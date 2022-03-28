@@ -14,17 +14,20 @@ use Inertia\Inertia;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'HomeController@show')->name('Home.show');
+Route::get('/', 'SiteController@home')->name('Site.home');
+Route::get('/privacy', 'SiteController@privacy')->name('Site.privacy');
 Route::get('/generator', 'GeneratorController@show')->name('Generator.show');
 
-Route::get('/welcome', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
+// Route::get('/welcome', function () {
+//     return Inertia::render('Welcome', [
+//         'canLogin' => Route::has('login'),
+//         'canRegister' => Route::has('register'),
+//         'laravelVersion' => Application::VERSION,
+//         'phpVersion' => PHP_VERSION,
+//     ]);
+// });
+
+
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

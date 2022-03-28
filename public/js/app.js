@@ -43525,6 +43525,14 @@ var map = {
 		"./resources/js/Pages/Home.vue",
 		"resources_js_Pages_Home_vue"
 	],
+	"./Privacy": [
+		"./resources/js/Pages/Privacy.vue",
+		"resources_js_Pages_Privacy_vue"
+	],
+	"./Privacy.vue": [
+		"./resources/js/Pages/Privacy.vue",
+		"resources_js_Pages_Privacy_vue"
+	],
 	"./Welcome": [
 		"./resources/js/Pages/Welcome.vue",
 		"resources_js_Pages_Welcome_vue"
@@ -43682,7 +43690,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Pages_Auth_ConfirmPassword_vue":"fd1f895a8d16cb72","resources_js_Pages_Auth_ForgotPassword_vue":"7ec3e5c41a01f8b0","resources_js_Pages_Auth_Login_vue":"ceae69800490ca81","resources_js_Pages_Auth_Register_vue":"cd6919459c9e9c95","resources_js_Pages_Auth_ResetPassword_vue":"18bf1e51bd2f4dfd","resources_js_Pages_Auth_VerifyEmail_vue":"697374b2a0a6b59e","resources_js_Pages_Dashboard_vue":"0c2987f5caf10c8a","resources_js_Pages_Generator_vue":"c9353943a42b5465","resources_js_Pages_Home_vue":"ee46fa6195bb917e","resources_js_Pages_Welcome_vue":"ecf49b7f03610082"}[chunkId] + "";
+/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Pages_Auth_ConfirmPassword_vue":"fd1f895a8d16cb72","resources_js_Pages_Auth_ForgotPassword_vue":"7ec3e5c41a01f8b0","resources_js_Pages_Auth_Login_vue":"ceae69800490ca81","resources_js_Pages_Auth_Register_vue":"cd6919459c9e9c95","resources_js_Pages_Auth_ResetPassword_vue":"18bf1e51bd2f4dfd","resources_js_Pages_Auth_VerifyEmail_vue":"697374b2a0a6b59e","resources_js_Pages_Dashboard_vue":"0c2987f5caf10c8a","resources_js_Pages_Generator_vue":"c9353943a42b5465","resources_js_Pages_Home_vue":"ee46fa6195bb917e","resources_js_Pages_Privacy_vue":"ef7ae35feded6b32","resources_js_Pages_Welcome_vue":"ecf49b7f03610082"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	
