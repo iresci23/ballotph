@@ -15,4 +15,9 @@ class SiteController extends Controller
     {
         return Inertia::render('Privacy');
     }
+
+    public function terms(Request $request)
+    {
+        return Inertia::render('Terms');
+    }
 }

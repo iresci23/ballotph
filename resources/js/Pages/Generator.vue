@@ -2,7 +2,7 @@
     <Head title="Generator" />
 
     <div class="min-h-screen bg-white">
-        <div class="container mx-auto">
+        <div class="container mx-auto wizard-generator">
             <VrWizard 
                 :options="options" 
                 :id="config.id" 

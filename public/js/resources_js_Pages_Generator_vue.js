@@ -5321,7 +5321,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"text-center py-4\"><h3 class=\"my-3 text-2xl md:text-3xl lg:text-4xl font-black leading-tight\"> Who is your President? </h3><h4 class=\"text-2xl\">Vote for one (1)</h4></div><div class=\"flex flex-wrap -mx-4\"><div class=\"w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4\"><a href=\"\" class=\"c-card\"><div class=\"relative pb-48 overflow-hidden\"><img class=\"absolute inset-0 h-full w-full object-cover\" src=\"https://votepilipinas.com/candidate/img/abella_1.png\" alt=\"\"></div><div class=\"p-4\"><h2 class=\"mt-2 mb-2 font-bold h-12\"><span class=\"ballot-number\">1.</span><span class=\"profile-name\">ABELLA, ERNIE</span></h2><p class=\"text-sm\"></p></div></a></div><div class=\"w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4\"><a href=\"\" class=\"c-card\"><div class=\"relative pb-48 overflow-hidden\"><img class=\"absolute inset-0 h-full w-full object-cover\" src=\"https://votepilipinas.com/candidate/img/leody_1.png\" alt=\"\"></div><div class=\"p-4\"><h2 class=\"mt-2 mb-2 font-bold h-12\"><span class=\"ballot-number\">2.</span><span class=\"profile-name\">DE GUZMAN, LEODY</span></h2><p class=\"text-sm\"></p></div></a></div><div class=\"w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4\"><a href=\"\" class=\"c-card\"><div class=\"relative pb-48 overflow-hidden\"><img class=\"absolute inset-0 h-full w-full object-cover\" src=\"https://votepilipinas.com/candidate/img/isko_1.png\" alt=\"\"></div><div class=\"p-4\"><h2 class=\"mt-2 mb-2 font-bold h-12\"><span class=\"ballot-number\">3.</span><span class=\"profile-name\">DOMAGOSO, ISKO MORENO</span></h2><p class=\"text-sm\"></p></div></a></div><div class=\"w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4\"><a href=\"\" class=\"c-card\"><div class=\"relative pb-48 overflow-hidden\"><img class=\"absolute inset-0 h-full w-full object-cover\" src=\"https://votepilipinas.com/candidate/img/gonzales_1.png\" alt=\"\"></div><div class=\"p-4\"><h2 class=\"mt-2 mb-2 font-bold h-12\"><span class=\"ballot-number\">4.</span><span class=\"profile-name\">GONZALES, NORBERTO</span></h2><p class=\"text-sm\"></p></div></a></div></div>", 2);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"text-center py-4\"><h3 class=\"my-3 text-2xl md:text-3xl lg:text-4xl font-black leading-tight\"> Who is your President? </h3><h4 class=\"text-2xl\">Vote for one (1)</h4></div><div class=\"flex flex-wrap -mx-4\"><div class=\"w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4\"><a href=\"#\" class=\"c-card\"><div class=\"relative pb-48 overflow-hidden\"><img class=\"absolute inset-0 h-full w-full object-cover\" src=\"https://votepilipinas.com/candidate/img/abella_1.png\" alt=\"\"></div><div class=\"p-4\"><h2 class=\"mt-2 mb-2 font-bold h-12\"><span class=\"ballot-number\">1.</span><span class=\"profile-name\">ABELLA, ERNIE</span></h2><p class=\"text-sm\"></p></div></a></div><div class=\"w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4\"><a href=\"#\" class=\"c-card\"><div class=\"relative pb-48 overflow-hidden\"><img class=\"absolute inset-0 h-full w-full object-cover\" src=\"https://votepilipinas.com/candidate/img/leody_1.png\" alt=\"\"></div><div class=\"p-4\"><h2 class=\"mt-2 mb-2 font-bold h-12\"><span class=\"ballot-number\">2.</span><span class=\"profile-name\">DE GUZMAN, LEODY</span></h2><p class=\"text-sm\"></p></div></a></div><div class=\"w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4\"><a href=\"#\" class=\"c-card\"><div class=\"relative pb-48 overflow-hidden\"><img class=\"absolute inset-0 h-full w-full object-cover\" src=\"https://votepilipinas.com/candidate/img/isko_1.png\" alt=\"\"></div><div class=\"p-4\"><h2 class=\"mt-2 mb-2 font-bold h-12\"><span class=\"ballot-number\">3.</span><span class=\"profile-name\">DOMAGOSO, ISKO MORENO</span></h2><p class=\"text-sm\"></p></div></a></div><div class=\"w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4\"><a href=\"#\" class=\"c-card\"><div class=\"relative pb-48 overflow-hidden\"><img class=\"absolute inset-0 h-full w-full object-cover\" src=\"https://votepilipinas.com/candidate/img/gonzales_1.png\" alt=\"\"></div><div class=\"p-4\"><h2 class=\"mt-2 mb-2 font-bold h-12\"><span class=\"ballot-number\">4.</span><span class=\"profile-name\">GONZALES, NORBERTO</span></h2><p class=\"text-sm\"></p></div></a></div></div>", 2);
 
 function render(_ctx, _cache) {
   return _hoisted_1;
@@ -5342,7 +5342,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"text-center py-4\"><h3 class=\"my-3 text-2xl md:text-3xl lg:text-4xl font-black leading-tight\"> Who are your Senators? </h3><h4 class=\"text-2xl\">Vote for 8</h4></div><div class=\"flex flex-wrap -mx-4\"><div class=\"w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4\"><a href=\"\" class=\"c-card\"><div class=\"relative pb-48 overflow-hidden\"><img class=\"absolute inset-0 h-full w-full object-cover\" src=\"https://votepilipinas.com/candidate/img/abella_1.png\" alt=\"\"></div><div class=\"p-4\"><h2 class=\"mt-2 mb-2 font-bold h-12\"><span class=\"ballot-number\">1.</span><span class=\"profile-name\">ABELLA, ERNIE</span></h2><p class=\"text-sm\"></p></div></a></div><div class=\"w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4\"><a href=\"\" class=\"c-card\"><div class=\"relative pb-48 overflow-hidden\"><img class=\"absolute inset-0 h-full w-full object-cover\" src=\"https://votepilipinas.com/candidate/img/leody_1.png\" alt=\"\"></div><div class=\"p-4\"><h2 class=\"mt-2 mb-2 font-bold h-12\"><span class=\"ballot-number\">2.</span><span class=\"profile-name\">DE GUZMAN, LEODY</span></h2><p class=\"text-sm\"></p></div></a></div><div class=\"w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4\"><a href=\"\" class=\"c-card\"><div class=\"relative pb-48 overflow-hidden\"><img class=\"absolute inset-0 h-full w-full object-cover\" src=\"https://votepilipinas.com/candidate/img/isko_1.png\" alt=\"\"></div><div class=\"p-4\"><h2 class=\"mt-2 mb-2 font-bold h-12\"><span class=\"ballot-number\">3.</span><span class=\"profile-name\">DOMAGOSO, ISKO MORENO</span></h2><p class=\"text-sm\"></p></div></a></div><div class=\"w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4\"><a href=\"\" class=\"c-card\"><div class=\"relative pb-48 overflow-hidden\"><img class=\"absolute inset-0 h-full w-full object-cover\" src=\"https://votepilipinas.com/candidate/img/gonzales_1.png\" alt=\"\"></div><div class=\"p-4\"><h2 class=\"mt-2 mb-2 font-bold h-12\"><span class=\"ballot-number\">4.</span><span class=\"profile-name\">GONZALES, NORBERTO</span></h2><p class=\"text-sm\"></p></div></a></div></div>", 2);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"text-center py-4\"><h3 class=\"my-3 text-2xl md:text-3xl lg:text-4xl font-black leading-tight\"> Who are your Senators? </h3><h4 class=\"text-2xl\">Vote for eight (8)</h4></div><div class=\"flex flex-wrap -mx-4\"><div class=\"w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4\"><a href=\"\" class=\"c-card\"><div class=\"relative pb-48 overflow-hidden\"><img class=\"absolute inset-0 h-full w-full object-cover\" src=\"https://votepilipinas.com/candidate/img/abella_1.png\" alt=\"\"></div><div class=\"p-4\"><h2 class=\"mt-2 mb-2 font-bold h-12\"><span class=\"ballot-number\">1.</span><span class=\"profile-name\">ABELLA, ERNIE</span></h2><p class=\"text-sm\"></p></div></a></div><div class=\"w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4\"><a href=\"\" class=\"c-card\"><div class=\"relative pb-48 overflow-hidden\"><img class=\"absolute inset-0 h-full w-full object-cover\" src=\"https://votepilipinas.com/candidate/img/leody_1.png\" alt=\"\"></div><div class=\"p-4\"><h2 class=\"mt-2 mb-2 font-bold h-12\"><span class=\"ballot-number\">2.</span><span class=\"profile-name\">DE GUZMAN, LEODY</span></h2><p class=\"text-sm\"></p></div></a></div><div class=\"w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4\"><a href=\"\" class=\"c-card\"><div class=\"relative pb-48 overflow-hidden\"><img class=\"absolute inset-0 h-full w-full object-cover\" src=\"https://votepilipinas.com/candidate/img/isko_1.png\" alt=\"\"></div><div class=\"p-4\"><h2 class=\"mt-2 mb-2 font-bold h-12\"><span class=\"ballot-number\">3.</span><span class=\"profile-name\">DOMAGOSO, ISKO MORENO</span></h2><p class=\"text-sm\"></p></div></a></div><div class=\"w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4\"><a href=\"\" class=\"c-card\"><div class=\"relative pb-48 overflow-hidden\"><img class=\"absolute inset-0 h-full w-full object-cover\" src=\"https://votepilipinas.com/candidate/img/gonzales_1.png\" alt=\"\"></div><div class=\"p-4\"><h2 class=\"mt-2 mb-2 font-bold h-12\"><span class=\"ballot-number\">4.</span><span class=\"profile-name\">GONZALES, NORBERTO</span></h2><p class=\"text-sm\"></p></div></a></div></div>", 2);
 
 function render(_ctx, _cache) {
   return _hoisted_1;
@@ -5383,49 +5383,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = {
-  id: "header",
-  "class": "w-full z-30 top-0 text-white py-1 lg:py-6"
-};
-var _hoisted_2 = {
-  "class": "w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6"
-};
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "pl-4 flex items-center"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  "class": "text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl",
-  href: "/"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "/images/Ballot_Logo.png",
-  alt: "Logo",
-  "class": "logo"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Sample Ballot Generator ")])], -1
-/* HOISTED */
-);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<header><nav id=\"header\" class=\"w-full z-30 top-0 text-white py-1 lg:py-6\"><div class=\"w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6\"><div class=\"md:pl-4 flex lg:items-center\"><a class=\"text-black no-underline hover:no-underline font-bold text-xl lg:text-4xl md:text-3xl flex items-center\" href=\"/\"><img src=\"/images/SBGLOGO.png\" alt=\"Logo\" class=\"logo mr-5 ml-5 md:ml-0\"> Sample Ballot Generator </a></div><!-- &lt;Link href=&quot;/generator&quot;&gt;\r\n                  &lt;button\r\n                      id=&quot;navAction&quot;\r\n                      class=&quot;mx-auto lg:mx-0 hover:underline text-gray-800 font-extrabold rounded mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 button-gradient&quot;\r\n                  &gt;\r\n                      Generate My Ballot\r\n                  &lt;/button&gt;\r\n                &lt;/Link&gt; --></div></nav><!-- &lt;Link href=&quot;/&quot;&gt;Home&lt;/Link&gt;\r\n      &lt;Link href=&quot;/about&quot;&gt;About&lt;/Link&gt;\r\n      &lt;Link href=&quot;/contact&quot;&gt;Contact&lt;/Link&gt; --></header>", 1);
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-  id: "navAction",
-  "class": "mx-auto lg:mx-0 hover:underline text-gray-800 font-extrabold rounded mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 button-gradient"
-}, " Generate My Ballot ", -1
-/* HOISTED */
-);
-
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<footer class=\"bg-white\"><div class=\"container mx-auto px-8\"><div class=\"w-full flex flex-col md:flex-row py-6\"><div class=\"flex-1 mb-6\"><a class=\"text-orange-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl\" href=\"#\"> Sample Ballot Generator </a></div><div class=\"flex-1\"><p class=\"uppercase font-extrabold text-gray-500 md:mb-6\"> Links </p><ul class=\"list-reset mb-6\"><li class=\"mt-2 inline-block mr-2 md:block md:mr-0\"><a href=\"#\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">FAQ</a></li><li class=\"mt-2 inline-block mr-2 md:block md:mr-0\"><a href=\"#\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">Terms</a></li><li class=\"mt-2 inline-block mr-2 md:block md:mr-0\"><a href=\"#\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">Privacy</a></li></ul></div><div class=\"flex-1\"><p class=\"uppercase font-extrabold text-gray-500 md:mb-6\"> Social </p><ul class=\"list-reset mb-6\"><li class=\"mt-2 inline-block mr-2 md:block md:mr-0\"><a href=\"#\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">Facebook</a></li><li class=\"mt-2 inline-block mr-2 md:block md:mr-0\"><a href=\"#\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">Linkedin</a></li><li class=\"mt-2 inline-block mr-2 md:block md:mr-0\"><a href=\"#\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">Twitter</a></li></ul></div><div class=\"flex-1\"><p class=\"uppercase font-extrabold text-gray-500 md:mb-6\"> Company </p><ul class=\"list-reset mb-6\"><li class=\"mt-2 inline-block mr-2 md:block md:mr-0\"><a href=\"#\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">About Us</a></li><li class=\"mt-2 inline-block mr-2 md:block md:mr-0\"><a href=\"#\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">Contact</a></li></ul></div></div></div></footer>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<footer class=\"bg-white\"><div class=\"container mx-auto px-8\"><div class=\"w-full flex flex-col md:flex-row py-6 md:pb-0\"><div class=\"flex-1 flex md:mb-6 flex-row flex-wrap justify-center\"><div class=\"flex md:footer-text-logo footer-text-logo-small\"><div class=\"md:pr-5\"><img src=\"/images/SBGLOGO.png\" alt=\"Logo\" class=\"logo ml-0\"></div></div><div class=\"flex flex-col flex-start justify-center xl:items-start\"><div class=\"flex flex-col flex-wrap items-center pt-5 md:pt-0\"><a class=\"text-black no-underline hover:no-underline font-bold text-lg lg:text-md\" href=\"#\"> Sample Ballot Generator</a></div><div class=\"flex xl:footer-links flex-start\"><ul class=\"list-reset mb-6 text-center md:text-justify\"><li class=\"mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6\"><a href=\"#\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">Privacy Policy</a></li><li class=\"mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6\"><a href=\"#\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">About Us</a></li><li class=\"mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6\"><a href=\"#\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">Contact Us</a></li></ul></div></div></div><!-- &lt;div class=&quot;flex-1&quot;&gt;\r\n                    &lt;p class=&quot;uppercase font-extrabold text-gray-500 md:mb-6&quot;&gt;\r\n                        Links\r\n                    &lt;/p&gt;\r\n                    &lt;ul class=&quot;list-reset mb-6&quot;&gt;\r\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\r\n                            &lt;a\r\n                                href=&quot;#&quot;\r\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                &gt;FAQ&lt;/a\r\n                            &gt;\r\n                        &lt;/li&gt;\r\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\r\n                            &lt;a\r\n                                href=&quot;#&quot;\r\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                &gt;Terms&lt;/a\r\n                            &gt;\r\n                        &lt;/li&gt;\r\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\r\n                            &lt;a\r\n                                href=&quot;#&quot;\r\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                &gt;Privacy&lt;/a\r\n                            &gt;\r\n                        &lt;/li&gt;\r\n                    &lt;/ul&gt;\r\n                &lt;/div&gt; --><!-- &lt;div class=&quot;flex-1&quot;&gt;\r\n                    &lt;p class=&quot;uppercase font-extrabold text-gray-500 md:mb-6&quot;&gt;\r\n                        Social\r\n                    &lt;/p&gt;\r\n                    &lt;ul class=&quot;list-reset mb-6&quot;&gt;\r\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\r\n                            &lt;a\r\n                                href=&quot;#&quot;\r\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                &gt;Facebook&lt;/a\r\n                            &gt;\r\n                        &lt;/li&gt;\r\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\r\n                            &lt;a\r\n                                href=&quot;#&quot;\r\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                &gt;Linkedin&lt;/a\r\n                            &gt;\r\n                        &lt;/li&gt;\r\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\r\n                            &lt;a\r\n                                href=&quot;#&quot;\r\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                &gt;Twitter&lt;/a\r\n                            &gt;\r\n                        &lt;/li&gt;\r\n                    &lt;/ul&gt;\r\n                &lt;/div&gt; --><div class=\"flex-1 flex md:m-5 md:ml-5 md:footer-kofi flex-col flex-wrap items-center\"><div class=\"md:pt-5 pb-3\"><p class=\"text-black text-center md:text-left text-xs\"> Hi! If this app helped you, <br> maybe you can buy us coffee? ❤</p></div><div class=\"flex\"><a href=\"https://ko-fi.com/codesandpaws\" target=\"blank\"><img class=\"h-6\" src=\"/images/Kofi_pixel_logo_with_text_dark.png\" alt=\"Kofi Logo\"></a></div><!-- &lt;ul class=&quot;list-reset mb-6&quot;&gt;\r\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\r\n                            &lt;a\r\n                                href=&quot;#&quot;\r\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                &gt;About Us&lt;/a\r\n                            &gt;\r\n                        &lt;/li&gt;\r\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\r\n                            &lt;a\r\n                                href=&quot;#&quot;\r\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                &gt;Contact&lt;/a\r\n                            &gt;\r\n                        &lt;/li&gt;\r\n                    &lt;/ul&gt; --></div></div></div></footer>", 1);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
-
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("header", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
-    href: "/generator"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_4];
-    }),
-    _: 1
-    /* STABLE */
-
-  })])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <Link href=\"/\">Home</Link>\n      <Link href=\"/about\">About</Link>\n      <Link href=\"/contact\">Contact</Link> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]), _hoisted_5], 64
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]), _hoisted_2], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -5448,7 +5412,7 @@ var _hoisted_1 = {
   "class": "min-h-screen bg-white"
 };
 var _hoisted_2 = {
-  "class": "container mx-auto"
+  "class": "container mx-auto wizard-generator"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Head"], {
@@ -5501,12 +5465,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _CompletedStep_vue_vue_type_template_id_6897bd3e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CompletedStep.vue?vue&type=template&id=6897bd3e */ "./resources/js/Components/Wizard/CompletedStep.vue?vue&type=template&id=6897bd3e");
-/* harmony import */ var _Volumes_Macintosh_HD_Data_code_www_html_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 const script = {}
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Data_code_www_html_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_CompletedStep_vue_vue_type_template_id_6897bd3e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/CompletedStep.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_CompletedStep_vue_vue_type_template_id_6897bd3e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/CompletedStep.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -5526,12 +5490,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Intro_vue_vue_type_template_id_151f4c73__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Intro.vue?vue&type=template&id=151f4c73 */ "./resources/js/Components/Wizard/Intro.vue?vue&type=template&id=151f4c73");
-/* harmony import */ var _Volumes_Macintosh_HD_Data_code_www_html_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 const script = {}
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Data_code_www_html_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_Intro_vue_vue_type_template_id_151f4c73__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/Intro.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_Intro_vue_vue_type_template_id_151f4c73__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/Intro.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -5551,12 +5515,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _PresidentStep_vue_vue_type_template_id_4ae65fb3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PresidentStep.vue?vue&type=template&id=4ae65fb3 */ "./resources/js/Components/Wizard/PresidentStep.vue?vue&type=template&id=4ae65fb3");
-/* harmony import */ var _Volumes_Macintosh_HD_Data_code_www_html_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 const script = {}
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Data_code_www_html_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_PresidentStep_vue_vue_type_template_id_4ae65fb3__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/PresidentStep.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_PresidentStep_vue_vue_type_template_id_4ae65fb3__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/PresidentStep.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -5576,12 +5540,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _SenatorStep_vue_vue_type_template_id_95f37136__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SenatorStep.vue?vue&type=template&id=95f37136 */ "./resources/js/Components/Wizard/SenatorStep.vue?vue&type=template&id=95f37136");
-/* harmony import */ var _Volumes_Macintosh_HD_Data_code_www_html_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 const script = {}
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Data_code_www_html_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_SenatorStep_vue_vue_type_template_id_95f37136__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/SenatorStep.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_SenatorStep_vue_vue_type_template_id_95f37136__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/SenatorStep.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -5601,12 +5565,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _VicePresidentStep_vue_vue_type_template_id_4755ea5e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VicePresidentStep.vue?vue&type=template&id=4755ea5e */ "./resources/js/Components/Wizard/VicePresidentStep.vue?vue&type=template&id=4755ea5e");
-/* harmony import */ var _Volumes_Macintosh_HD_Data_code_www_html_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 const script = {}
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Data_code_www_html_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_VicePresidentStep_vue_vue_type_template_id_4755ea5e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/VicePresidentStep.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_VicePresidentStep_vue_vue_type_template_id_4755ea5e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/VicePresidentStep.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -5627,13 +5591,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _SiteLayout_vue_vue_type_template_id_61958455__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SiteLayout.vue?vue&type=template&id=61958455 */ "./resources/js/Layouts/SiteLayout.vue?vue&type=template&id=61958455");
 /* harmony import */ var _SiteLayout_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SiteLayout.vue?vue&type=script&lang=js */ "./resources/js/Layouts/SiteLayout.vue?vue&type=script&lang=js");
-/* harmony import */ var _Volumes_Macintosh_HD_Data_code_www_html_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Data_code_www_html_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_SiteLayout_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_SiteLayout_vue_vue_type_template_id_61958455__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Layouts/SiteLayout.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_SiteLayout_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_SiteLayout_vue_vue_type_template_id_61958455__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Layouts/SiteLayout.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -5654,13 +5618,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Generator_vue_vue_type_template_id_a5a9cc0c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Generator.vue?vue&type=template&id=a5a9cc0c */ "./resources/js/Pages/Generator.vue?vue&type=template&id=a5a9cc0c");
 /* harmony import */ var _Generator_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Generator.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/Generator.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _Volumes_Macintosh_HD_Data_code_www_html_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Data_code_www_html_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Generator_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Generator_vue_vue_type_template_id_a5a9cc0c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Generator.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Generator_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Generator_vue_vue_type_template_id_a5a9cc0c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Generator.vue"]])
 /* hot reload */
 if (false) {}
 

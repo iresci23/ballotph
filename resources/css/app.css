@@ -3,7 +3,7 @@
 @import 'tailwindcss/utilities';
 
 .gradient {
-    background-image: linear-gradient(-225deg, #cbbacc 0%, #2580b3 100%);
+    background-image: linear-gradient(90deg, #2580b361  0%, #b3252561 100%);
 }
 
 .button-gradient {
@@ -12,13 +12,13 @@
 }
 
 .logo {
-    width: 40px;
-    height: 40px;
+    width: 75px;
+    height: 75px;
     display: inline-block;
 }
 
 .c-card {
-    @apply  block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden;
+    @apply  block bg-white shadow-md hover:shadow-2xl rounded-lg overflow-hidden;
 }
 .c-card .profile-party {
     @apply px-2 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs;
@@ -34,4 +34,84 @@
 }
 .table-theme tr {
     @apply focus:outline-none h-8 border border-solid border-neutral-200;
+}
+
+/* Footer */
+
+@layer utilities {
+    .footer-text-logo {
+        /* @apply flex-row items-center content-start justify-evenly; */
+        @apply flex-row items-start;
+    }
+    .footer-text-logo-small {
+        /* @apply items-center flex-col content-center flex-wrap; */
+        @apply justify-center items-center;
+    }
+    .footer-links {
+        @apply flex-col justify-center items-center;
+    }
+
+    .footer-kofi {
+        /* @apply flex-col flex-wrap items-center; */
+        @apply content-center items-start flex-col flex-wrap;
+    }
+}
+
+/* Generator */
+
+.wizard-generator .wrapper {
+    @apply flex justify-evenly py-5;
+}
+
+.wizard-generator .wrapper .w-stepper {
+    @apply bg-neutral-200 text-gray-400;
+}
+
+.wizard-generator .wrapper .w-stepper li {
+    @apply p-5;
+}
+
+.wizard-generator .wrapper .w-stepper__item.active {
+    @apply bg-orange-500 text-white font-bold;
+}
+
+.wizard-generator .wrapper .w-stepper__item::before, 
+.wizard-generator .wrapper .w_stepper__item_content::before {
+    @apply hidden;
+}
+
+.wizard-generator .wrapper .w_stepper__item_content {
+    margin-right: 3px;
+    margin-left: 3px;
+    min-width: 164.5px;
+    @apply justify-center;
+}
+
+.wizard-generator .wrapper .w_stepper__item_content .w_stepper__title {
+    white-space: nowrap;
+}
+
+.wizard-generator .vr-wizard--footer {
+    justify-content: center;
+}
+
+.wizard-generator .vr-wizard--footer .vr-wizard--footer-right .vr-wizard--btn {
+    background-color: #f39f86;
+    background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+}
+
+.wizard-generator .vr-wizard--footer .vr-wizard--footer-left .vr-wizard--prev-btn {
+    @apply bg-slate-400;
+}
+
+/* Card States */
+
+.selected-card {
+    box-shadow: inset 0px 0px 0px 5px green;
+}
+
+@media screen and (max-width:1000px) {
+    .wizard-generator .wrapper {
+        display: none;
+    } 
 }

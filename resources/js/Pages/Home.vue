@@ -4,23 +4,20 @@
     <div class="container mx-auto h-screen">
         <div class="text-center px-3 lg:px-0">
             <h1
-                class="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight"
-            >
-                Choose your lineup and print
+                class="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight">
+                Are You Election Ready?
             </h1>
             <p
-                class="leading-normal text-gray-800 text-base md:text-xl lg:text-2xl mb-8"
-            >
-                A sample ballot generator provided as a convenience to voters <br/>
-                for the 2022 Philippine election.
+                class="leading-normal text-gray-800 text-base md:text-xl lg:text-2xl mt-8 mb-8">
+                Be prepared for the election, generate a sample ballot based on your selections.
             </p>
 
             <Link href="/generator">
-                <button
-                    class="mx-auto lg:mx-0 hover:underline text-gray-800 font-extrabold rounded my-2 md:my-6 py-4 px-8 shadow-lg w-48 button-gradient"
-                >
-                    Click to Start
-                </button>
+                  <button
+                      id="navAction"
+                      class="mx-auto lg:mx-0 hover:underline text-black font-bold rounded mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 button-gradient drop-shadow-md">
+                      Generate My Ballot
+                  </button>
             </Link>
         </div>
 
@@ -36,19 +33,32 @@
         </div>
     </div>
 
-    <section class="bg-white border-b py-60">
+    <section class="bg-white border-b pt-10 xl:pt-72 lg:pt-40">
         <div
-            class="container mx-auto flex flex-wrap items-center justify-between pb-12"
-        >
+            class="container mx-auto flex flex-wrap items-center justify-between pb-12">
             <h2
-                class="w-full my-2 text-xl font-black leading-tight text-center text-gray-800 lg:mt-8"
-            >
+                class="w-full my-2 lg:text-3xl text-2xl font-black leading-tight text-center text-gray-800">
                 How to use the generator
             </h2>
             <div class="w-full mb-4">
-                <div
-                    class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
-                ></div>
+                <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t">
+                </div>
+            </div>
+
+            <div class="w-full">
+                <div class="p-5 pb-0">
+                    <p class="text-center lg:text-2xl text-xl">You can create your personalized sample ballot with these easy steps:</p>
+                </div>
+                <div class="w-full p-5 flex justify-center">
+                    <ul class="list-decimal">
+                        <li class="p-3 text-lg">Click "Create My Ballot" button to start</li>
+                        <img src="https://placehold.co/600x400" alt="">
+                        <li class="p-3 text-lg">Select your preferred candidate(s) in each category.</li>
+                        <img src="https://placehold.co/600x400" alt="">
+                        <li class="p-3 text-lg">Click the “Download” button to save your personalized sample ballot.</li>
+                        <img src="https://placehold.co/600x400" alt="">
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -56,8 +66,7 @@
     <section class="bg-gray-100 border-b py-8">
         <div class="container max-w-5xl mx-auto m-8">
             <h2
-                class="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800"
-            >
+                class="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800">
                 Useful Links
             </h2>
             <div class="w-full mb-4">
@@ -70,8 +79,7 @@
 
     <section class="gradient w-full mx-auto text-center pt-6 pb-12">
         <h2
-            class="w-full my-2 text-5xl font-black leading-tight text-center text-white"
-        >
+            class="w-full my-2 text-5xl font-black leading-tight text-center text-white">
             Are You Election Ready?
         </h2>
         <div class="w-full mb-4">
