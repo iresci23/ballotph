@@ -42,8 +42,8 @@ class CreatePositionsTable extends Migration
                 'order' => 2,
             ],
             [
-                'slug' => 'senators',
-                'name' => 'Senators',
+                'slug' => 'senator',
+                'name' => 'Senator',
                 'type' => 'national',
                 'voting_limit' => 12,
                 'order' => 3,
@@ -70,7 +70,7 @@ class CreatePositionsTable extends Migration
                 'order' => 6,
             ],
             [
-                'slug' => 'prov_saggunian',
+                'slug' => 'prov_saggunian_member',
                 'name' => 'Member, Sangguniang Panlalawigan',
                 'type' => 'local',
                 'voting_limit' => 2,
@@ -91,7 +91,7 @@ class CreatePositionsTable extends Migration
                 'order' => 9,
             ],
             [
-                'slug' => 'city_saggunian',
+                'slug' => 'city_saggunian_member',
                 'name' => 'Member, Sangguniang Bayan',
                 'type' => 'local',
                 'voting_limit' => 8,

@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Models\Position;
 use Illuminate\Http\Request;
 
@@ -20,7 +21,7 @@ class PositionController extends Controller
     {
         $positions = Position::paginate();
 
-        return view('position.index', compact('positions'))
+        return view('admin.position.index', compact('positions'))
             ->with('i', (request()->input('page', 1) - 1) * $positions->perPage());
     }
 
@@ -32,7 +33,7 @@ class PositionController extends Controller
     public function create()
     {
         $position = new Position();
-        return view('position.create', compact('position'));
+        return view('admin.position.create', compact('position'));
     }
 
     /**
