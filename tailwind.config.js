@@ -11,8 +11,18 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["Inter", ...defaultTheme.fontFamily.sans],
+                sans: ["Poppins", ...defaultTheme.fontFamily.sans],
             }
+        },
+
+        container: {
+            padding: {
+              DEFAULT: '1rem',
+              sm: '3rem',
+              lg: '4rem',
+              xl: '5rem',
+              '2xl': '6rem',
+            },
         },
     },
 

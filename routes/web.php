@@ -16,6 +16,7 @@ use Inertia\Inertia;
 */
 Route::get('/', 'SiteController@home')->name('Site.home');
 Route::get('/privacy', 'SiteController@privacy')->name('Site.privacy');
+Route::get('/terms', 'SiteController@terms')->name('Site.terms');
 Route::get('/generator', 'GeneratorController@show')->name('Generator.show');
 
 // Route::get('/welcome', function () {

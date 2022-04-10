@@ -5,7 +5,7 @@
         >
             Who are your Senators?
         </h3>
-        <h4 class="text-2xl">Vote for 8</h4>
+        <h4 class="text-2xl">Vote for eight (8)</h4>
     </div>
     <div class="flex flex-wrap -mx-4">
 

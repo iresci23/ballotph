@@ -11,7 +11,7 @@
 
         <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4">
             <a
-                href=""
+                href="#"
                 class="c-card"
             >
                 <div class="relative pb-48 overflow-hidden">
@@ -34,7 +34,7 @@
 
         <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4">
             <a
-                href=""
+                href="#"
                 class="c-card"
             >
                 <div class="relative pb-48 overflow-hidden">
@@ -57,7 +57,7 @@
 
         <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4">
             <a
-                href=""
+                href="#"
                 class="c-card"
             >
                 <div class="relative pb-48 overflow-hidden">
@@ -80,7 +80,7 @@
 
         <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4">
             <a
-                href=""
+                href="#"
                 class="c-card"
             >
                 <div class="relative pb-48 overflow-hidden">

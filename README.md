@@ -7,7 +7,7 @@ Note: Run the commands in a terminal.
 1. Clone the repo: 
 `git clone git@github.com:iresci23/ballotph.git`
 2. Once cloned, go to the project's root folder and execture via terminal:
-`composer install`
+`php composer.phar install`
 `npm install`
 3. Create a database in your local (you can name it "ballotph" or whatever you want)
 4. Create a new file name it as `.env`, and copy the contents from `.env.example` 
