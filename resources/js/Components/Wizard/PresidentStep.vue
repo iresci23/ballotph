@@ -9,22 +9,23 @@
     </div>
     <div class="flex flex-wrap -mx-4">
 
-        <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4">
+        <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4">
             <a
                 href="#"
-                class="c-card"
+                class="c-card md:flex-col md:items-center"
             >
-                <div class="relative pb-48 overflow-hidden">
+                <div class="relative">
                     <img
-                        class="absolute inset-0 h-full w-full object-cover"
+                        class="w-24 h-full md:w-full"
                         src="https://votepilipinas.com/candidate/img/abella_1.png"
                         alt=""
                     />
                 </div>
-                <div class="p-4">
-                    <h2 class="mt-2 mb-2 font-bold h-12">
+                <div class="p-4 flex-1">
+                    <h2 class="mt-2 mb-2 font-bold h-12 flex flex-col flex-wrap content-center items-center">
                         <span class="ballot-number">1.</span>
                         <span class="profile-name">ABELLA, ERNIE</span>
+                        <span class="profile-party">INDEPENDENT</span>
                     </h2>
                     <p class="text-sm">
                     </p>
@@ -32,22 +33,23 @@
             </a>
         </div>
 
-        <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4">
+        <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4">
             <a
                 href="#"
-                class="c-card"
+                class="c-card md:flex-col md:items-center"
             >
-                <div class="relative pb-48 overflow-hidden">
+                <div class="relative">
                     <img
-                        class="absolute inset-0 h-full w-full object-cover"
-                        src="https://votepilipinas.com/candidate/img/leody_1.png"
+                        class="w-24 h-full md:w-full"
+                        src="https://votepilipinas.com/candidate/img/abella_1.png"
                         alt=""
                     />
                 </div>
-                <div class="p-4">
-                    <h2 class="mt-2 mb-2 font-bold h-12">
-                        <span class="ballot-number">2.</span>
-                        <span class="profile-name">DE GUZMAN, LEODY</span>
+                <div class="p-4 flex-1">
+                    <h2 class="mt-2 mb-2 font-bold h-12 flex flex-col flex-wrap content-center items-center">
+                        <span class="ballot-number">1.</span>
+                        <span class="profile-name">ABELLA, ERNIE</span>
+                        <span class="profile-party">INDEPENDENT</span>
                     </h2>
                     <p class="text-sm">
                     </p>
@@ -55,22 +57,23 @@
             </a>
         </div>
 
-        <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4">
+        <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4">
             <a
                 href="#"
-                class="c-card"
+                class="c-card md:flex-col md:items-center"
             >
-                <div class="relative pb-48 overflow-hidden">
+                <div class="relative">
                     <img
-                        class="absolute inset-0 h-full w-full object-cover"
-                        src="https://votepilipinas.com/candidate/img/isko_1.png"
+                        class="w-24 h-full md:w-full"
+                        src="https://votepilipinas.com/candidate/img/abella_1.png"
                         alt=""
                     />
                 </div>
-                <div class="p-4">
-                    <h2 class="mt-2 mb-2 font-bold h-12">
-                        <span class="ballot-number">3.</span>
-                        <span class="profile-name">DOMAGOSO, ISKO MORENO</span>
+                <div class="p-4 flex-1">
+                    <h2 class="mt-2 mb-2 font-bold h-12 flex flex-col flex-wrap content-center items-center">
+                        <span class="ballot-number">1.</span>
+                        <span class="profile-name">ABELLA, ERNIE</span>
+                        <span class="profile-party">INDEPENDENT</span>
                     </h2>
                     <p class="text-sm">
                     </p>
@@ -78,28 +81,53 @@
             </a>
         </div>
 
-        <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/5 p-4">
+        <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4">
             <a
                 href="#"
-                class="c-card"
+                class="c-card md:flex-col md:items-center"
             >
-                <div class="relative pb-48 overflow-hidden">
+                <div class="relative">
                     <img
-                        class="absolute inset-0 h-full w-full object-cover"
-                        src="https://votepilipinas.com/candidate/img/gonzales_1.png"
+                        class="w-24 h-full md:w-full"
+                        src="https://votepilipinas.com/candidate/img/abella_1.png"
                         alt=""
                     />
                 </div>
-                <div class="p-4">
-                    <h2 class="mt-2 mb-2 font-bold h-12">
-                        <span class="ballot-number">4.</span>
-                        <span class="profile-name">GONZALES, NORBERTO</span>
+                <div class="p-4 flex-1">
+                    <h2 class="mt-2 mb-2 font-bold h-12 flex flex-col flex-wrap content-center items-center">
+                        <span class="ballot-number">1.</span>
+                        <span class="profile-name">ABELLA, ERNIE</span>
+                        <span class="profile-party">INDEPENDENT</span>
                     </h2>
                     <p class="text-sm">
                     </p>
                 </div>
             </a>
         </div>
+
+        <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4">
+            <a
+                href="#"
+                class="c-card md:flex-col md:items-center"
+            >
+                <div class="relative">
+                    <img
+                        class="w-24 h-full md:w-full"
+                        src="https://votepilipinas.com/candidate/img/abella_1.png"
+                        alt=""
+                    />
+                </div>
+                <div class="p-4 flex-1">
+                    <h2 class="mt-2 mb-2 font-bold h-12 flex flex-col flex-wrap content-center items-center">
+                        <span class="ballot-number">1.</span>
+                        <span class="profile-name">ABELLA, ERNIE</span>
+                        <span class="profile-party">INDEPENDENT</span>
+                    </h2>
+                    <p class="text-sm">
+                    </p>
+                </div>
+            </a>
+        </div>      
 
     </div>
 </template>
