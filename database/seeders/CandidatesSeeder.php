@@ -20,7 +20,7 @@ class CandidatesSeeder extends Seeder
         $candidates->each(function ($item, $key) {
 
             // insert into positions if it does not exists yet
-            $position = \App\Models\Position::firstOrCreate(['slug' => $item['position']],
+            $position = \App\Models\Position::updateOrCreate(['slug' => $item['position']],
                 [
                     'name' => ucwords(str_replace('_',' ',$item['position'])),
                     'type' => in_array($item['position'], ['president','vice_president','senator','partylist']) ? 'national' : 'local',
@@ -30,14 +30,15 @@ class CandidatesSeeder extends Seeder
             );
 
             // insert the candidates
-            $candidate = \App\Models\Candidate::firstOrCreate(['name' => $item['name']],
+            $candidate = \App\Models\Candidate::updateOrCreate(['name' => $item['name']],
                 [
+                    'picture' => $item['picture'] ?? null,
                     'profile_url' => $item['profile_url']
                 ]
             );
 
             // map the position of candidates
-            $positionCandidate = \App\Models\PositionCandidate::firstOrCreate([
+            $positionCandidate = \App\Models\PositionCandidate::updateOrCreate([
                     'election_year' => 2022,
                     'position_id' => $position->id,
                     'candidate_id' => $candidate->id

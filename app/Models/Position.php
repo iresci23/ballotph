@@ -38,6 +38,12 @@ class Position extends Model
      */
     protected $fillable = ['slug','name','type','voting_limit','order'];
 
-
+    /**
+     * The candidates that belong to the position.
+     */
+    public function candidates()
+    {
+        return $this->belongsToMany(Candidate::class, 'position_candidates', 'position_id', 'candidate_id');
+    }
 
 }

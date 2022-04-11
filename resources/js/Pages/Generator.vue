@@ -23,15 +23,18 @@ import Intro from './../Components/Wizard/Intro.vue';
 import PresidentStep from './../Components/Wizard/PresidentStep.vue';
 import VicePresidentStep from './../Components/Wizard/VicePresidentStep.vue';
 import SenatorStep from './../Components/Wizard/SenatorStep.vue';
+import PartyListStep from './../Components/Wizard/PartyListStep.vue';
 import CompletedStep from './../Components/Wizard/CompletedStep.vue';
-import { assign } from "xstate";
+import { useCandidateStore } from '@/Stores/Candidate'
 
-defineProps({
-    canLogin: Boolean,
-    canRegister: Boolean,
-    laravelVersion: String,
-    phpVersion: String,
+const props = defineProps({
+    candidates: Array
 });
+
+const store = useCandidateStore();
+
+// console.log("candidates", JSON.parse(JSON.stringify(props.candidates)))
+store.setList(props.candidates);
 
 const config = {
   id: "generator",
@@ -41,6 +44,8 @@ const config = {
     president: '',
     vicePresident: '',
     senators: [],
+    partylist: [],
+    local: {},
     isAgreeToTerm: false
   },
   states: {
@@ -68,11 +73,17 @@ const config = {
       stepView: SenatorStep,
       order: 2,
     },
+    partylist: {
+      title: 'Party List',
+      id: 'partylist',
+      stepView: PartyListStep,
+      order: 3,
+    },
     success: {
       title: 'Download',
       id: 'success',
       stepView: CompletedStep,
-      order: 3,
+      order: 4,
       meta: {
         description: 'Order confirmed',
       },
@@ -96,27 +107,9 @@ const onComplete = () => {
 </script>
 
 <script>
-import SiteLayout from "./../Layouts/SiteLayout";
-import IntroVue from '@/Components/Wizard/Intro.vue';
+import SiteLayout from "@/Layouts/SiteLayout.vue";
 
 export default {
-    // Using the shorthand
     layout: SiteLayout,
-
-    // data() {
-    //     return {
-    //         currStep: 0,
-    //         steps: [
-    //             {
-    //                 step: 0,
-    //                 component: () => import('../Components/Wizard/Intro.vue')
-    //             },
-    //             {
-    //                 step: 1,
-    //                 component: () => import('../Components/Wizard/PresidentStep.vue')
-    //             },
-    //         ]
-    //     };
-    // }
 };
 </script>
