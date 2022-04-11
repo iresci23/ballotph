@@ -62,6 +62,6 @@ class Candidate extends Model
     public function positions()
     {
         return $this->belongsToMany(Position::class, 'position_candidates', 'candidate_id', 'position_id')
-                    ->withPivot('ballot_number');
+                    ->withPivot(['ballot_number', 'party']);
     }
 }

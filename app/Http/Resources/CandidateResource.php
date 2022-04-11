@@ -20,7 +20,8 @@ class CandidateResource extends JsonResource
             'picture' => $this->picture,
             'profile_url' => $this->profile_url,
             'position' => $this->current_position->slug,
-            'ballot_number' => $this->current_position->pivot->ballot_number
+            'ballot_number' => $this->current_position->pivot->ballot_number,
+            'partylist' => $this->current_position->pivot->party,
         ];
     }
 }
