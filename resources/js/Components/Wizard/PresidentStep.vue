@@ -16,8 +16,8 @@
             >
                 <div class="relative">
                     <img
-                        class="w-24 h-full md:w-full"
-                        src="https://votepilipinas.com/candidate/img/abella_1.png"
+                        class="w-24 h-full md:w-full grayscale"
+                        src="https://eboto.ph/uploads/2022/02/39aaa4e39c921ca8506d12000fb614e7.png"
                         alt=""
                     />
                 </div>
@@ -40,8 +40,8 @@
             >
                 <div class="relative">
                     <img
-                        class="w-24 h-full md:w-full"
-                        src="https://votepilipinas.com/candidate/img/abella_1.png"
+                        class="w-24 h-full md:w-full grayscale"
+                        src="https://eboto.ph/uploads/2022/02/7f3680303c5aea63cabba2fa7c89e95b.png"
                         alt=""
                     />
                 </div>
