@@ -119,6 +119,16 @@
     border: 2px solid green;
 }
 
+.selected-index {
+    position: absolute;
+    right: 0;
+    background-color: violet;
+    border-radius: 12px;
+    width: 30px;
+    text-align: center;
+    color: #fff;
+}
+
 @media screen and (max-width:1000px) {
     .wizard-generator .wrapper {
         display: none;

@@ -10,6 +10,7 @@
                 :states="config.states" 
                 :initial="config.initial"
                 :onComplete="onComplete"
+                doneText="Download"
             />
         </div>
     </div>
@@ -17,9 +18,10 @@
 
 <script setup>
 import { Head, Link } from "@inertiajs/inertia-vue3";
-
+import html2canvas from 'html2canvas';
+import { saveAs } from 'file-saver';
 import VrWizard from '@vurian/wizard';
-import Intro from './../Components/Wizard/Intro.vue';
+
 import PresidentStep from './../Components/Wizard/PresidentStep.vue';
 import VicePresidentStep from './../Components/Wizard/VicePresidentStep.vue';
 import SenatorStep from './../Components/Wizard/SenatorStep.vue';
@@ -38,9 +40,9 @@ store.setList(props.candidates);
 
 const config = {
   id: "generator",
-  initial: "president",
+  initial: store.wizard.lastSavedStep ?? "president",
   context: {
-    completedSteps: [],
+    completedSteps: store.wizard.completedSteps ?? [],
     senatorVoteLimitValid: true
   },
   states: {
@@ -50,9 +52,9 @@ const config = {
       stepView: PresidentStep,
       order: 0,
     },
-    vicePresident: {
+    vice_president: {
       title: 'Vice President',
-      id: 'vicePresident',
+      id: 'vice_president',
       stepView: VicePresidentStep,
       order: 1,
     },
@@ -64,7 +66,7 @@ const config = {
       on: {
         /*...*/
         NEXT: {
-            cond: 'senatorVoteLimitValid'
+          cond: 'senatorVoteLimitValid'
         }
       }
     },
@@ -78,10 +80,7 @@ const config = {
       title: 'Download',
       id: 'success',
       stepView: CompletedStep,
-      order: 4,
-      meta: {
-        description: 'Order confirmed',
-      },
+      order: 4
     },
   },
 } 
@@ -91,17 +90,18 @@ const options = {
     senatorVoteLimitValid: (ctx) => {
       let selectionCount = store.myBallot.senators.length;
       let isValid =  selectionCount <= store.votingLimits.senators
-
-      if (!isValid) {
-        alert("You've reached the maximum number of allowed selection for senatorial position.")
-      }
       return isValid;
     },
   }
 }
 
 const onComplete = () => {
-    /* do something */
+  console.log("onComplete download")
+  html2canvas(document.querySelector("#ballot-result")).then(canvas => {
+    canvas.toBlob(function(blob) {
+      window.saveAs(blob, 'my_image.jpg');
+    });
+  });
 }
 </script>
 

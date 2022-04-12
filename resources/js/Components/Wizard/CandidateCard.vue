@@ -5,6 +5,7 @@
             :class="{'selected-card': selected}"
         >
             <div class="relative w-full" :class="{'hidden' : hidePicture}">
+                <span class="selected-index" v-if="selectedIndex">{{ selectedIndex }}</span>
                 <img
                     class="w-24 h-full md:w-full md:max-h-48"
                     :src="candidate.picture ?? 'https://placehold.co/400x400'"
@@ -36,6 +37,10 @@ const props = defineProps({
     selected: {
         type: Boolean,
         default: false
+    },
+    selectedIndex: {
+        type: Number,
+        default: null
     }
 });
 </script>

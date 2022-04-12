@@ -2,7 +2,13 @@
 import { useCandidateStore } from '@/Stores/Candidate'
 import CandidateCard from './CandidateCard.vue'
 
-const store = useCandidateStore();
+const store = useCandidateStore()
+
+const props = defineProps({
+    service: Object
+});
+
+store.saveCompletedSteps(props.service.state.context.completedSteps, props.service.state.value)
 </script>
 
 <template>

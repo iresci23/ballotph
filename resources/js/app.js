@@ -4,7 +4,10 @@ import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/inertia-vue3';
 import { InertiaProgress } from '@inertiajs/progress';
 import { createPinia } from 'pinia';
+import piniaPersist from 'pinia-plugin-persist'
 
+const pinia = createPinia()
+pinia.use(piniaPersist)
 
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
@@ -14,7 +17,7 @@ createInertiaApp({
     setup({ el, app, props, plugin }) {
         return createApp({ render: () => h(app, props) })
             .use(plugin)
-            .use(createPinia())
+            .use(pinia)
             .mixin({ methods: { route } })
             .mount(el);
     },

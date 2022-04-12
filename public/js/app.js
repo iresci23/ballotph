@@ -19564,7 +19564,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 /* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
 /* harmony import */ var _inertiajs_progress__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/progress */ "./node_modules/@inertiajs/progress/dist/index.js");
-/* harmony import */ var pinia__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! pinia */ "./node_modules/pinia/dist/pinia.esm-browser.js");
+/* harmony import */ var pinia__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! pinia */ "./node_modules/pinia/dist/pinia.esm-browser.js");
+/* harmony import */ var pinia_plugin_persist__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! pinia-plugin-persist */ "./node_modules/pinia-plugin-persist/dist/pinia-persist.es.js");
 var _window$document$getE;
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
@@ -19573,6 +19574,9 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
+
+var pinia = (0,pinia__WEBPACK_IMPORTED_MODULE_4__.createPinia)();
+pinia.use(pinia_plugin_persist__WEBPACK_IMPORTED_MODULE_3__["default"]);
 var appName = ((_window$document$getE = window.document.getElementsByTagName('title')[0]) === null || _window$document$getE === void 0 ? void 0 : _window$document$getE.innerText) || 'Laravel';
 (0,_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.createInertiaApp)({
   title: function title(_title) {
@@ -19590,7 +19594,7 @@ var appName = ((_window$document$getE = window.document.getElementsByTagName('ti
       render: function render() {
         return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(app, props);
       }
-    }).use(plugin).use((0,pinia__WEBPACK_IMPORTED_MODULE_3__.createPinia)()).mixin({
+    }).use(plugin).use(pinia).mixin({
       methods: {
         route: route
       }
@@ -42225,6 +42229,60 @@ function arrObjKeys(obj, inspect) {
 
 /***/ }),
 
+/***/ "./node_modules/pinia-plugin-persist/dist/pinia-persist.es.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/pinia-plugin-persist/dist/pinia-persist.es.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ index),
+/* harmony export */   "updateStorage": () => (/* binding */ updateStorage)
+/* harmony export */ });
+const updateStorage = (strategy, store) => {
+  const storage = strategy.storage || sessionStorage;
+  const storeKey = strategy.key || store.$id;
+  if (strategy.paths) {
+    const partialState = strategy.paths.reduce((finalObj, key) => {
+      finalObj[key] = store.$state[key];
+      return finalObj;
+    }, {});
+    storage.setItem(storeKey, JSON.stringify(partialState));
+  } else {
+    storage.setItem(storeKey, JSON.stringify(store.$state));
+  }
+};
+var index = ({ options, store }) => {
+  var _a, _b, _c, _d;
+  if ((_a = options.persist) == null ? void 0 : _a.enabled) {
+    const defaultStrat = [{
+      key: store.$id,
+      storage: sessionStorage
+    }];
+    const strategies = ((_c = (_b = options.persist) == null ? void 0 : _b.strategies) == null ? void 0 : _c.length) ? (_d = options.persist) == null ? void 0 : _d.strategies : defaultStrat;
+    strategies.forEach((strategy) => {
+      const storage = strategy.storage || sessionStorage;
+      const storeKey = strategy.key || store.$id;
+      const storageResult = storage.getItem(storeKey);
+      if (storageResult) {
+        store.$patch(JSON.parse(storageResult));
+        updateStorage(strategy, store);
+      }
+    });
+    store.$subscribe(() => {
+      strategies.forEach((strategy) => {
+        updateStorage(strategy, store);
+      });
+    });
+  }
+};
+
+
+
+/***/ }),
+
 /***/ "./node_modules/pinia/dist/pinia.esm-browser.js":
 /*!******************************************************!*\
   !*** ./node_modules/pinia/dist/pinia.esm-browser.js ***!
@@ -42250,7 +42308,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "skipHydrate": () => (/* binding */ skipHydrate),
 /* harmony export */   "storeToRefs": () => (/* binding */ storeToRefs)
 /* harmony export */ });
-/* harmony import */ var vue_demi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-demi */ "./node_modules/pinia/node_modules/vue-demi/lib/index.mjs");
+/* harmony import */ var vue_demi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-demi */ "./node_modules/vue-demi/lib/index.mjs");
 /* harmony import */ var _vue_devtools_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @vue/devtools-api */ "./node_modules/@vue/devtools-api/lib/esm/index.js");
 /*!
   * pinia v2.0.13
@@ -45797,10 +45855,10 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ "./node_modules/pinia/node_modules/vue-demi/lib/index.mjs":
-/*!****************************************************************!*\
-  !*** ./node_modules/pinia/node_modules/vue-demi/lib/index.mjs ***!
-  \****************************************************************/
+/***/ "./node_modules/vue-demi/lib/index.mjs":
+/*!*********************************************!*\
+  !*** ./node_modules/vue-demi/lib/index.mjs ***!
+  \*********************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -46110,7 +46168,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Pages_Auth_ConfirmPassword_vue":"d5ff2de5b80bc5be","resources_js_Pages_Auth_ForgotPassword_vue":"08d1967502de2a5a","resources_js_Pages_Auth_Login_vue":"06bda3966b9a2a21","resources_js_Pages_Auth_Register_vue":"8f1f563f9ab8a549","resources_js_Pages_Auth_ResetPassword_vue":"5a526be0023f7fa6","resources_js_Pages_Auth_VerifyEmail_vue":"c05adfe9f54e7a5e","resources_js_Pages_Dashboard_vue":"2f3926e753b504fa","resources_js_Pages_Generator_vue":"cb18c62a6babee5e","resources_js_Pages_Home_vue":"60b322a4ae1d54bb","resources_js_Pages_Privacy_vue":"a2393a53225ab58c","resources_js_Pages_Terms_vue":"3d8bc7670653f7c1","resources_js_Pages_Welcome_vue":"5a8427669dddd6ee"}[chunkId] + "";
+/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Pages_Auth_ConfirmPassword_vue":"d5ff2de5b80bc5be","resources_js_Pages_Auth_ForgotPassword_vue":"08d1967502de2a5a","resources_js_Pages_Auth_Login_vue":"06bda3966b9a2a21","resources_js_Pages_Auth_Register_vue":"8f1f563f9ab8a549","resources_js_Pages_Auth_ResetPassword_vue":"5a526be0023f7fa6","resources_js_Pages_Auth_VerifyEmail_vue":"c05adfe9f54e7a5e","resources_js_Pages_Dashboard_vue":"2f3926e753b504fa","resources_js_Pages_Generator_vue":"a22d54d609066371","resources_js_Pages_Home_vue":"60b322a4ae1d54bb","resources_js_Pages_Privacy_vue":"a2393a53225ab58c","resources_js_Pages_Terms_vue":"3d8bc7670653f7c1","resources_js_Pages_Welcome_vue":"5a8427669dddd6ee"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	
