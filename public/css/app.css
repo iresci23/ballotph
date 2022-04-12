@@ -849,6 +849,9 @@ select {
 .h-12 {
   height: 3rem;
 }
+.h-10 {
+  height: 2.5rem;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -943,6 +946,9 @@ select {
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 .flex-row {
   flex-direction: row;
 }
@@ -970,6 +976,9 @@ select {
 .justify-between {
   justify-content: space-between;
 }
+.gap-3 {
+  gap: 0.75rem;
+}
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -984,6 +993,9 @@ select {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.self-center {
+  align-self: center;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -1076,6 +1088,14 @@ select {
 .bg-indigo-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(238 242 255 / var(--tw-bg-opacity));
+}
+.bg-sky-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+}
+.bg-teal-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 148 136 / var(--tw-bg-opacity));
 }
 .fill-current {
   fill: currentColor;
@@ -1561,6 +1581,23 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
+<<<<<<< HEAD
+=======
+/* Card States */
+.selected-card {
+    /* box-shadow: inset 0px 0px 0px 5px green; */
+    border: 2px solid green;
+}
+.selected-index {
+    position: absolute;
+    right: 0;
+    background-color: violet;
+    border-radius: 12px;
+    width: 30px;
+    text-align: center;
+    color: #fff;
+}
+>>>>>>> bb6316b9384526815a5fd5747547e9fa35544a3c
 @media screen and (max-width:1000px) {
     .wizard-generator .wrapper {
         display: none;

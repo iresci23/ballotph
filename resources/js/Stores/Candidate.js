@@ -5,6 +5,10 @@ export const useCandidateStore = defineStore('candidate', {
   // state: () => ({ count: 0 })
   state: () => {
     return { 
+      wizard: {
+        lastSavedStep: "president",
+        completedSteps: []
+      },
       list: [], //list of candidates
       ballot: {
         president: null,
@@ -25,7 +29,6 @@ export const useCandidateStore = defineStore('candidate', {
       this.list = candidates.data
     },
     select(position, candidate_id) {
-
       if (position === 'senators') {
 
         let arr = this.ballot.senators;
@@ -46,7 +49,11 @@ export const useCandidateStore = defineStore('candidate', {
           this.ballot[position] = candidate_id
         }
       }
-      
+    },
+    saveCompletedSteps(steps, last_step) {
+      let uniq = [...new Set(steps)];
+      this.wizard.completedSteps = uniq
+      this.wizard.lastSavedStep = last_step
     }
   },
   getters: {
@@ -63,7 +70,16 @@ export const useCandidateStore = defineStore('candidate', {
       return state.list.filter((c) => c.position === 'partylist')
     },
     myBallot: (state) => {
-      return state.ballot
+      let senators = state.list.filter((c) => state.ballot.senators.includes(c.id))
+      return {
+        president: state.list.find((c) => c.id === state.ballot.president),
+        vice_president: state.list.find((c) => c.id === state.ballot.vice_president),
+        senators: senators,
+        partylist: state.list.find((c) => c.id === state.ballot.partylist),
+      }
     }
   },
+  persist: {
+    enabled: true
+  }
 })
