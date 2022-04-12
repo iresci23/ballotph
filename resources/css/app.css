@@ -18,6 +18,7 @@
 }
 
 .c-card {
+    border: 2px solid #fff;
     @apply  flex bg-white shadow-md hover:shadow-2xl rounded-lg overflow-hidden;
 }
 .c-card .profile-party {
@@ -33,7 +34,8 @@
 /* Card States */
 
 .selected-card {
-    box-shadow: inset 0px 0px 0px 5px green;
+    /* box-shadow: inset 0px 0px 0px 5px green; */
+    border: 2px solid green;
 }
 
 .table-theme {
@@ -67,6 +69,9 @@
 
 .wizard-generator .wrapper {
     @apply flex justify-evenly py-5;
+}
+
+.wizard-generator .step-view {
 }
 
 .wizard-generator .wrapper .w-stepper {
@@ -104,6 +109,10 @@
 .wizard-generator .vr-wizard--footer .vr-wizard--footer-right .vr-wizard--btn {
     background-color: #f39f86;
     background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+}
+
+.wizard-generator .vr-wizard--footer .vr-wizard--footer-right .vr-wizard--btn:disabled {
+    opacity: 0.5;
 }
 
 .wizard-generator .vr-wizard--footer .vr-wizard--footer-left .vr-wizard--prev-btn {

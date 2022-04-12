@@ -1,19 +1,22 @@
 <template>
     <header>
-        <nav id="header" class="w-full z-30 top-0 text-white py-1 lg:py-6">
+        <nav id="header" class="w-full z-30 top-0 text-white py-1 lg:py-4">
             <div
-                class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6"
+                class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2"
             >
                 <div class="md:pl-4 flex lg:items-center">
                     <a
-                        class="text-black no-underline hover:no-underline font-bold text-xl lg:text-4xl md:text-3xl flex items-center"
+                        class="text-black no-underline hover:no-underline font-bold text-sm flex items-center"
                         href="/">
                         <img
                             src="/images/SBGLOGO.png"
                             alt="Logo"
                             class="logo mr-5 ml-5 md:ml-0"
                         />
-                        Sample Ballot Generator
+                        <div class="flex flex-col">
+                            <span>Sample Ballot</span>
+                            <span>Generator</span>
+                        </div>
                     </a>
                 </div>
 
@@ -172,6 +175,6 @@ import { Link } from "@inertiajs/inertia-vue3";
 export default {
     components: {
         Link,
-    },
+    }
 };
 </script>

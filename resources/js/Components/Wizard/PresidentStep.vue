@@ -1,12 +1,13 @@
 <script setup>
 import { useCandidateStore } from '@/Stores/Candidate'
+import CandidateCard from './CandidateCard.vue';
 
 const store = useCandidateStore();
 console.log("store.pres", store.presidents)
 </script>
 
 <template>
-    <div class="text-center py-4">
+    <div class="text-center py-4" v-bind="$attrs">
         <h3
             class="my-3 text-2xl md:text-3xl lg:text-4xl font-black leading-tight"
         >
@@ -16,30 +17,11 @@ console.log("store.pres", store.presidents)
     </div>
     <div class="flex flex-wrap -mx-4">
 
-        <div v-for="candidate in store.presidents" :key="candidate.id" 
-            class="w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4">
-            <a
-                href="#"
-                class="c-card md:flex-col md:items-center"
-            >
-                <div class="relative">
-                    <img
-                        class="w-24 h-full md:w-full grayscale"
-                        :src="candidate.picture"
-                        alt=""
-                    />
-                </div>
-                <div class="p-4 flex-1">
-                    <h2 class="mt-2 mb-2 font-bold h-12 flex flex-col flex-wrap content-center items-center">
-                        <span class="ballot-number">{{ candidate.ballot_number }}.</span>
-                        <span class="profile-name">{{ candidate.name }}</span>
-                        <span class="profile-party">{{ candidate.partylist }}</span>
-                    </h2>
-                    <p class="text-sm">
-                    </p>
-                </div>
-            </a>
-        </div> 
+        <CandidateCard v-for="candidate in store.presidents" :key="candidate.id"  
+            :candidate="candidate"
+            :selected="store.ballot.president == candidate.id"
+            @click="store.select('president', candidate.id )">
+        </CandidateCard>
 
     </div>
 </template>
