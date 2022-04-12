@@ -28,7 +28,7 @@ import CompletedStep from './../Components/Wizard/CompletedStep.vue';
 import { useCandidateStore } from '@/Stores/Candidate'
 
 const props = defineProps({
-    candidates: Array
+    candidates: Object
 });
 
 const store = useCandidateStore();
@@ -41,12 +41,7 @@ const config = {
   initial: "president",
   context: {
     completedSteps: [],
-    president: '',
-    vicePresident: '',
-    senators: [],
-    partylist: [],
-    local: {},
-    isAgreeToTerm: false
+    senatorVoteLimitValid: true
   },
   states: {
     president: {
@@ -54,12 +49,6 @@ const config = {
       id: 'president',
       stepView: PresidentStep,
       order: 0,
-      on: {
-        /*...*/
-        NEXT: {
-            cond: 'isAgreeToTerm'
-        }
-      }
     },
     vicePresident: {
       title: 'Vice President',
@@ -72,6 +61,12 @@ const config = {
       id: 'senator',
       stepView: SenatorStep,
       order: 2,
+      on: {
+        /*...*/
+        NEXT: {
+            cond: 'senatorVoteLimitValid'
+        }
+      }
     },
     partylist: {
       title: 'Party List',
@@ -93,10 +88,14 @@ const config = {
 
 const options = {
   guards: {
-    isAgreeToTerm: (ctx) => {
-        // alert("validation")
-        return true;
-        // ctx.agreeToTerms && !!ctx.paymentMethod
+    senatorVoteLimitValid: (ctx) => {
+      let selectionCount = store.myBallot.senators.length;
+      let isValid =  selectionCount <= store.votingLimits.senators
+
+      if (!isValid) {
+        alert("You've reached the maximum number of allowed selection for senatorial position.")
+      }
+      return isValid;
     },
   }
 }
@@ -110,6 +109,6 @@ const onComplete = () => {
 import SiteLayout from "@/Layouts/SiteLayout.vue";
 
 export default {
-    layout: SiteLayout,
+    layout: SiteLayout
 };
 </script>

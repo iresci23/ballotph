@@ -5111,6 +5111,49 @@ var entry_esm = /*#__PURE__*/(() => {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Wizard/CandidateCard.vue?vue&type=script&setup=true&lang=js":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Wizard/CandidateCard.vue?vue&type=script&setup=true&lang=js ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: {
+    candidate: Object,
+    hidePicture: {
+      type: Boolean,
+      "default": false
+    },
+    selected: {
+      type: Boolean,
+      "default": false
+    }
+  },
+  setup: function setup(__props, _ref) {
+    var expose = _ref.expose;
+    expose();
+    var props = __props;
+    var __returned__ = {
+      props: props,
+      reactive: vue__WEBPACK_IMPORTED_MODULE_0__.reactive,
+      computed: vue__WEBPACK_IMPORTED_MODULE_0__.computed
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Wizard/PartyListStep.vue?vue&type=script&setup=true&lang=js":
 /*!*************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Wizard/PartyListStep.vue?vue&type=script&setup=true&lang=js ***!
@@ -5122,6 +5165,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Stores/Candidate */ "./resources/js/Stores/Candidate.js");
+/* harmony import */ var _CandidateCard_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CandidateCard.vue */ "./resources/js/Components/Wizard/CandidateCard.vue");
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   setup: function setup(__props, _ref) {
@@ -5130,7 +5175,8 @@ __webpack_require__.r(__webpack_exports__);
     var store = (0,_Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__.useCandidateStore)();
     var __returned__ = {
       store: store,
-      useCandidateStore: _Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__.useCandidateStore
+      useCandidateStore: _Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__.useCandidateStore,
+      CandidateCard: _CandidateCard_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -5153,6 +5199,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Stores/Candidate */ "./resources/js/Stores/Candidate.js");
+/* harmony import */ var _CandidateCard_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CandidateCard.vue */ "./resources/js/Components/Wizard/CandidateCard.vue");
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   setup: function setup(__props, _ref) {
@@ -5162,7 +5210,8 @@ __webpack_require__.r(__webpack_exports__);
     console.log("store.pres", store.presidents);
     var __returned__ = {
       store: store,
-      useCandidateStore: _Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__.useCandidateStore
+      useCandidateStore: _Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__.useCandidateStore,
+      CandidateCard: _CandidateCard_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -5185,6 +5234,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Stores/Candidate */ "./resources/js/Stores/Candidate.js");
+/* harmony import */ var _CandidateCard_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CandidateCard.vue */ "./resources/js/Components/Wizard/CandidateCard.vue");
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   setup: function setup(__props, _ref) {
@@ -5193,7 +5244,8 @@ __webpack_require__.r(__webpack_exports__);
     var store = (0,_Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__.useCandidateStore)();
     var __returned__ = {
       store: store,
-      useCandidateStore: _Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__.useCandidateStore
+      useCandidateStore: _Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__.useCandidateStore,
+      CandidateCard: _CandidateCard_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -5216,6 +5268,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Stores/Candidate */ "./resources/js/Stores/Candidate.js");
+/* harmony import */ var _CandidateCard_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CandidateCard.vue */ "./resources/js/Components/Wizard/CandidateCard.vue");
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   setup: function setup(__props, _ref) {
@@ -5224,7 +5278,8 @@ __webpack_require__.r(__webpack_exports__);
     var store = (0,_Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__.useCandidateStore)();
     var __returned__ = {
       store: store,
-      useCandidateStore: _Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__.useCandidateStore
+      useCandidateStore: _Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__.useCandidateStore,
+      CandidateCard: _CandidateCard_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -5291,7 +5346,7 @@ var __default__ = {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/*#__PURE__*/Object.assign(__default__, {
   props: {
-    candidates: Array
+    candidates: Object
   },
   setup: function setup(__props, _ref) {
     var expose = _ref.expose;
@@ -5305,25 +5360,14 @@ var __default__ = {
       initial: "president",
       context: {
         completedSteps: [],
-        president: '',
-        vicePresident: '',
-        senators: [],
-        partylist: [],
-        local: {},
-        isAgreeToTerm: false
+        senatorVoteLimitValid: true
       },
       states: {
         president: {
           title: 'President',
           id: 'president',
           stepView: _Components_Wizard_PresidentStep_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
-          order: 0,
-          on: {
-            /*...*/
-            NEXT: {
-              cond: 'isAgreeToTerm'
-            }
-          }
+          order: 0
         },
         vicePresident: {
           title: 'Vice President',
@@ -5335,7 +5379,13 @@ var __default__ = {
           title: 'Senators',
           id: 'senator',
           stepView: _Components_Wizard_SenatorStep_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
-          order: 2
+          order: 2,
+          on: {
+            /*...*/
+            NEXT: {
+              cond: 'senatorVoteLimitValid'
+            }
+          }
         },
         partylist: {
           title: 'Party List',
@@ -5356,9 +5406,15 @@ var __default__ = {
     };
     var options = {
       guards: {
-        isAgreeToTerm: function isAgreeToTerm(ctx) {
-          // alert("validation")
-          return true; // ctx.agreeToTerms && !!ctx.paymentMethod
+        senatorVoteLimitValid: function senatorVoteLimitValid(ctx) {
+          var selectionCount = store.myBallot.senators.length;
+          var isValid = selectionCount <= store.votingLimits.senators;
+
+          if (!isValid) {
+            alert("You've reached the maximum number of allowed selection for senatorial position.");
+          }
+
+          return isValid;
         }
       }
     };
@@ -5392,6 +5448,79 @@ var __default__ = {
     return __returned__;
   }
 }));
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Wizard/CandidateCard.vue?vue&type=template&id=f663528c":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Wizard/CandidateCard.vue?vue&type=template&id=f663528c ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4"
+};
+var _hoisted_2 = ["src"];
+var _hoisted_3 = {
+  "class": "p-4 flex-1"
+};
+var _hoisted_4 = {
+  "class": "mt-2 mb-2 font-bold h-12 flex flex-col flex-wrap content-center items-center"
+};
+var _hoisted_5 = {
+  "class": "ballot-number"
+};
+var _hoisted_6 = {
+  "class": "profile-name"
+};
+var _hoisted_7 = {
+  "class": "profile-party"
+};
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "text-sm"
+}, null, -1
+/* HOISTED */
+);
+
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _$props$candidate$pic;
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["c-card md:flex-col md:items-center", {
+      'selected-card': $props.selected
+    }])
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["relative w-full", {
+      'hidden': $props.hidePicture
+    }])
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+    "class": "w-24 h-full md:w-full md:max-h-48",
+    src: (_$props$candidate$pic = $props.candidate.picture) !== null && _$props$candidate$pic !== void 0 ? _$props$candidate$pic : 'https://placehold.co/400x400',
+    alt: "",
+    onError: _cache[0] || (_cache[0] = function ($event) {
+      return $props.candidate.picture = 'https://placehold.co/400x400';
+    })
+  }, null, 40
+  /* PROPS, HYDRATE_EVENTS */
+  , _hoisted_2)], 2
+  /* CLASS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.candidate.ballot_number) + ".", 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.candidate.name), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.candidate.partylist), 1
+  /* TEXT */
+  )]), _hoisted_8])], 2
+  /* CLASS */
+  )]);
+}
 
 /***/ }),
 
@@ -5442,57 +5571,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "text-center py-4"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
   "class": "my-3 text-2xl md:text-3xl lg:text-4xl font-black leading-tight"
-}, " Select your Partylist "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
-  "class": "text-2xl"
-}, "Vote for one (1)")], -1
+}, " Select your Partylist ", -1
 /* HOISTED */
 );
 
-var _hoisted_2 = {
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
+  "class": "text-2xl"
+}, "Vote for one (1)", -1
+/* HOISTED */
+);
+
+var _hoisted_3 = [_hoisted_1, _hoisted_2];
+var _hoisted_4 = {
   "class": "flex flex-wrap -mx-4"
 };
-var _hoisted_3 = {
-  href: "#",
-  "class": "c-card md:flex-col md:items-center"
-};
-var _hoisted_4 = {
-  "class": "p-4 flex-1"
-};
-var _hoisted_5 = {
-  "class": "mt-2 mb-2 font-bold h-12 flex flex-col flex-wrap content-center items-center"
-};
-var _hoisted_6 = {
-  "class": "ballot-number"
-};
-var _hoisted_7 = {
-  "class": "profile-name"
-};
-var _hoisted_8 = {
-  "class": "profile-party"
-};
-
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "text-sm"
-}, null, -1
-/* HOISTED */
-);
-
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.partylist, function (candidate) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", (0,vue__WEBPACK_IMPORTED_MODULE_0__.mergeProps)({
+    "class": "text-center py-4"
+  }, _ctx.$attrs), _hoisted_3, 16
+  /* FULL_PROPS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.partylist, function (candidate) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["CandidateCard"], {
       key: candidate.id,
-      "class": "w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4"
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(candidate.ballot_number) + ".", 1
-    /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(candidate.name), 1
-    /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(candidate.partylist), 1
-    /* TEXT */
-    )]), _hoisted_9])])]);
+      candidate: candidate,
+      "hide-picture": true,
+      selected: $setup.store.ballot.partylist == candidate.id,
+      onClick: function onClick($event) {
+        return $setup.store.select('partylist', candidate.id);
+      }
+    }, null, 8
+    /* PROPS */
+    , ["candidate", "selected", "onClick"]);
   }), 128
   /* KEYED_FRAGMENT */
   ))])], 64
@@ -5515,67 +5626,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "text-center py-4"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
   "class": "my-3 text-2xl md:text-3xl lg:text-4xl font-black leading-tight"
-}, " Who is your President? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
-  "class": "text-2xl"
-}, "Vote for one (1)")], -1
+}, " Who is your President? ", -1
 /* HOISTED */
 );
 
-var _hoisted_2 = {
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
+  "class": "text-2xl"
+}, "Vote for one (1)", -1
+/* HOISTED */
+);
+
+var _hoisted_3 = [_hoisted_1, _hoisted_2];
+var _hoisted_4 = {
   "class": "flex flex-wrap -mx-4"
 };
-var _hoisted_3 = {
-  href: "#",
-  "class": "c-card md:flex-col md:items-center"
-};
-var _hoisted_4 = {
-  "class": "relative"
-};
-var _hoisted_5 = ["src"];
-var _hoisted_6 = {
-  "class": "p-4 flex-1"
-};
-var _hoisted_7 = {
-  "class": "mt-2 mb-2 font-bold h-12 flex flex-col flex-wrap content-center items-center"
-};
-var _hoisted_8 = {
-  "class": "ballot-number"
-};
-var _hoisted_9 = {
-  "class": "profile-name"
-};
-var _hoisted_10 = {
-  "class": "profile-party"
-};
-
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "text-sm"
-}, null, -1
-/* HOISTED */
-);
-
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.presidents, function (candidate) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", (0,vue__WEBPACK_IMPORTED_MODULE_0__.mergeProps)({
+    "class": "text-center py-4"
+  }, _ctx.$attrs), _hoisted_3, 16
+  /* FULL_PROPS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.presidents, function (candidate) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["CandidateCard"], {
       key: candidate.id,
-      "class": "w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4"
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-      "class": "w-24 h-full md:w-full",
-      src: candidate.picture,
-      alt: ""
+      candidate: candidate,
+      selected: $setup.store.ballot.president == candidate.id,
+      onClick: function onClick($event) {
+        return $setup.store.select('president', candidate.id);
+      }
     }, null, 8
     /* PROPS */
-    , _hoisted_5)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(candidate.ballot_number) + ".", 1
-    /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(candidate.name), 1
-    /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(candidate.partylist), 1
-    /* TEXT */
-    )]), _hoisted_11])])]);
+    , ["candidate", "selected", "onClick"]);
   }), 128
   /* KEYED_FRAGMENT */
   ))])], 64
@@ -5598,67 +5680,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "text-center py-4"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
   "class": "my-3 text-2xl md:text-3xl lg:text-4xl font-black leading-tight"
-}, " Who are your Senators? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
-  "class": "text-2xl"
-}, "Vote for eight (8)")], -1
+}, " Who are your Senators? ", -1
 /* HOISTED */
 );
 
-var _hoisted_2 = {
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
+  "class": "text-2xl"
+}, "Vote for eight (8)", -1
+/* HOISTED */
+);
+
+var _hoisted_3 = [_hoisted_1, _hoisted_2];
+var _hoisted_4 = {
   "class": "flex flex-wrap -mx-4"
 };
-var _hoisted_3 = {
-  href: "#",
-  "class": "c-card md:flex-col md:items-center"
-};
-var _hoisted_4 = {
-  "class": "relative"
-};
-var _hoisted_5 = ["src"];
-var _hoisted_6 = {
-  "class": "p-4 flex-1"
-};
-var _hoisted_7 = {
-  "class": "mt-2 mb-2 font-bold h-12 flex flex-col flex-wrap content-center items-center"
-};
-var _hoisted_8 = {
-  "class": "ballot-number"
-};
-var _hoisted_9 = {
-  "class": "profile-name"
-};
-var _hoisted_10 = {
-  "class": "profile-party"
-};
-
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "text-sm"
-}, null, -1
-/* HOISTED */
-);
-
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.senators, function (candidate) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", (0,vue__WEBPACK_IMPORTED_MODULE_0__.mergeProps)({
+    "class": "text-center py-4"
+  }, _ctx.$attrs), _hoisted_3, 16
+  /* FULL_PROPS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.senators, function (candidate) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["CandidateCard"], {
       key: candidate.id,
-      "class": "w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4"
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-      "class": "w-24 h-full md:w-full",
-      src: candidate.picture,
-      alt: ""
+      candidate: candidate,
+      selected: $setup.store.ballot.senators.includes(candidate.id),
+      onClick: function onClick($event) {
+        return $setup.store.select('senators', candidate.id);
+      }
     }, null, 8
     /* PROPS */
-    , _hoisted_5)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(candidate.ballot_number) + ".", 1
-    /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(candidate.name), 1
-    /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(candidate.partylist), 1
-    /* TEXT */
-    )]), _hoisted_11])])]);
+    , ["candidate", "selected", "onClick"]);
   }), 128
   /* KEYED_FRAGMENT */
   ))])], 64
@@ -5681,67 +5734,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "text-center py-4"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
   "class": "my-3 text-2xl md:text-3xl lg:text-4xl font-black leading-tight"
-}, " Who is your Vice President? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
-  "class": "text-2xl"
-}, "Vote for one (1)")], -1
+}, " Who is your Vice President? ", -1
 /* HOISTED */
 );
 
-var _hoisted_2 = {
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
+  "class": "text-2xl"
+}, "Vote for one (1)", -1
+/* HOISTED */
+);
+
+var _hoisted_3 = [_hoisted_1, _hoisted_2];
+var _hoisted_4 = {
   "class": "flex flex-wrap -mx-4"
 };
-var _hoisted_3 = {
-  href: "#",
-  "class": "c-card md:flex-col md:items-center"
-};
-var _hoisted_4 = {
-  "class": "relative"
-};
-var _hoisted_5 = ["src"];
-var _hoisted_6 = {
-  "class": "p-4 flex-1"
-};
-var _hoisted_7 = {
-  "class": "mt-2 mb-2 font-bold h-12 flex flex-col flex-wrap content-center items-center"
-};
-var _hoisted_8 = {
-  "class": "ballot-number"
-};
-var _hoisted_9 = {
-  "class": "profile-name"
-};
-var _hoisted_10 = {
-  "class": "profile-party"
-};
-
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "text-sm"
-}, null, -1
-/* HOISTED */
-);
-
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.vicePresidents, function (candidate) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", (0,vue__WEBPACK_IMPORTED_MODULE_0__.mergeProps)({
+    "class": "text-center py-4"
+  }, _ctx.$attrs), _hoisted_3, 16
+  /* FULL_PROPS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.vicePresidents, function (candidate) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["CandidateCard"], {
       key: candidate.id,
-      "class": "w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4"
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-      "class": "w-24 h-full md:w-full",
-      src: candidate.picture,
-      alt: ""
+      candidate: candidate,
+      selected: $setup.store.ballot.vice_president == candidate.id,
+      onClick: function onClick($event) {
+        return $setup.store.select('vice_president', candidate.id);
+      }
     }, null, 8
     /* PROPS */
-    , _hoisted_5)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(candidate.ballot_number) + ".", 1
-    /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(candidate.name), 1
-    /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(candidate.partylist), 1
-    /* TEXT */
-    )]), _hoisted_11])])]);
+    , ["candidate", "selected", "onClick"]);
   }), 128
   /* KEYED_FRAGMENT */
   ))])], 64
@@ -5764,7 +5788,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<header><nav id=\"header\" class=\"w-full z-30 top-0 text-white py-1 lg:py-6\"><div class=\"w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6\"><div class=\"md:pl-4 flex lg:items-center\"><a class=\"text-black no-underline hover:no-underline font-bold text-xl lg:text-4xl md:text-3xl flex items-center\" href=\"/\"><img src=\"/images/SBGLOGO.png\" alt=\"Logo\" class=\"logo mr-5 ml-5 md:ml-0\"> Sample Ballot Generator </a></div><!-- &lt;Link href=&quot;/generator&quot;&gt;\n                  &lt;button\n                      id=&quot;navAction&quot;\n                      class=&quot;mx-auto lg:mx-0 hover:underline text-gray-800 font-extrabold rounded mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 button-gradient&quot;\n                  &gt;\n                      Generate My Ballot\n                  &lt;/button&gt;\n                &lt;/Link&gt; --></div></nav><!-- &lt;Link href=&quot;/&quot;&gt;Home&lt;/Link&gt;\n      &lt;Link href=&quot;/about&quot;&gt;About&lt;/Link&gt;\n      &lt;Link href=&quot;/contact&quot;&gt;Contact&lt;/Link&gt; --></header>", 1);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<header><nav id=\"header\" class=\"w-full z-30 top-0 text-white py-1 lg:py-4\"><div class=\"w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2\"><div class=\"md:pl-4 flex lg:items-center\"><a class=\"text-black no-underline hover:no-underline font-bold text-sm flex items-center\" href=\"/\"><img src=\"/images/SBGLOGO.png\" alt=\"Logo\" class=\"logo mr-5 ml-5 md:ml-0\"><div class=\"flex flex-col\"><span>Sample Ballot</span><span>Generator</span></div></a></div><!-- &lt;Link href=&quot;/generator&quot;&gt;\n                  &lt;button\n                      id=&quot;navAction&quot;\n                      class=&quot;mx-auto lg:mx-0 hover:underline text-gray-800 font-extrabold rounded mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 button-gradient&quot;\n                  &gt;\n                      Generate My Ballot\n                  &lt;/button&gt;\n                &lt;/Link&gt; --></div></nav><!-- &lt;Link href=&quot;/&quot;&gt;Home&lt;/Link&gt;\n      &lt;Link href=&quot;/about&quot;&gt;About&lt;/Link&gt;\n      &lt;Link href=&quot;/contact&quot;&gt;Contact&lt;/Link&gt; --></header>", 1);
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<footer class=\"bg-white\"><div class=\"container mx-auto px-8\"><div class=\"w-full flex flex-col md:flex-row py-6 md:pb-0\"><div class=\"flex-1 flex md:mb-6 flex-row flex-wrap justify-center\"><div class=\"flex md:footer-text-logo footer-text-logo-small\"><div class=\"md:pr-5\"><img src=\"/images/SBGLOGO.png\" alt=\"Logo\" class=\"logo ml-0\"></div></div><div class=\"flex flex-col flex-start justify-center xl:items-start\"><div class=\"flex flex-col flex-wrap items-center pt-5 md:pt-0\"><a class=\"text-black no-underline hover:no-underline font-bold text-lg lg:text-md\" href=\"#\"> Sample Ballot Generator</a></div><div class=\"flex xl:footer-links flex-start\"><ul class=\"list-reset mb-6 text-center md:text-justify\"><li class=\"mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6\"><a href=\"#\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">Privacy Policy</a></li><li class=\"mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6\"><a href=\"#\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">About Us</a></li><li class=\"mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6\"><a href=\"#\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">Contact Us</a></li></ul></div></div></div><!-- &lt;div class=&quot;flex-1&quot;&gt;\n                    &lt;p class=&quot;uppercase font-extrabold text-gray-500 md:mb-6&quot;&gt;\n                        Links\n                    &lt;/p&gt;\n                    &lt;ul class=&quot;list-reset mb-6&quot;&gt;\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\n                            &lt;a\n                                href=&quot;#&quot;\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\n                                &gt;FAQ&lt;/a\n                            &gt;\n                        &lt;/li&gt;\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\n                            &lt;a\n                                href=&quot;#&quot;\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\n                                &gt;Terms&lt;/a\n                            &gt;\n                        &lt;/li&gt;\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\n                            &lt;a\n                                href=&quot;#&quot;\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\n                                &gt;Privacy&lt;/a\n                            &gt;\n                        &lt;/li&gt;\n                    &lt;/ul&gt;\n                &lt;/div&gt; --><!-- &lt;div class=&quot;flex-1&quot;&gt;\n                    &lt;p class=&quot;uppercase font-extrabold text-gray-500 md:mb-6&quot;&gt;\n                        Social\n                    &lt;/p&gt;\n                    &lt;ul class=&quot;list-reset mb-6&quot;&gt;\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\n                            &lt;a\n                                href=&quot;#&quot;\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\n                                &gt;Facebook&lt;/a\n                            &gt;\n                        &lt;/li&gt;\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\n                            &lt;a\n                                href=&quot;#&quot;\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\n                                &gt;Linkedin&lt;/a\n                            &gt;\n                        &lt;/li&gt;\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\n                            &lt;a\n                                href=&quot;#&quot;\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\n                                &gt;Twitter&lt;/a\n                            &gt;\n                        &lt;/li&gt;\n                    &lt;/ul&gt;\n                &lt;/div&gt; --><div class=\"flex-1 flex md:m-5 md:ml-5 md:footer-kofi flex-col flex-wrap items-center\"><div class=\"md:pt-5 pb-3\"><p class=\"text-black text-center md:text-left text-xs\"> Hi! If this app helped you, <br> maybe you can buy us coffee? ❤</p></div><div class=\"flex\"><a href=\"https://ko-fi.com/codesandpaws\" target=\"blank\"><img class=\"h-6\" src=\"/images/Kofi_pixel_logo_with_text_dark.png\" alt=\"Kofi Logo\"></a></div><!-- &lt;ul class=&quot;list-reset mb-6&quot;&gt;\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\n                            &lt;a\n                                href=&quot;#&quot;\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\n                                &gt;About Us&lt;/a\n                            &gt;\n                        &lt;/li&gt;\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\n                            &lt;a\n                                href=&quot;#&quot;\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\n                                &gt;Contact&lt;/a\n                            &gt;\n                        &lt;/li&gt;\n                    &lt;/ul&gt; --></div></div></div></footer>", 1);
 
@@ -5830,13 +5854,45 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_0__.defineStore)('cand
   // state: () => ({ count: 0 })
   state: function state() {
     return {
-      list: [] //list of candidates
-
+      list: [],
+      //list of candidates
+      ballot: {
+        president: null,
+        vice_president: null,
+        senators: [],
+        partylist: null
+      },
+      votingLimits: {
+        president: 1,
+        vicePresident: 1,
+        senators: 8,
+        partylist: 1
+      }
     };
   },
   actions: {
     setList: function setList(candidates) {
       this.list = candidates.data;
+    },
+    select: function select(position, candidate_id) {
+      if (position === 'senators') {
+        var arr = this.ballot.senators;
+
+        if (arr.includes(candidate_id)) {
+          arr.splice(arr.indexOf(candidate_id), 1);
+          return;
+        }
+
+        this.ballot[position].push(candidate_id);
+      } else {
+        // unselect if the same
+        if (this.ballot[position] && this.ballot[position] === candidate_id) {
+          this.ballot[position] = null;
+        } else {
+          //select
+          this.ballot[position] = candidate_id;
+        }
+      }
     }
   },
   getters: {
@@ -5859,6 +5915,9 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_0__.defineStore)('cand
       return state.list.filter(function (c) {
         return c.position === 'partylist';
       });
+    },
+    myBallot: function myBallot(state) {
+      return state.ballot;
     }
   }
 });
@@ -5883,6 +5942,33 @@ exports["default"] = (sfc, props) => {
     return target;
 };
 
+
+/***/ }),
+
+/***/ "./resources/js/Components/Wizard/CandidateCard.vue":
+/*!**********************************************************!*\
+  !*** ./resources/js/Components/Wizard/CandidateCard.vue ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _CandidateCard_vue_vue_type_template_id_f663528c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CandidateCard.vue?vue&type=template&id=f663528c */ "./resources/js/Components/Wizard/CandidateCard.vue?vue&type=template&id=f663528c");
+/* harmony import */ var _CandidateCard_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CandidateCard.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Components/Wizard/CandidateCard.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_CandidateCard_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_CandidateCard_vue_vue_type_template_id_f663528c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/CandidateCard.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
 
 /***/ }),
 
@@ -6098,6 +6184,21 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/Components/Wizard/CandidateCard.vue?vue&type=script&setup=true&lang=js":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/Components/Wizard/CandidateCard.vue?vue&type=script&setup=true&lang=js ***!
+  \*********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CandidateCard_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CandidateCard_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./CandidateCard.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Wizard/CandidateCard.vue?vue&type=script&setup=true&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/Components/Wizard/PartyListStep.vue?vue&type=script&setup=true&lang=js":
 /*!*********************************************************************************************!*\
   !*** ./resources/js/Components/Wizard/PartyListStep.vue?vue&type=script&setup=true&lang=js ***!
@@ -6185,6 +6286,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Generator_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Generator.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Generator.vue?vue&type=script&setup=true&lang=js");
  
+
+/***/ }),
+
+/***/ "./resources/js/Components/Wizard/CandidateCard.vue?vue&type=template&id=f663528c":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/Components/Wizard/CandidateCard.vue?vue&type=template&id=f663528c ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CandidateCard_vue_vue_type_template_id_f663528c__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CandidateCard_vue_vue_type_template_id_f663528c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./CandidateCard.vue?vue&type=template&id=f663528c */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Wizard/CandidateCard.vue?vue&type=template&id=f663528c");
+
 
 /***/ }),
 
