@@ -56,16 +56,6 @@ class PositionCandidate extends Model
     }
 
     /**
-     * @param  \Illuminate\Database\Eloquent\Builder  $query
-     * @param  string  $slug
-     * @return void
-     */
-    public function scodePosition($query, $slug)
-    {
-        return $query->position->where('slug', $slug);
-    }
-
-    /**
      * @return \Illuminate\Database\Eloquent\Relations\belongsTo
      */
     public function candidate()
@@ -104,6 +94,4 @@ class PositionCandidate extends Model
     {
         return $this->belongsTo('App\Models\Province', 'id', 'province_id');
     }
-    
-
 }

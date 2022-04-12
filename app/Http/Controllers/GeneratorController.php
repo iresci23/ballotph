@@ -1,26 +1,25 @@
 <?php
 namespace App\Http\Controllers;
 
-use App\Models\PositionCandidate;
 use Illuminate\Http\Request;
+use App\Models\Candidate;
+use App\Http\Resources\CandidateResource;
 use Inertia\Inertia;
 
 class GeneratorController extends Controller
 {
     public function show(Request $request)
     {
+        $positions = ['president', 'vice_president', 'senator', 'partylist'];
 
-        // get lists of presidents
-        // 
-        return Inertia::render('Generator');
-    }
+        $candidates = Candidate::position($positions)->get();
 
-    public function getCandidates(Request $request)
-    {
-        $position = $request->input('position');
-        
-        $candidatesByPosition = PositionCandidate::position('president')->get();
+        $collection = CandidateResource::collection($candidates);
 
-        response()->json($candidatesByPosition);
+        // dd(collect($collection));
+
+        return Inertia::render('Generator', [
+            'candidates' => $collection
+        ]);
     }
 }

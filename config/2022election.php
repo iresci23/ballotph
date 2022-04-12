@@ -6,6 +6,7 @@ return [
         // presidentiables
         [
             'name' => 'ABELLA, ERNIE',
+            'picture' => 'https://eboto.ph/uploads/2022/02/39aaa4e39c921ca8506d12000fb614e7.png',
             'profile_url' => 'https://votepilipinas.com/candidate/abella-ernie.html',
             'party' => 'IND',
             'ballot_number' => 1,
@@ -13,6 +14,7 @@ return [
         ],
         [
             'name' => 'DE GUZMAN, LEODY',
+            'picture' => 'https://eboto.ph/uploads/2022/03/ef5b8c9707b91a08f6d6288be70aed43.jpg',
             'profile_url' => 'https://votepilipinas.com/candidate/deguzman-leody.html',
             'party' => 'PLM',
             'ballot_number' => 2,
@@ -20,6 +22,7 @@ return [
         ],
         [
             'name' => 'DOMAGOSO, ISKO MORENO',
+            'picture' => 'https://en.wikipedia.org/wiki/File:IskoMorenoOfficialPortrait.jpg',
             'profile_url' => 'https://votepilipinas.com/candidate/domagoso-isko.html',
             'party' => 'AKSYON',
             'ballot_number' => 3,
@@ -31,7 +34,7 @@ return [
             'party' => 'PDSP',
             'ballot_number' => 4,
             'position' => 'president',
-        ],
+    ],
         [
             'name' => 'LACSON, PING',
             'profile_url' => 'https://votepilipinas.com/candidate/lacson-ping.html',
@@ -134,6 +137,7 @@ return [
         ],
         [
             'name' => 'SOTTO, VICENTE TITO',
+            'picture' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sen._Pres_Vicente_Sotto_%28cropped%29.jpg/1024px-Sen._Pres_Vicente_Sotto_%28cropped%29.jpg',
             'profile_url' => null,
             'party' => 'NPC',
             'ballot_number' => 9,
@@ -143,6 +147,7 @@ return [
         // senators
         [
             'name' => 'AFUANG, ABNER',
+            'picture' => 'https://images.gmanews.tv/webpics/2019/04/640_Afuang,_Abner_2019_04_03_18_40_33_1.jpg',
             'profile_url' => null,
             'party' => 'IND',
             'ballot_number' => 1,

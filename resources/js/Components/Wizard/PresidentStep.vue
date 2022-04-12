@@ -1,3 +1,10 @@
+<script setup>
+import { useCandidateStore } from '@/Stores/Candidate'
+
+const store = useCandidateStore();
+console.log("store.pres", store.presidents)
+</script>
+
 <template>
     <div class="text-center py-4">
         <h3
@@ -9,7 +16,8 @@
     </div>
     <div class="flex flex-wrap -mx-4">
 
-        <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4">
+        <div v-for="candidate in store.presidents" :key="candidate.id" 
+            class="w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4">
             <a
                 href="#"
                 class="c-card md:flex-col md:items-center"
@@ -17,125 +25,21 @@
                 <div class="relative">
                     <img
                         class="w-24 h-full md:w-full grayscale"
-                        src="https://eboto.ph/uploads/2022/02/39aaa4e39c921ca8506d12000fb614e7.png"
+                        :src="candidate.picture"
                         alt=""
                     />
                 </div>
                 <div class="p-4 flex-1">
                     <h2 class="mt-2 mb-2 font-bold h-12 flex flex-col flex-wrap content-center items-center">
-                        <span class="ballot-number">1.</span>
-                        <span class="profile-name">ABELLA, ERNIE</span>
-                        <span class="profile-party">INDEPENDENT</span>
+                        <span class="ballot-number">{{ candidate.ballot_number }}.</span>
+                        <span class="profile-name">{{ candidate.name }}</span>
+                        <span class="profile-party">{{ candidate.partylist }}</span>
                     </h2>
                     <p class="text-sm">
                     </p>
                 </div>
             </a>
-        </div>
-
-        <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4">
-            <a
-                href="#"
-                class="c-card md:flex-col md:items-center"
-            >
-                <div class="relative">
-                    <img
-                        class="w-24 h-full md:w-full grayscale"
-                        src="https://eboto.ph/uploads/2022/02/7f3680303c5aea63cabba2fa7c89e95b.png"
-                        alt=""
-                    />
-                </div>
-                <div class="p-4 flex-1">
-                    <h2 class="mt-2 mb-2 font-bold h-12 flex flex-col flex-wrap content-center items-center">
-                        <span class="ballot-number">1.</span>
-                        <span class="profile-name">ABELLA, ERNIE</span>
-                        <span class="profile-party">INDEPENDENT</span>
-                    </h2>
-                    <p class="text-sm">
-                    </p>
-                </div>
-            </a>
-        </div>
-
-        <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4">
-            <a
-                href="#"
-                class="c-card md:flex-col md:items-center"
-            >
-                <div class="relative">
-                    <img
-                        class="w-24 h-full md:w-full"
-                        src="https://votepilipinas.com/candidate/img/abella_1.png"
-                        alt=""
-                    />
-                </div>
-                <div class="p-4 flex-1">
-                    <h2 class="mt-2 mb-2 font-bold h-12 flex flex-col flex-wrap content-center items-center">
-                        <span class="ballot-number">1.</span>
-                        <span class="profile-name">ABELLA, ERNIE</span>
-                        <span class="profile-party">INDEPENDENT</span>
-                    </h2>
-                    <p class="text-sm">
-                    </p>
-                </div>
-            </a>
-        </div>
-
-        <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4">
-            <a
-                href="#"
-                class="c-card md:flex-col md:items-center"
-            >
-                <div class="relative">
-                    <img
-                        class="w-24 h-full md:w-full"
-                        src="https://votepilipinas.com/candidate/img/abella_1.png"
-                        alt=""
-                    />
-                </div>
-                <div class="p-4 flex-1">
-                    <h2 class="mt-2 mb-2 font-bold h-12 flex flex-col flex-wrap content-center items-center">
-                        <span class="ballot-number">1.</span>
-                        <span class="profile-name">ABELLA, ERNIE</span>
-                        <span class="profile-party">INDEPENDENT</span>
-                    </h2>
-                    <p class="text-sm">
-                    </p>
-                </div>
-            </a>
-        </div>
-
-        <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-4">
-            <a
-                href="#"
-                class="c-card md:flex-col md:items-center"
-            >
-                <div class="relative">
-                    <img
-                        class="w-24 h-full md:w-full"
-                        src="https://votepilipinas.com/candidate/img/abella_1.png"
-                        alt=""
-                    />
-                </div>
-                <div class="p-4 flex-1">
-                    <h2 class="mt-2 mb-2 font-bold h-12 flex flex-col flex-wrap content-center items-center">
-                        <span class="ballot-number">1.</span>
-                        <span class="profile-name">ABELLA, ERNIE</span>
-                        <span class="profile-party">INDEPENDENT</span>
-                    </h2>
-                    <p class="text-sm">
-                    </p>
-                </div>
-            </a>
-        </div>      
+        </div> 
 
     </div>
 </template>
-
-<script>
-export default {
-    setup() {
-        
-    },
-}
-</script>

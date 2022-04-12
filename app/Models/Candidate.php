@@ -21,7 +21,7 @@ class Candidate extends Model
 {
     
     static $rules = [
-		'name' => 'required',
+		  'name' => 'required',
     ];
 
     protected $perPage = 20;
@@ -31,7 +31,37 @@ class Candidate extends Model
      *
      * @var array
      */
-    protected $fillable = ['name','profile_url'];
+    protected $fillable = ['name', 'picture', 'profile_url'];
     
+    protected $appends = ['current_position'];
 
+
+    public function getCurrentPositionAttribute()
+    {
+      // dd($this->positions()->first()->pivot);
+      return $this->positions()->first();
+    }
+
+    /**
+     * Scope a query to only get candidates by specific positions
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @param  mixed  $positions
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopePosition($builder, $positions)
+    {
+      return $builder->whereHas('positions', function($query) use($positions) {
+          $query->where('election_year', config('election.year', 2022))->whereIn('slug', $positions);
+      });
+    }
+
+    /**
+     * The positions that belong to the candidate.
+     */
+    public function positions()
+    {
+        return $this->belongsToMany(Position::class, 'position_candidates', 'candidate_id', 'position_id')
+                    ->withPivot(['ballot_number', 'party']);
+    }
 }
