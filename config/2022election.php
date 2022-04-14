@@ -641,7 +641,7 @@ return [
             'position' => 'senator',
         ],
         [
-            'name' => 'VILLANUEVA,JOEL TESDAMAN',
+            'name' => 'VILLANUEVA, JOEL TESDAMAN',
             'picture' => 'https://eboto.ph/uploads/2022/02/807718457e98406e1c6f4bee629d228b.jpg',
             'profile_url' => 'https://eboto.ph/candidate/joel-villanueva/issue-rundown?scrollto=candidate-info-tab',
             'party' => 'INDEPENDENT',

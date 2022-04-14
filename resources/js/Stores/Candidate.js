@@ -19,7 +19,7 @@ export const useCandidateStore = defineStore('candidate', {
       votingLimits: {
         president: 1,
         vicePresident: 1,
-        senators: 8,
+        senators: 12,
         partylist: 1
       },
     }

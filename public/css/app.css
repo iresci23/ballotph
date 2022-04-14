@@ -689,6 +689,9 @@ select {
 .m-8 {
   margin: 2rem;
 }
+.m-1 {
+  margin: 0.25rem;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -840,8 +843,8 @@ select {
 .h-1 {
   height: 0.25rem;
 }
-.h-10 {
-  height: 2.5rem;
+.h-14 {
+  height: 3.5rem;
 }
 .max-h-28 {
   max-height: 7rem;
@@ -940,9 +943,6 @@ select {
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 .flex-row {
   flex-direction: row;
 }
@@ -966,9 +966,6 @@ select {
 }
 .justify-between {
   justify-content: space-between;
-}
-.gap-3 {
-  gap: 0.75rem;
 }
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -1084,9 +1081,9 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(2 132 199 / var(--tw-bg-opacity));
 }
-.bg-teal-600 {
+.bg-green-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(13 148 136 / var(--tw-bg-opacity));
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 .fill-current {
   fill: currentColor;
@@ -1102,6 +1099,9 @@ select {
 }
 .p-5 {
   padding: 1.25rem;
+}
+.p-4 {
+  padding: 1rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -1200,6 +1200,9 @@ select {
 }
 .pl-1 {
   padding-left: 0.25rem;
+}
+.pr-2 {
+  padding-right: 0.5rem;
 }
 .text-left {
   text-align: left;
@@ -1517,6 +1520,9 @@ select {
     margin-right: 0.5rem;
   }
 }
+.c-card .pl-margin {
+    margin-right: 10px;
+}
 .c-card .card-footer {
   border-top-width: 1px;
   border-bottom-width: 1px;
@@ -1530,6 +1536,10 @@ select {
 .selected-card {
     /* box-shadow: inset 0px 0px 0px 5px green; */
     border: 2px solid orange;
+}
+.selected-card img {
+  --tw-grayscale: grayscale(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .selected-index {
     /* position: absolute;
@@ -1585,6 +1595,7 @@ select {
   padding-bottom: 1.25rem;
 }
 .wizard-generator .step-view {
+    margin-block: 1rem!important;
 }
 .wizard-generator .wrapper .w-stepper {
   --tw-bg-opacity: 1;
@@ -1617,9 +1628,35 @@ select {
 .wizard-generator .vr-wizard--footer {
     justify-content: center;
 }
+/* Buttons */
+.wizard-generator .vr-wizard--footer .vr-wizard--btn {
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+@media (min-width: 768px) {
+
+  .wizard-generator .vr-wizard--footer .vr-wizard--btn {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .wizard-generator .vr-wizard--footer .vr-wizard--btn {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .wizard-generator .vr-wizard--footer .vr-wizard--btn {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
 .wizard-generator .vr-wizard--footer .vr-wizard--footer-right .vr-wizard--btn {
-    background-color: #f39f86;
-    background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+    /* background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%); */
 }
 .wizard-generator .vr-wizard--footer .vr-wizard--footer-right .vr-wizard--btn:disabled {
     opacity: 0.5;
@@ -1628,11 +1665,28 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1100px) {
     .wizard-generator .wrapper {
         display: none;
     } 
 }
+/* Ballot */
+.ballot-border {
+    box-shadow: inset 0px 0px 0px 1px black;
+}
+.ballot-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  text-align: center;
+}
+#ballot-result {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+/* Check layer utilities for: .ballot-grid */
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -2002,6 +2056,14 @@ select {
     padding-left: 0px;
   }
 
+  .md\:pr-0 {
+    padding-right: 0px;
+  }
+
+  .md\:pl-12 {
+    padding-left: 3rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -2061,6 +2123,18 @@ select {
     .md\:card-minheight-md {
         min-height: 288px;
     }
+
+    .md\:ballot-grid {
+    display: grid;
+  }
+
+    .md\:ballot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+    .md\:ballot-grid {
+    gap: 0.75rem;
+  }
 }
 @media (min-width: 1024px) {
 

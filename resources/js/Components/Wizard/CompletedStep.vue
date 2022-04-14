@@ -12,11 +12,24 @@ store.saveCompletedSteps(props.service.state.context.completedSteps, props.servi
 </script>
 <template>
     <div class="w-full bg-white" id="ballot-result">
-        <div class="flex">
+        <div class="flex flex-col justify-between p-4">
             <div>
-                <h1>May 9, 2022 NATIONAL AND LOCAL ELECTIONS</h1>
+                <h1 class="font-bold text-center">
+                    <span>May 9, 2022</span><br>
+                    <span>NATIONAL AND LOCAL ELECTIONS</span>
+                </h1>
             </div>
-            <div>
+            <!-- <div class="flex">
+                <p>Type: National and Local</p>
+                <p>INSTRUCTIONS FOR VOTING
+                    (1) Completely blacken the inside of the circle 
+                    beside the name of the desired candidate.
+                    (2) Use only the marking pen provided for
+                    blackening the circles.
+                    (3) Do not blacken more circles that what is intended
+                </p>
+            </div> -->
+            <div class="flex flex-col items-center p-2">
                 <img
                     src="/images/SBGLOGO.png"
                     alt="Logo"
@@ -26,120 +39,122 @@ store.saveCompletedSteps(props.service.state.context.completedSteps, props.servi
                 <p>phballotgenerator.com</p>
             </div>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col ballot-border">
 
             <!-- President -->
-            <div class="bg-sky-600 text-white h-10 flex"><h2 class="self-center">PRESIDENT / Vote for 1</h2></div>
+            <div class="bg-sky-600 text-white flex ballot-border ballot-center h-14"><h2 class="self-center">PRESIDENT / Vote for 1</h2></div>
             <div>
-                <div v-if="store.myBallot.president">
+                <div v-if="store.myBallot.president" class="ballot-center">
                     <span>
-                        <span>{{ store.myBallot.president.ballot_number }}.</span>
+                        <span class="pr-2">{{ store.myBallot.president.ballot_number }}.</span>
                         <span>{{ store.myBallot.president.name }}</span>
                     </span>
                 </div>
-                <div v-else>
+                <div v-else class="ballot-center">
                     <span>--UNDERVOTE--</span>
                 </div>
             </div>
 
             <!-- Vice President -->
-            <div class="bg-teal-600 text-white"><h2>VICE PRESIDENT / Vote for 1</h2></div>
+            <div class="bg-green-600 text-white ballot-border ballot-center h-14"><h2>VICE PRESIDENT / Vote for 1</h2></div>
             <div>
-                <div v-if="store.myBallot.vice_president">
+                <div v-if="store.myBallot.vice_president" class="ballot-center">
                     <span>
-                        <span>{{ store.myBallot.vice_president.ballot_number }}.</span>
+                        <span class="pr-2">{{ store.myBallot.vice_president.ballot_number }}.</span>
                         <span>{{ store.myBallot.vice_president.name }}</span>
                     </span>
                 </div>
-                <div v-else>
+                <div v-else class="ballot-center">
                     <span>--UNDERVOTE--</span>
                 </div>
             </div>
 
             <!-- Senators -->
-            <div class="bg-sky-600 text-white"><h2>SENATOR / Vote for 12</h2></div>
+            <div class="bg-sky-600 text-white ballot-border ballot-center h-14"><h2>SENATOR / Vote for 12</h2></div>
             <div>
-                <div class="grid grid-cols-3 gap-3"  v-if="store.myBallot.senators">
+                <div class="md:ballot-grid px-3 md:pr-0 md:pl-12" v-if="store.myBallot.senators">
                     <div v-for="candidate in store.myBallot.senators" :key="candidate.id">
                         <div>
                             <span>
-                                <span>{{ candidate.ballot_number }}.</span>
+                                <span class="pr-2">{{ candidate.ballot_number }}.</span>
                                 <span>{{ candidate.name }}</span>
                             </span> 
                         </div>
                     </div>
                 </div>
-                <div v-else>
+                <div v-else class="ballot-center">
                     <span>--UNDERVOTE--</span>
                 </div>
             </div>
 
             <!-- MEMBER, HOUSE OF REPRESENTATIVES -->
-            <div class="bg-teal-600 text-white"><h2>MEMBER, HOUSE OF REPRESENTATIVES / Vote for 1</h2></div>
+            <div class="bg-green-600 text-white ballot-border ballot-center h-14"><h2>MEMBER, HOUSE OF REPRESENTATIVES / Vote for 1</h2></div>
             <div>
-                <div>
+                <div class="ballot-center">
                     <span>--UNDERVOTE--</span>
                 </div>
             </div>
 
             <!-- PROVINCIAL GOVERNOR -->
-            <div class="bg-sky-600 text-white"><h2>PROVINCIAL GOVERNOR / Vote for 1</h2></div>
+            <div class="bg-sky-600 text-white ballot-border ballot-center"><h2>PROVINCIAL GOVERNOR / Vote for 1</h2></div>
             <div>
-                <div>
+                <div class="ballot-center">
                     <span>--UNDERVOTE--</span>
                 </div>
             </div>
 
             <!-- PROVINCIAL VICE GOVERNOR -->
-            <div class="bg-teal-600 text-white"><h2>PROVINCIAL VICE-GOVERNOR / Vote for 1</h2></div>
+            <div class="bg-green-600 text-white ballot-border ballot-center"><h2>PROVINCIAL VICE-GOVERNOR / Vote for 1</h2></div>
             <div>
-                <div>
+                <div class="ballot-center">
                     <span>--UNDERVOTE--</span>
                 </div>
             </div>
 
             <!-- MEMBER, SANGGUNIANG PANLALAWIGAN -->
-            <div class="bg-sky-600 text-white"><h2>MEMBER, SANGGUNIANG PANLALAWIGAN / Vote for 2</h2></div>
+            <div class="bg-sky-600 text-white ballot-border ballot-center"><h2>MEMBER, SANGGUNIANG PANLALAWIGAN / Vote for 2</h2></div>
             <div>
-                <div>
+                <div class="ballot-center">
                     <span>--UNDERVOTE--</span>
                 </div>
             </div>
 
             <!-- MAYOR -->
-            <div class="bg-teal-600 text-white"><h2>MAYOR / Vote for 1</h2></div>
+            <div class="bg-green-600 text-white ballot-border ballot-center"><h2>MAYOR / Vote for 1</h2></div>
             <div>
-                <div>
+                <div class="ballot-center">
                     <span>--UNDERVOTE--</span>
                 </div>
             </div>
 
             <!-- VICE MAYOR -->
-            <div class="bg-sky-600 text-white"><h2>VICE-MAYOR / Vote for 1</h2></div>
+            <div class="bg-sky-600 text-white ballot-border ballot-center"><h2>VICE-MAYOR / Vote for 1</h2></div>
             <div>
-                <div>
+                <div class="ballot-center">
                     <span>--UNDERVOTE--</span>
                 </div>
             </div>
 
             <!-- MEMBER, SANGGUNIANG BAYAN -->
-            <div class="bg-teal-600 text-white"><h2>MEMBER, HOUSE OF REPRESENTATIVES / Vote for 8</h2></div>
+            <div class="bg-green-600 text-white ballot-border ballot-center">
+                <h2>MEMBER, SANGGUNIANG BAYAN / Vote for 8</h2>
+            </div>
             <div>
-                <div>
+                <div class="ballot-center">
                     <span>--UNDERVOTE--</span>
                 </div>
             </div>
 
             <!-- Partylist -->
-            <div class="bg-sky-600 text-white"><h2>PARTY LIST / Vote for 1</h2></div>
+            <div class="bg-sky-600 text-white ballot-border ballot-center"><h2>PARTY LIST / Vote for 1</h2></div>
             <div>
-                <div v-if="store.myBallot.partylist">
+                <div v-if="store.myBallot.partylist" class="ballot-center">
                     <span>
-                        <span>{{ store.myBallot.partylist.ballot_number }}.</span>
+                        <span class="pr-2">{{ store.myBallot.partylist.ballot_number }}.</span>
                         <span>{{ store.myBallot.partylist.name }}</span>
                     </span>
                 </div>
-                <div v-else>
+                <div v-else class="ballot-center">
                     <span>--UNDERVOTE--</span>
                 </div>
             </div>

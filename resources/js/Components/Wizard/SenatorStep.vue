@@ -37,6 +37,6 @@ const selectionCountValid = computed(() => {
 
     </div>
     <div v-if="!selectionCountValid">
-        <p class="text-red-600 text-center text-bold">Maari lamang bomoto ng Senador hanggang {{ store.votingLimits.senators }}</p>
+        <p class="text-red-600 text-center text-bold">Maari lamang bumoto ng hanggang {{ store.votingLimits.senators }} na Senador</p>
     </div>
 </template>

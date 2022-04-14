@@ -5,12 +5,16 @@
         <div class="text-center px-3 lg:px-0">
             <h1
                 class="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight">
-                Are You Election Ready?
+                Election Ready ka na ba?
             </h1>
-            <p
-                class="leading-normal text-gray-800 text-base md:text-xl lg:text-2xl mt-8 mb-8">
-                Be prepared for the election, generate a sample ballot based on your selections.
-            </p>
+            <div class="leading-normal text-gray-800 text-base md:text-xl lg:text-2xl mt-8 mb-8">
+                <p class="font-medium p-2">
+                    Hindi na pwede ang hula hula!
+                </p>
+                <p>
+                    Mag generate ng sample ballot para tama ang mailagay sa balota. Tara na!
+                </p>
+            </div>
 
             <Link href="/generator">
                   <button
@@ -38,7 +42,7 @@
             class="container mx-auto flex flex-wrap items-center justify-between pb-12">
             <h2
                 class="w-full my-2 lg:text-3xl text-2xl font-black leading-tight text-center text-gray-800">
-                How to use the generator
+                Paano ba gamitin ang Generator?
             </h2>
             <div class="w-full mb-4">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t">
@@ -47,15 +51,19 @@
 
             <div class="w-full">
                 <div class="p-5 pb-0">
-                    <p class="text-center lg:text-2xl text-xl">You can create your personalized sample ballot with these easy steps:</p>
+                    <p class="text-center lg:text-2xl text-xl">
+                        Madali lang mag generate ng personalized sample ballot with these easy steps:
+                    </p>
                 </div>
                 <div class="w-full p-5 flex justify-center">
                     <ul class="list-decimal">
-                        <li class="p-3 text-lg">Click "Create My Ballot" button to start</li>
+                        <li class="p-3 text-lg">I-click ang "Create My Ballot" button para mag simula.</li>
                         <img src="https://placehold.co/600x400" alt="">
-                        <li class="p-3 text-lg">Select your preferred candidate(s) in each category.</li>
+                        <li class="p-3 text-lg">Piliin ang kandidatong gusto mong iboto.</li>
                         <img src="https://placehold.co/600x400" alt="">
-                        <li class="p-3 text-lg">Click the “Download” button to save your personalized sample ballot.</li>
+                        <li class="p-3 text-lg">I-click ang “Download” button para ma-save sa'yong device ang personalized sample ballot mo.</li>
+                        <img src="https://placehold.co/600x400" alt="">
+                        <li class="p-3 text-lg">At 'yun na! Nakapag generate ka na ng kodigo mo para sa May 9!</li>
                         <img src="https://placehold.co/600x400" alt="">
                     </ul>
                 </div>

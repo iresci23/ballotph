@@ -29,6 +29,11 @@
     margin-right: 2px;
     @apply  px-2 rounded-full border-2 border-black md:mr-2;
 }
+
+.c-card .pl-margin {
+    margin-right: 10px;
+}
+
 .c-card .card-footer {
     @apply p-4 border-t border-b text-xs text-gray-700;
 }
@@ -38,6 +43,10 @@
 .selected-card {
     /* box-shadow: inset 0px 0px 0px 5px green; */
     border: 2px solid orange;
+}
+
+.selected-card img {
+    @apply grayscale-0;
 }
 
 .selected-index {
@@ -86,6 +95,10 @@
     .card-minheight-lg {
         min-height: 322px;
     }
+
+    .ballot-grid {
+        @apply grid grid-cols-2 gap-3;
+    }
 }
 
 /* Generator */
@@ -95,6 +108,7 @@
 }
 
 .wizard-generator .step-view {
+    margin-block: 1rem!important;
 }
 
 .wizard-generator .wrapper .w-stepper {
@@ -129,9 +143,15 @@
     justify-content: center;
 }
 
+/* Buttons */
+
+.wizard-generator .vr-wizard--footer .vr-wizard--btn {
+    @apply md:px-20 md:py-3 text-white md:text-xl tracking-wide outline-none;
+}
+
 .wizard-generator .vr-wizard--footer .vr-wizard--footer-right .vr-wizard--btn {
-    background-color: #f39f86;
-    background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+    @apply bg-orange-500;
+    /* background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%); */
 }
 
 .wizard-generator .vr-wizard--footer .vr-wizard--footer-right .vr-wizard--btn:disabled {
@@ -142,8 +162,25 @@
     @apply bg-slate-400;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1100px) {
     .wizard-generator .wrapper {
         display: none;
     } 
 }
+
+/* Ballot */
+
+.ballot-border {
+    box-shadow: inset 0px 0px 0px 1px black;
+}
+
+.ballot-center {
+    @apply flex justify-center items-center text-center px-1;
+}
+
+#ballot-result {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+/* Check layer utilities for: .ballot-grid */
