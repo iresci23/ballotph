@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Imports\CandidatesImport;
 
 class CandidatesSeeder extends Seeder
 {
@@ -50,5 +52,9 @@ class CandidatesSeeder extends Seeder
             );
 
         });
+
+
+        // Import candidates from excel file
+        Excel::import(new CandidatesImport, storage_path('candidates.xlsx'));
     }
 }
