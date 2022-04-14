@@ -20,7 +20,7 @@
 
         @inertiaHead
     </head>
-    <body class="gradient leading-relaxed tracking-wide flex flex-col">
+    <body class="gradient leading-relaxed flex flex-col">
         @inertia
 
         @env ('local')
