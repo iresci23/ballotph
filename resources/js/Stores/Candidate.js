@@ -22,6 +22,10 @@ export const useCandidateStore = defineStore('candidate', {
         senators: 12,
         partylist: 1
       },
+      search: {
+        senator: '',
+        partylist: ''
+      }
     }
   },
   actions: {
@@ -64,10 +68,24 @@ export const useCandidateStore = defineStore('candidate', {
       return state.list.filter((c) => c.position === 'vice_president')
     },
     senators: (state) => {
-      return state.list.filter((c) => c.position === 'senator')
+      // check if there is a search query
+      let filtered = state.list.filter((c) => c.position === 'senator');
+      if (state.search.senator) {
+        return filtered.filter((c)=>{
+          return state.search.senator.toLowerCase().split(' ').every(v => c.name.toLowerCase().includes(v))
+        })
+      }
+      return filtered;
     },
     partylist: (state) => {
-      return state.list.filter((c) => c.position === 'partylist')
+      // check if there is a search query
+      let filtered = state.list.filter((c) => c.position === 'partylist');
+      if (state.search.partylist) {
+        return filtered.filter((c)=>{
+          return state.search.partylist.toLowerCase().split(' ').every(v => c.name.toLowerCase().includes(v))
+        })
+      }
+      return filtered;
     },
     myBallot: (state) => {
       let senators = state.list.filter((c) => state.ballot.senators.includes(c.id))

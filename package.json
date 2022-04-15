@@ -31,8 +31,7 @@
     "dependencies": {
         "@babel/plugin-syntax-dynamic-import": "^7.8.3",
         "@vurian/wizard": "^0.0.2",
-        "file-saver": "^2.0.5",
-        "html2canvas": "^1.4.1",
+        "html-to-image": "^1.9.0",
         "pinia": "^2.0.13",
         "pinia-plugin-persist": "^1.0.0",
         "xstate": "^4.30.6"

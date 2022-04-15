@@ -14,9 +14,9 @@ class GeneratorController extends Controller
 
         $candidates = Candidate::position($positions)->get();
 
-        $collection = CandidateResource::collection($candidates);
+        $sorted = $candidates->sortBy('current_position.pivot.ballot_number');
 
-        // dd(collect($collection));
+        $collection = CandidateResource::collection($sorted);
 
         return Inertia::render('Generator', [
             'candidates' => $collection
