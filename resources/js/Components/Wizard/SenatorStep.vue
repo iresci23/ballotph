@@ -21,9 +21,9 @@ const selectionCountValid = computed(() => {
         <h3
             class="my-3 text-2xl md:text-3xl lg:text-4xl font-black leading-tight"
         >
-            Who are your Senators?
+            Sino ang mga Senators mo?
         </h3>
-        <h4 class="text-2xl">Vote for eight ({{ store.votingLimits.senators }})</h4>
+        <h4 class="text-2xl">Vote for twelve ({{ store.votingLimits.senators }})</h4>
     </div>
     <div class="flex flex-wrap -mx-4">
 

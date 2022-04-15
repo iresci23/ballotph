@@ -5940,7 +5940,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
   "class": "my-3 text-2xl md:text-3xl lg:text-4xl font-black leading-tight"
-}, " Who is your President? ", -1
+}, " Sino ang President mo? ", -1
 /* HOISTED */
 );
 
@@ -5995,7 +5995,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
   "class": "my-3 text-2xl md:text-3xl lg:text-4xl font-black leading-tight"
-}, " Who are your Senators? ", -1
+}, " Sino ang mga Senators mo? ", -1
 /* HOISTED */
 );
 
@@ -6014,7 +6014,7 @@ var _hoisted_5 = {
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", (0,vue__WEBPACK_IMPORTED_MODULE_0__.mergeProps)({
     "class": "text-center py-4"
-  }, _ctx.$attrs), [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", _hoisted_2, "Vote for eight (" + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.store.votingLimits.senators) + ")", 1
+  }, _ctx.$attrs), [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", _hoisted_2, "Vote for twelve (" + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.store.votingLimits.senators) + ")", 1
   /* TEXT */
   )], 16
   /* FULL_PROPS */
@@ -6059,7 +6059,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
   "class": "my-3 text-2xl md:text-3xl lg:text-4xl font-black leading-tight"
-}, " Who is your Vice President? ", -1
+}, " Sino ang Vice President mo? ", -1
 /* HOISTED */
 );
 
