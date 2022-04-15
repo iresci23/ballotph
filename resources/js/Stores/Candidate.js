@@ -22,7 +22,10 @@ export const useCandidateStore = defineStore('candidate', {
         senators: 12,
         partylist: 1
       },
-      search: ''
+      search: {
+        senator: '',
+        partylist: ''
+      }
     }
   },
   actions: {
@@ -67,9 +70,9 @@ export const useCandidateStore = defineStore('candidate', {
     senators: (state) => {
       // check if there is a search query
       let filtered = state.list.filter((c) => c.position === 'senator');
-      if (state.search) {
+      if (state.search.senator) {
         return filtered.filter((c)=>{
-          return state.search.toLowerCase().split(' ').every(v => c.name.toLowerCase().includes(v))
+          return state.search.senator.toLowerCase().split(' ').every(v => c.name.toLowerCase().includes(v))
         })
       }
       return filtered;
@@ -77,9 +80,9 @@ export const useCandidateStore = defineStore('candidate', {
     partylist: (state) => {
       // check if there is a search query
       let filtered = state.list.filter((c) => c.position === 'partylist');
-      if (state.search) {
+      if (state.search.partylist) {
         return filtered.filter((c)=>{
-          return state.search.toLowerCase().split(' ').every(v => c.name.toLowerCase().includes(v))
+          return state.search.partylist.toLowerCase().split(' ').every(v => c.name.toLowerCase().includes(v))
         })
       }
       return filtered;

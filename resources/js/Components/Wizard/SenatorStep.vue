@@ -22,7 +22,7 @@ const selectionCountValid = computed(() => {
         <h3
             class="my-3 text-2xl md:text-3xl lg:text-4xl font-black leading-tight"
         >
-            Who are your Senators?
+            Sino ang mga Senators mo?
         </h3>
         <div v-if="!selectionCountValid">
             <Alert class="bg-red-500">
@@ -34,7 +34,7 @@ const selectionCountValid = computed(() => {
         <h4 v-else class="text-2xl">Vote for twelve ({{ store.votingLimits.senators }})</h4>
     </div>
     <div class="flex">
-        <input type="text" placeholder="Search candidate" v-model="store.search">
+        <input type="text" placeholder="Search candidate" v-model="store.search.senator">
     </div>
     <div class="flex flex-wrap -mx-4">
 

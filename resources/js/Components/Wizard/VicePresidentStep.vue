@@ -16,7 +16,7 @@ store.saveCompletedSteps(props.service.state.context.completedSteps, props.servi
         <h3
             class="my-3 text-2xl md:text-3xl lg:text-4xl font-black leading-tight"
         >
-            Who is your Vice President?
+            Sino ang Vice President mo?
         </h3>
         <h4 class="text-2xl">Vote for one (1)</h4>
     </div>

@@ -129,9 +129,7 @@ store.saveCompletedSteps(props.service.state.context.completedSteps, props.servi
                 <!-- MEMBER, SANGGUNIANG PANLALAWIGAN -->
                 <div class="bg-sky-600 text-white ballot-border ballot-center"><h2>MEMBER, SANGGUNIANG PANLALAWIGAN / Vote for 2</h2></div>
                 <div>
-                    <div class="ballot-center">
-                        <span>&nbsp;</span>
-                    </div>
+                    <div class="ballot-center" v-for="index in 2" :key="index"><span>&nbsp;</span></div>
                 </div>
 
                 <!-- MAYOR -->
@@ -155,9 +153,7 @@ store.saveCompletedSteps(props.service.state.context.completedSteps, props.servi
                     <h2>MEMBER, SANGGUNIANG BAYAN / Vote for 8</h2>
                 </div>
                 <div>
-                    <div class="ballot-center">
-                        <span>&nbsp;</span>
-                    </div>
+                    <div class="ballot-center" v-for="index in 4" :key="index"><span>&nbsp;</span></div>
                 </div>
 
                 <!-- Partylist -->

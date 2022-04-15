@@ -22,7 +22,7 @@ store.saveCompletedSteps(props.service.state.context.completedSteps, props.servi
         <h4 class="text-2xl">Vote for one (1)</h4>
     </div>
     <div class="flex">
-        <input type="text" placeholder="Search candidate" v-model="store.search">
+        <input type="text" placeholder="Search candidate" v-model="store.search.partylist">
     </div>
     <div class="flex flex-wrap items-center -mx-4">
 
