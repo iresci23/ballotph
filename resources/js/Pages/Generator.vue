@@ -18,9 +18,10 @@
 
 <script setup>
 import { Head, Link } from "@inertiajs/inertia-vue3";
-import html2canvas from 'html2canvas';
-import { saveAs } from 'file-saver';
 import VrWizard from '@vurian/wizard';
+
+import * as htmlToImage from 'html-to-image';
+import { toJpeg } from 'html-to-image';
 
 import PresidentStep from './../Components/Wizard/PresidentStep.vue';
 import VicePresidentStep from './../Components/Wizard/VicePresidentStep.vue';
@@ -96,12 +97,17 @@ const options = {
 }
 
 const onComplete = () => {
-  console.log("onComplete download")
-  html2canvas(document.querySelector("#ballot-result")).then(canvas => {
-    canvas.toBlob(function(blob) {
-      window.saveAs(blob, 'my_image.jpg');
-    });
+  let ballotDiv = document.getElementById('ballot-result');
+
+  htmlToImage.toJpeg(ballotDiv, { quality: 0.95 })
+  .then(function (dataUrl) {
+    var link = document.createElement('a');
+    link.download = 'my_sample_ballot.jpeg';
+    link.href = dataUrl;
+    link.click();
   });
+
+  console.log("download ballot")
 }
 </script>
 

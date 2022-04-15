@@ -21,6 +21,9 @@ store.saveCompletedSteps(props.service.state.context.completedSteps, props.servi
         </h3>
         <h4 class="text-2xl">Vote for one (1)</h4>
     </div>
+    <div class="flex">
+        <input type="text" placeholder="Search candidate" v-model="store.search">
+    </div>
     <div class="flex flex-wrap items-center -mx-4">
 
         <CandidateCard v-for="candidate in store.partylist" :key="candidate.id"  

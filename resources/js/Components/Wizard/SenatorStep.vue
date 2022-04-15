@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { useCandidateStore } from '@/Stores/Candidate'
 import CandidateCard from './CandidateCard.vue'
+import Alert from '@/Components/Alert.vue'
 
 const store = useCandidateStore()
 
@@ -23,7 +24,17 @@ const selectionCountValid = computed(() => {
         >
             Who are your Senators?
         </h3>
-        <h4 class="text-2xl">Vote for eight ({{ store.votingLimits.senators }})</h4>
+        <div v-if="!selectionCountValid">
+            <Alert class="bg-red-500">
+                <template #text>
+                    Maari lamang bumoto ng hanggang {{ store.votingLimits.senators }} na Senador
+                </template>
+            </Alert>
+        </div>
+        <h4 v-else class="text-2xl">Vote for twelve ({{ store.votingLimits.senators }})</h4>
+    </div>
+    <div class="flex">
+        <input type="text" placeholder="Search candidate" v-model="store.search">
     </div>
     <div class="flex flex-wrap -mx-4">
 
@@ -37,6 +48,10 @@ const selectionCountValid = computed(() => {
 
     </div>
     <div v-if="!selectionCountValid">
-        <p class="text-red-600 text-center text-bold">Maari lamang bumoto ng hanggang {{ store.votingLimits.senators }} na Senador</p>
+        <Alert class="bg-red-500">
+            <template #text>
+                Maari lamang bumoto ng hanggang {{ store.votingLimits.senators }} na Senador
+            </template>
+        </Alert>
     </div>
 </template>

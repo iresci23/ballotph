@@ -19,7 +19,7 @@
 
 .c-card {
     border: 2px solid #fff;
-    @apply  flex bg-white shadow-md hover:shadow-2xl rounded-lg overflow-hidden;
+    @apply  flex bg-white shadow-md hover:shadow-2xl rounded-lg overflow-hidden cursor-pointer;
 }
 .c-card .profile-party {
     font-size: 10px;
@@ -179,8 +179,8 @@
 }
 
 #ballot-result {
-    max-width: 40rem;
-    margin: 0 auto;
+    width: 40rem;
+    padding: 40px 20px;
 }
 
 /* Check layer utilities for: .ballot-grid */
