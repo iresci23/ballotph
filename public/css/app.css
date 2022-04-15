@@ -1198,6 +1198,9 @@ select {
 .pb-0 {
   padding-bottom: 0px;
 }
+.pb-4 {
+  padding-bottom: 1rem;
+}
 .pl-1 {
   padding-left: 0.25rem;
 }
@@ -1209,6 +1212,9 @@ select {
 }
 .text-center {
   text-align: center;
+}
+.text-justify {
+  text-align: justify;
 }
 .text-sm {
   font-size: 0.875rem;
@@ -1687,6 +1693,24 @@ select {
     margin: 0 auto;
 }
 /* Check layer utilities for: .ballot-grid */
+.usefullinksdiv {
+    margin: 0 auto;
+    max-width: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 768px) {
+
+  .usefullinksdiv {
+    max-width: 32rem;
+  }
+
+  .usefullinksdiv {
+    flex-direction: row;
+  }
+}
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -1955,6 +1979,11 @@ select {
     margin: 3rem;
   }
 
+  .md\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .md\:ml-0 {
     margin-left: 0px;
   }
@@ -2086,6 +2115,11 @@ select {
     line-height: 1.75rem;
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -2134,6 +2168,16 @@ select {
 
     .md\:ballot-grid {
     gap: 0.75rem;
+  }
+
+    .md\:usefullinksimg {
+        max-width: 10rem;
+    }
+
+    .md\:usefullinksimg:hover {
+    --tw-scale-x: 1.05;
+    --tw-scale-y: 1.05;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
 @media (min-width: 1024px) {

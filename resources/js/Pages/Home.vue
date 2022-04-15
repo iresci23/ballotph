@@ -51,6 +51,9 @@
 
             <div class="w-full">
                 <div class="p-5 pb-0">
+                    <p class="text-center lg:text-2xl text-xl pb-4">
+                        Hindi na kailangan mag sign-up. <strong>Libre 'to!</strong>
+                    </p>
                     <p class="text-center lg:text-2xl text-xl">
                         Madali lang mag generate ng personalized sample ballot with these easy steps:
                     </p>
@@ -74,20 +77,41 @@
     <section class="gradient border-b py-8">
         <div class="container max-w-5xl mx-auto m-8">
             <h2
-                class="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800">
+                class="w-full my-2 text-2xl md:text-4xl font-black leading-tight text-center text-gray-800">
                 Useful Links
             </h2>
-            <div class="w-full mb-4">
+            <div class="w-full mb-4"> <!--grayline-->
                 <div
                     class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
                 ></div>
+                <div class="usefullinksdiv">
+                    <a class="my-4 md:mx-4" href="https://comelec.gov.ph/" target="_blank">
+                        <img class="md:usefullinksimg" src="/images/COMELECLOGO.png" alt="COMELEC Logo">
+                    </a>
+                    <a class="my-4 md:mx-4" href="https://eboto.ph/" target="_blank">
+                        <img class="md:usefullinksimg" src="/images/EBOTOLOGO.svg" alt="eBoto Logo">
+                    </a>
+                    <a class="my-4 md:mx-4" href="https://votepilipinas.com/" target="_blank">
+                        <img class="md:usefullinksimg" src="/images/VOTEPILIPINASLOGO.png" alt="Vote Pilipinas Logo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center text-justify">
+                <h3 class="font-bold">Disclaimer:</h3>
+                <p class="py-4">
+                    We are not affiliated, associated, authorized or in any way officially connected with the <strong>Commissions on Elections (COMELEC)</strong>. 
+                    The official COMELEC website can be found at <a class="hover:underline" href="https://comelec.gov.ph/" target="_blank">https://comelec.gov.ph/</a>. 
+                </p>
+                <p>
+                    This website aims to provide convenience to Filipino voters for the upcoming 2022 Elections.
+                </p>
             </div>
         </div>
     </section>
-
-    <!-- <section class="gradient w-full mx-auto text-center pt-6 pb-12">
+    <!-- <section class="bg-white w-full mx-auto text-center pt-6 pb-12">
         <h2
-            class="w-full my-2 text-5xl font-black leading-tight text-center text-white">
+            class="w-full my-2 text-5xl font-black leading-tight text-center text-bl">
             Are You Election Ready?
         </h2>
         <div class="w-full mb-4">
