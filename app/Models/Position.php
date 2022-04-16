@@ -38,6 +38,11 @@ class Position extends Model
      */
     protected $fillable = ['slug','name','type','voting_limit','order'];
 
+    public function scopeSlug($builder, $slug)
+    {
+      return $builder->where('slug', $slug);
+    }
+
     /**
      * The candidates that belong to the position.
      */
