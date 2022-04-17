@@ -39,7 +39,7 @@ class LocalCandidatesImport implements ToCollection, WithStartRow
         }
 
         $dataRows = array_filter($data); //remove null values
-        
+
         $grouped = [];
         // format and group by position
         foreach ($dataRows as $row) {

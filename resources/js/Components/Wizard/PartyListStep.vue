@@ -1,6 +1,8 @@
 <script setup>
-import { useCandidateStore } from '@/Stores/Candidate'
-import CandidateCard from './CandidateCard.vue'
+import { onMounted } from 'vue';
+import { useCandidateStore } from '@/Stores/Candidate';
+import CandidateCard from './CandidateCard.vue';
+import CardLoading from '@/Components/CardLoading.vue'
 
 const store = useCandidateStore()
 
@@ -8,8 +10,18 @@ const props = defineProps({
     service: Object
 });
 
-store.saveCompletedSteps(props.service.state.context.completedSteps, props.service.state.value)
+store.fetchCandidates('partylist', true);
 
+store.saveCompletedSteps(
+    props.service.state.context.completedSteps, 
+    props.service.state.value
+);
+
+onMounted(() => {
+  document.getElementById('wizard-generator').scrollIntoView({
+      behavior: 'smooth', block: 'start'
+  });
+});
 </script>
 
 <template>
@@ -24,6 +36,11 @@ store.saveCompletedSteps(props.service.state.context.completedSteps, props.servi
     <div class="flex">
         <input type="text" placeholder="Search candidate" v-model="store.search.partylist">
     </div>
+
+    <div class="flex flex-wrap -mx-4" v-if="!store.partylist.length">
+        <CardLoading :compact="true" v-for="index in 5" :key="index"></CardLoading>
+    </div>
+
     <div class="flex flex-wrap items-center -mx-4">
 
         <CandidateCard v-for="candidate in store.partylist" :key="candidate.id"  

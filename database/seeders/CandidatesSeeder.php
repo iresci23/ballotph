@@ -76,7 +76,11 @@ class CandidatesSeeder extends Seeder
                 [
                     'region' => $region,
                     'province' => $province,
-                    'city_dist' => $citydist
+                    'city_dist' => str_replace('-', ' ', $citydist)
+                ],
+                [
+                    'prov_saggunian_member_limit' => 0,
+                    'city_saggunian_member_limit' => 0,
                 ]
             );
 

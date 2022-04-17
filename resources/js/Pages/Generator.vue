@@ -2,7 +2,7 @@
     <Head title="Generator" />
 
     <div class="min-h-screen bg-white">
-        <div class="container mx-auto wizard-generator">
+        <div class="container mx-auto wizard-generator" id="wizard-generator">
             <VrWizard 
                 :options="options" 
                 :id="config.id" 
@@ -12,6 +12,9 @@
                 :onComplete="onComplete"
                 doneText="Download"
             />
+            <div class="text-center py-4" v-if="store.wizard.lastSavedStep != 'president'">
+              <a href="" @click.prevent="store.reset(() => { reload() })" class="underline">Click here to start over</a>
+            </div>
         </div>
     </div>
 </template>
@@ -26,18 +29,20 @@ import { toJpeg } from 'html-to-image';
 import PresidentStep from './../Components/Wizard/PresidentStep.vue';
 import VicePresidentStep from './../Components/Wizard/VicePresidentStep.vue';
 import SenatorStep from './../Components/Wizard/SenatorStep.vue';
+import LocaleStep from './../Components/Wizard/LocaleStep.vue';
 import PartyListStep from './../Components/Wizard/PartyListStep.vue';
 import CompletedStep from './../Components/Wizard/CompletedStep.vue';
 import { useCandidateStore } from '@/Stores/Candidate'
 
 const props = defineProps({
-    candidates: Object
+    localities: Object
 });
 
 const store = useCandidateStore();
 
-// console.log("candidates", JSON.parse(JSON.stringify(props.candidates)))
-store.setList(props.candidates);
+store.setLocalities(props.localities);
+
+// console.log("localities", JSON.parse(JSON.stringify(props.localities)))
 
 const config = {
   id: "generator",
@@ -71,17 +76,23 @@ const config = {
         }
       }
     },
+    locale: {
+      title: 'Local Election',
+      id: 'locale',
+      stepView: LocaleStep,
+      order: 3,
+    },
     partylist: {
       title: 'Party List',
       id: 'partylist',
       stepView: PartyListStep,
-      order: 3,
+      order: 4,
     },
     success: {
       title: 'Download',
       id: 'success',
       stepView: CompletedStep,
-      order: 4
+      order: 5
     },
   },
 } 
@@ -108,6 +119,10 @@ const onComplete = () => {
   });
 
   console.log("download ballot")
+}
+
+function reload() {
+  window.location.reload()
 }
 </script>
 
