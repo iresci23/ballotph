@@ -99,6 +99,11 @@
     .ballot-grid {
         @apply grid grid-cols-2 gap-3;
     }
+
+    .usefullinksimg {
+        max-width: 10rem;
+        @apply hover:scale-105;
+    }
 }
 
 /* Generator */
@@ -184,3 +189,10 @@
 }
 
 /* Check layer utilities for: .ballot-grid */
+
+
+.usefullinksdiv {
+    margin: 0 auto;
+    max-width: 6rem;
+    @apply flex flex-col md:flex-row justify-center items-center md:max-w-lg;
+}
