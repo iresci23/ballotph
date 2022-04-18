@@ -858,6 +858,9 @@ select {
 .h-14 {
   height: 3.5rem;
 }
+.h-full {
+  height: 100%;
+}
 .max-h-28 {
   max-height: 7rem;
 }
@@ -899,6 +902,9 @@ select {
 }
 .w-16 {
   width: 4rem;
+}
+.w-9\/12 {
+  width: 75%;
 }
 .max-w-xl {
   max-width: 36rem;

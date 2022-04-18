@@ -41,7 +41,9 @@ export const useCandidateStore = defineStore('candidate', {
         partylist: '',
         province: '',
         citydist: '',
-      }
+      },
+      showModal: false,
+      modalCandidate: []
     }
   },
   actions: {
@@ -123,6 +125,24 @@ export const useCandidateStore = defineStore('candidate', {
       let uniq = [...new Set(steps)];
       this.wizard.completedSteps = uniq
       this.wizard.lastSavedStep = last_step
+    },
+    showProfile(candidate) {
+      this.showModal = true;
+      this.modalCandidate = candidate;
+    },
+    modalOpened() {
+      console.log("opened")
+
+      var iframeId = this.modalCandidate.id;
+
+      setTimeout(() => {
+        var iframe = document.getElementById("iframe"+iframeId);
+        var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+        var header = innerDoc.getElementById("main-navigation");
+        header.remove();
+        console.log(header)
+      }, 100);
     }
   },
   getters: {

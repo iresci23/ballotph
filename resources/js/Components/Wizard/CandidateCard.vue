@@ -25,10 +25,13 @@
                 </p>
             </div>
         </div>
-    </div> 
+        <!-- <button @click.stop.prevent="store.showProfile(candidate)">Open Modal</button> -->
+    </div>
 </template>
 <script setup>
-import { reactive, computed } from 'vue'
+import { useCandidateStore } from '@/Stores/Candidate'
+
+const store = useCandidateStore()
 
 const props = defineProps({
     candidate: Object,
