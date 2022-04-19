@@ -31,9 +31,9 @@ class AlterLocalitiesTable extends Migration
             $table->foreignId('locality_id')->nullable()->after('candidate_id')->constrained('localities');
         });
 
-        Schema::dropIfExists('provinces');
-        Schema::dropIfExists('cities');
         Schema::dropIfExists('districts');
+        Schema::dropIfExists('cities');
+        Schema::dropIfExists('provinces');
     }
 
     /**

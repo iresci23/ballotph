@@ -662,9 +662,6 @@ select {
 .left-0 {
   left: 0px;
 }
-.isolate {
-  isolation: isolate;
-}
 .z-0 {
   z-index: 0;
 }
@@ -815,9 +812,6 @@ select {
 }
 .grid {
   display: grid;
-}
-.contents {
-  display: contents;
 }
 .hidden {
   display: none;
@@ -1269,6 +1263,9 @@ select {
 .pb-4 {
   padding-bottom: 1rem;
 }
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
 .pl-1 {
   padding-left: 0.25rem;
 }
@@ -1315,6 +1312,10 @@ select {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .font-medium {
   font-weight: 500;
@@ -1780,6 +1781,23 @@ select {
     flex-direction: row;
   }
 }
+/* Privacy Page */
+.priv-spacing {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.priv-spacing h2 {
+  font-weight: 700;
+}
+.priv-spacing p {
+  text-align: justify;
+}
+@media (min-width: 768px) {
+
+  .priv-spacing p {
+    text-align: left;
+  }
+}
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -2128,6 +2146,11 @@ select {
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .md\:pl-4 {

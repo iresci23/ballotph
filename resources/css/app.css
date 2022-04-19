@@ -196,3 +196,17 @@
     max-width: 6rem;
     @apply flex flex-col md:flex-row justify-center items-center md:max-w-lg;
 }
+
+/* Privacy Page */
+
+.priv-spacing {
+    @apply py-4;
+}
+
+.priv-spacing h2 {
+    @apply font-bold;
+}
+
+.priv-spacing p {
+    @apply text-justify md:text-left;
+}
