@@ -9,12 +9,26 @@ export const useCandidateStore = defineStore('candidate', {
         lastSavedStep: "president",
         completedSteps: []
       },
-      list: [], //list of candidates
+      dataSource: {
+        president: [],
+        vice_president: [],
+        senator: [],
+        partylist: [],
+        localities: [], //list of provinces...
+        local_candidates: [] //local candidates based on filters selected
+      },
       ballot: {
         president: null,
         vice_president: null,
         senators: [],
         partylist: null,
+        house_representative: null,
+        governor: null,
+        vice_governor: null,
+        mayor: null,
+        vice_mayor: null,
+        prov_sang_members: [],
+        city_sang_members: [],
       },
       votingLimits: {
         president: 1,
@@ -24,29 +38,82 @@ export const useCandidateStore = defineStore('candidate', {
       },
       search: {
         senator: '',
-        partylist: ''
-      }
+        partylist: '',
+        province: '',
+        citydist: '',
+      },
+      showModal: false,
+      modalCandidate: []
     }
   },
   actions: {
-    setList(candidates) {
-      this.list = candidates.data
+    async fetchCandidates(position, reload) {
+      try {
+          // get data if empty
+          if ((this.dataSource[position] && this.dataSource[position].length == 0) || reload === true) {
+            const data = await window.axios.get('/json/candidates', {
+              params: {
+                position: position,
+                locality_id: this.search.citydist
+              }
+            })
+            this.dataSource[position] = data.data
+          }
+        }
+        catch (error) {
+          console.log(error)
+      }
+    },
+    setLocalities(data) {
+      this.dataSource.localities = data;
+    },
+    reset(callback) {
+      this.wizard = {
+        lastSavedStep: "president",
+        completedSteps: []
+      };
+
+      this.ballot = {
+        president: null,
+        vice_president: null,
+        senators: [],
+        partylist: null,
+        house_representative: null,
+        governor: null,
+        vice_governor: null,
+        mayor: null,
+        vice_mayor: null,
+        prov_sang_members: [],
+        city_sang_members: [],
+      };
+
+      this.search = {
+        senator: '',
+        partylist: '',
+        province: '',
+        citydist: '',
+      };
+
+      callback();
     },
     select(position, candidate_id) {
-      if (position === 'senators') {
+      
+      let positions = ['senators', 'prov_sang_members', 'city_sang_members'];
+      // multi select
+      if (positions.includes(position)) {
 
-        let arr = this.ballot.senators;
+        let arr = this.ballot[position];
         if(arr.includes(candidate_id)){
             arr.splice(arr.indexOf(candidate_id), 1);
             return;
         }
-
         this.ballot[position].push(candidate_id)
 
       } else {
-        // unselect if the same
+        // single select
         if (this.ballot[position] && 
           this.ballot[position] === candidate_id) {
+          //unselect if the same
           this.ballot[position] = null
         } else {
           //select
@@ -58,18 +125,36 @@ export const useCandidateStore = defineStore('candidate', {
       let uniq = [...new Set(steps)];
       this.wizard.completedSteps = uniq
       this.wizard.lastSavedStep = last_step
+    },
+    showProfile(candidate) {
+      this.showModal = true;
+      this.modalCandidate = candidate;
+    },
+    modalOpened() {
+      console.log("opened")
+
+      var iframeId = this.modalCandidate.id;
+
+      setTimeout(() => {
+        var iframe = document.getElementById("iframe"+iframeId);
+        var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+        var header = innerDoc.getElementById("main-navigation");
+        header.remove();
+        console.log(header)
+      }, 100);
     }
   },
   getters: {
     presidents: (state) => {
-      return state.list.filter((c) => c.position === 'president')
+      return state.dataSource.president
     },
     vicePresidents: (state) => {
-      return state.list.filter((c) => c.position === 'vice_president')
+      return state.dataSource.vice_president
     },
     senators: (state) => {
       // check if there is a search query
-      let filtered = state.list.filter((c) => c.position === 'senator');
+      let filtered = state.dataSource.senator;
       if (state.search.senator) {
         return filtered.filter((c)=>{
           return state.search.senator.toLowerCase().split(' ').every(v => c.name.toLowerCase().includes(v))
@@ -79,7 +164,7 @@ export const useCandidateStore = defineStore('candidate', {
     },
     partylist: (state) => {
       // check if there is a search query
-      let filtered = state.list.filter((c) => c.position === 'partylist');
+      let filtered = state.dataSource.partylist;
       if (state.search.partylist) {
         return filtered.filter((c)=>{
           return state.search.partylist.toLowerCase().split(' ').every(v => c.name.toLowerCase().includes(v))
@@ -87,13 +172,60 @@ export const useCandidateStore = defineStore('candidate', {
       }
       return filtered;
     },
+    provinces: (state) => {
+      const provinces = [...new Map(state.dataSource.localities.map(item =>[item['province'], item])).values()];
+      return provinces;
+    },
+    citydists: (state) => {
+      if (state.search.province) {
+        const citydists = state.dataSource.localities;
+        return citydists.filter((c)=>{
+          return c.province === state.search.province;
+        })
+      }
+      return [];
+    },
+    houseRepresentatives: (state) => {
+      return state.dataSource.local_candidates.filter((c) => c.position === 'house_representative');
+    },
+    governors: (state) => {
+      return state.dataSource.local_candidates.filter((c) => c.position === 'governor');
+    },
+    viceGovernors: (state) => {
+      return state.dataSource.local_candidates.filter((c) => c.position === 'vice_governor');
+    },
+    provSangMembers: (state) => {
+      return state.dataSource.local_candidates.filter((c) => c.position === 'prov_saggunian_member');
+    },
+    mayors: (state) => {
+      return state.dataSource.local_candidates.filter((c) => c.position === 'mayor');
+    },
+    viceMayors: (state) => {
+      return state.dataSource.local_candidates.filter((c) => c.position === 'vice_mayor');
+    },
+    citySangMembers: (state) => {
+      return state.dataSource.local_candidates.filter((c) => c.position === 'city_saggunian_member');
+    },
+    selectedLocale: (state) => {
+      return state.dataSource.localities.find((c) => c.id === state.search.citydist)
+    },
     myBallot: (state) => {
-      let senators = state.list.filter((c) => state.ballot.senators.includes(c.id))
+      let senators = state.dataSource.senator.filter((c) => state.ballot.senators.includes(c.id))
+      let prov_sang_members = state.provSangMembers.filter((c) => state.ballot.prov_sang_members.includes(c.id))
+      let city_sang_members = state.citySangMembers.filter((c) => state.ballot.city_sang_members.includes(c.id))
       return {
-        president: state.list.find((c) => c.id === state.ballot.president),
-        vice_president: state.list.find((c) => c.id === state.ballot.vice_president),
+        president: state.dataSource.president.find((c) => c.id === state.ballot.president),
+        vice_president: state.dataSource.vice_president.find((c) => c.id === state.ballot.vice_president),
         senators: senators,
-        partylist: state.list.find((c) => c.id === state.ballot.partylist),
+        partylist: state.dataSource.partylist.find((c) => c.id === state.ballot.partylist),
+
+        house_representative: state.houseRepresentatives.find((c) => c.id === state.ballot.house_representative),
+        governor: state.governors.find((c) => c.id === state.ballot.governor),
+        vice_governor: state.viceGovernors.find((c) => c.id === state.ballot.vice_governor),
+        prov_sang_members: prov_sang_members,
+        mayor: state.mayors.find((c) => c.id === state.ballot.mayor),
+        vice_mayor: state.viceMayors.find((c) => c.id === state.ballot.vice_mayor),
+        city_sang_members: city_sang_members,
       }
     }
   },

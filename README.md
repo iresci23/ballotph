@@ -25,3 +25,4 @@ Done!
 
 Tip:
 To clear application cache, run `php artisan optimize:clear` 
+Crud generator command: `php artisan make:crud {table_name}`

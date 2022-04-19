@@ -1,7 +1,8 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, onMounted } from 'vue'
 import { useCandidateStore } from '@/Stores/Candidate'
 import CandidateCard from './CandidateCard.vue'
+import CardLoading from '@/Components/CardLoading.vue'
 import Alert from '@/Components/Alert.vue'
 
 const store = useCandidateStore()
@@ -10,11 +11,23 @@ const props = defineProps({
     service: Object
 });
 
-store.saveCompletedSteps(props.service.state.context.completedSteps, props.service.state.value)
+store.fetchCandidates('senator');
+
+store.saveCompletedSteps(
+    props.service.state.context.completedSteps, 
+    props.service.state.value
+);
 
 const selectionCountValid = computed(() => {
   return store.ballot.senators.length <= store.votingLimits.senators;
 })
+
+onMounted(() => {
+    console.log("onMounted")
+  document.getElementById('wizard-generator').scrollIntoView({
+      behavior: 'smooth', block: 'start'
+  });
+});
 </script>
 
 <template>
@@ -36,6 +49,11 @@ const selectionCountValid = computed(() => {
     <div class="flex">
         <input type="text" placeholder="Search candidate" v-model="store.search.senator">
     </div>
+
+    <div class="flex flex-wrap -mx-4" v-if="!store.senators.length">
+        <CardLoading  v-for="index in 5" :key="index"></CardLoading>
+    </div>
+
     <div class="flex flex-wrap -mx-4">
 
         <CandidateCard v-for="candidate in store.senators" 

@@ -19,16 +19,9 @@ Route::get('/privacy', 'SiteController@privacy')->name('Site.privacy');
 Route::get('/terms', 'SiteController@terms')->name('Site.terms');
 Route::get('/generator', 'GeneratorController@show')->name('Generator.show');
 
-// Route::get('/welcome', function () {
-//     return Inertia::render('Welcome', [
-//         'canLogin' => Route::has('login'),
-//         'canRegister' => Route::has('register'),
-//         'laravelVersion' => Application::VERSION,
-//         'phpVersion' => PHP_VERSION,
-//     ]);
-// });
-
-
+Route::prefix('json')->group(function () {
+    Route::get('/candidates', 'GeneratorController@getCandidates')->name('json.candidates');
+});
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

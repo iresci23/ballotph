@@ -49,10 +49,14 @@ class Candidate extends Model
      * @param  mixed  $positions
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function scopePosition($builder, $positions)
+    public function scopePosition($builder, $positions, $locality_id = 0)
     {
-      return $builder->whereHas('positions', function($query) use($positions) {
-          $query->where('election_year', config('election.year', 2022))->whereIn('slug', $positions);
+      return $builder->whereHas('positions', function($query) use($positions, $locality_id) {
+          $query->where('election_year', config('election.year', 2022))
+                ->whereIn('slug', $positions);
+          if ($locality_id) {
+            $query->where('locality_id', $locality_id);
+          }
       });
     }
 

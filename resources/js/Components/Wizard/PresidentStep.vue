@@ -1,6 +1,9 @@
 <script setup>
+import { onMounted } from 'vue';
 import { useCandidateStore } from '@/Stores/Candidate'
 import CandidateCard from './CandidateCard.vue';
+import CardLoading from '@/Components/CardLoading.vue';
+import { $vfm, VueFinalModal, ModalsContainer } from 'vue-final-modal';
 
 const store = useCandidateStore()
 
@@ -8,7 +11,18 @@ const props = defineProps({
     service: Object
 });
 
-store.saveCompletedSteps(props.service.state.context.completedSteps, props.service.state.value)
+store.fetchCandidates('president');
+
+store.saveCompletedSteps(
+    props.service.state.context.completedSteps, 
+    props.service.state.value
+)
+
+onMounted(() => {
+  document.getElementById('wizard-generator').scrollIntoView({
+      behavior: 'smooth', block: 'start'
+  });
+});
 </script>
 
 <template>
@@ -20,6 +34,11 @@ store.saveCompletedSteps(props.service.state.context.completedSteps, props.servi
         </h3>
         <h4 class="text-2xl">Vote for one (1)</h4>
     </div>
+
+    <div class="flex flex-wrap -mx-4" v-if="!store.presidents.length">
+        <CardLoading  v-for="index in 5" :key="index"></CardLoading>
+    </div>
+
     <div class="flex flex-wrap -mx-4">
 
         <CandidateCard v-for="candidate in store.presidents" :key="candidate.id"  
@@ -27,6 +46,18 @@ store.saveCompletedSteps(props.service.state.context.completedSteps, props.servi
             :selected="store.ballot.president == candidate.id"
             @click="store.select('president', candidate.id )">
         </CandidateCard>
+
+        <!-- <vue-final-modal v-model="store.showModal">
+            {{ store.modalCandidate.profile_url }}
+            <iframe
+            class="absolute inset-0 w-9/12 h-full"
+            :src="store.modalCandidate.profile_url+'#candidate-profile'"
+            height="100"
+            frameborder="0"
+            :id="'iframe'+store.modalCandidate.id"
+            @load="store.modalOpened()" >
+           </iframe>
+        </vue-final-modal> -->
 
     </div>
 </template>

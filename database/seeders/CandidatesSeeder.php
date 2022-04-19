@@ -5,7 +5,10 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Facades\Excel;
+use Illuminate\Support\Facades\Storage;
+
 use App\Imports\CandidatesImport;
+use App\Imports\LocalCandidatesImport;
 
 class CandidatesSeeder extends Seeder
 {
@@ -16,7 +19,7 @@ class CandidatesSeeder extends Seeder
      */
     public function run()
     {
-        //
+        
         $candidates = collect(config('2022election.candidates'));
 
         $candidates->each(function ($item, $key) {
@@ -56,5 +59,35 @@ class CandidatesSeeder extends Seeder
 
         // Import candidates from excel file
         Excel::import(new CandidatesImport, storage_path('candidates.xlsx'));
+
+        // Import local candidates from `importables` folder
+        $files = Storage::disk('importables')->files();
+
+        (collect($files))->each(function ($file, $key) {
+            // Split file name by "_", format REGION_PROVINCE_CITYDIST, NCR is special with format NCR_CITY_DIST
+            $locationInfo = explode('_', Str::of($file)->basename('.xlsx'));
+
+            $region = $locationInfo[0] ?? null;
+            $province = $locationInfo[1] ?? null;
+            $citydist = $locationInfo[2] ?? null;
+
+            // Insert locale info
+            $locality = \App\Models\Locality::updateOrCreate(
+                [
+                    'region' => $region,
+                    'province' => $province,
+                    'city_dist' => str_replace('-', ' ', $citydist)
+                ],
+                [
+                    'prov_saggunian_member_limit' => 0,
+                    'city_saggunian_member_limit' => 0,
+                ]
+            );
+
+            // import
+            Excel::import(new LocalCandidatesImport($locality), storage_path('/app/importables/'.$file));
+        });
+
+        echo "Imported data from ".count($files). " excel files.\n";
     }
 }
