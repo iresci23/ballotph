@@ -58,11 +58,11 @@
                             <ul class="list-reset mb-6 text-center md:text-justify">
                                 <li class="mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6">
                                     <a
-                                    href="#"
+                                    href="/privacy"
                                     class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
                                     >Privacy Policy</a>
                                 </li>
-                                <li class="mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6">
+                                <!-- <li class="mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6">
                                     <a
                                         href="#"
                                         class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
@@ -75,7 +75,7 @@
                                         class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
                                         >Contact Us</a
                                     >
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>

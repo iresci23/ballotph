@@ -1,11 +1,11 @@
 <template>
     <div class="w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-2">
         <div
-            class="c-card md:items-center max-h-28 md:max-h-full"
+            class="c-card md:items-center max-h-28 md:max-h-full relative"
             :class="{'selected-card': selected, 'md:flex-col md:card-minheight-md lg:card-minheight-lg': !hidePicture}"
         >
+            <span class="selected-index" v-if="selectedIndex">{{ selectedIndex }}</span>
             <div class="relative w-16 h-16 md:w-full md:h-full" :class="{'hidden': hidePicture}">
-                <span class="selected-index" v-if="selectedIndex">{{ selectedIndex }}</span>
                 <img
                     class="grayscale hover:grayscale-0"
                     :src="candidate.picture ?? 'https://placehold.co/400x400'"

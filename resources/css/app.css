@@ -121,7 +121,7 @@
 }
 
 .wizard-generator .wrapper .w-stepper li {
-    @apply p-5;
+    @apply py-5 px-1;
 }
 
 .wizard-generator .wrapper .w-stepper__item.active {
@@ -146,6 +146,17 @@
 
 .wizard-generator .vr-wizard--footer {
     justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    z-index: 11;
+}
+
+.search-bar {
+    @apply flex justify-center md:justify-end;
 }
 
 /* Buttons */

@@ -46,8 +46,8 @@ onMounted(() => {
         </div>
         <h4 v-else class="text-2xl">Vote for twelve ({{ store.votingLimits.senators }})</h4>
     </div>
-    <div class="flex">
-        <input type="text" placeholder="Search candidate" v-model="store.search.senator">
+    <div class="search-bar">
+        <input class="w-full lg:w-60" type="text" placeholder="Search candidate" v-model="store.search.senator">
     </div>
 
     <div class="flex flex-wrap -mx-4" v-if="!store.senators.length">

@@ -1161,6 +1161,9 @@ select {
 .p-5 {
   padding: 1.25rem;
 }
+.p-8 {
+  padding: 2rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1680,7 +1683,10 @@ select {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 .wizard-generator .wrapper .w-stepper li {
-  padding: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 .wizard-generator .wrapper .w-stepper__item.active {
   --tw-bg-opacity: 1;
@@ -1703,6 +1709,23 @@ select {
 }
 .wizard-generator .vr-wizard--footer {
     justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    z-index: 11;
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+
+  .search-bar {
+    justify-content: flex-end;
+  }
 }
 /* Buttons */
 .wizard-generator .vr-wizard--footer .vr-wizard--btn {
@@ -2131,6 +2154,10 @@ select {
     align-items: center;
   }
 
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
   .md\:justify-center {
     justify-content: center;
   }
@@ -2151,6 +2178,11 @@ select {
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 
   .md\:pl-4 {
@@ -2183,6 +2215,10 @@ select {
 
   .md\:pl-12 {
     padding-left: 3rem;
+  }
+
+  .md\:pr-1 {
+    padding-right: 0.25rem;
   }
 
   .md\:text-left {
@@ -2287,8 +2323,24 @@ select {
     margin-right: 0px;
   }
 
+  .lg\:w-60 {
+    width: 15rem;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .lg\:p-8 {
+    padding: 2rem;
   }
 
   .lg\:px-8 {
