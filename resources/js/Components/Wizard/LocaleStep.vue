@@ -27,9 +27,11 @@ onMounted(() => {
 
 <template>
     <div class="text-center py-4" v-bind="$attrs">
-        <div class="flex">
-            <div>
+        <div class="flex flex-col md:flex-row justify-center md:justify-start md:items-center">
+            <div class="">
                 Filter: 
+            </div>
+            <div class="pt-2 px-2 md:pr-1">
                 <select v-model="store.search.province">
                     <option value="">SELECT PROVINCE</option>
                     <option v-for="option in store.provinces" :key="option.province" v-bind:value="option.province">
@@ -37,7 +39,7 @@ onMounted(() => {
                     </option>
                 </select>
             </div>
-            <div>
+            <div class="pt-2 px-2">
                 <select v-model="store.search.citydist" @change="store.fetchCandidates('local_candidates', true)">
                     <option value="">SELECT CITY</option>
                     <option v-for="option in store.citydists" :key="option.city_dist" v-bind:value="option.id">
@@ -153,5 +155,8 @@ onMounted(() => {
             @click="store.select('partylist', candidate.id)">
         </CandidateCard> -->
 
+    </div>
+    <div class="text-lg md:text-xl lg:text-2xl text-center lg:p-8 py-8" v-else>
+        Piliin ang <strong>Province / City</strong> kung saan ka boboto.
     </div>
 </template>

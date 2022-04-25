@@ -89,35 +89,40 @@ class LocalCandidatesImport implements ToCollection, WithStartRow
 
                 // get position
                 $position = Position::slug($positionMapping[$key])->first();
-            
-                // update the voting limit of saggunian for each locality
-                if ($position->slug == 'prov_saggunian_member') {
-                    $this->locality->prov_saggunian_member_limit = $group['vote_limit'];
-                }
-                if ($position->slug == 'city_saggunian_member') {
-                    $this->locality->city_saggunian_member_limit = $group['vote_limit'];
-                }
+                
+                if ($position) {
 
-                $this->locality->save();
+                    // update the voting limit of saggunian for each locality
+                    if ($position->slug == 'prov_saggunian_member') {
+                        $this->locality->prov_saggunian_member_limit = $group['vote_limit'];
+                    }
+                    if ($position->slug == 'city_saggunian_member') {
+                        $this->locality->city_saggunian_member_limit = $group['vote_limit'];
+                    }
 
-                foreach ($group['candidates'] as $item) {
-                    // dump($item);
-                    // insert the candidates
-                    $candidate = Candidate::updateOrCreate(['name' => $item['name']]);
+                    $this->locality->save();
 
-                    // map the position of candidates
-                    $positionCandidate = PositionCandidate::updateOrCreate([
-                            'election_year' => 2022,
-                            'position_id' => $position->id,
-                            'candidate_id' => $candidate->id,
-                            'locality_id' => $this->locality->id,
-                        ],
-                        [
-                            'ballot_number' => $item['ballot_number'],
-                            'party' => $item['party']
-                        ]
-                    );
-                    // dump($positionCandidate->id);
+                    foreach ($group['candidates'] as $item) {
+                        // dump($item);
+                        // insert the candidates
+                        $candidate = Candidate::updateOrCreate(['name' => $item['name']]);
+
+                        // map the position of candidates
+                        $positionCandidate = PositionCandidate::updateOrCreate([
+                                'election_year' => 2022,
+                                'position_id' => $position->id,
+                                'candidate_id' => $candidate->id,
+                                'locality_id' => $this->locality->id,
+                            ],
+                            [
+                                'ballot_number' => $item['ballot_number'],
+                                'party' => $item['party']
+                            ]
+                        );
+                        // dump($positionCandidate->id);
+                    }
+                }  else {
+                    dd($key, $position);
                 }
     
             }

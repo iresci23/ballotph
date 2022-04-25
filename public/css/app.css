@@ -1712,6 +1712,23 @@ select {
 }
 .wizard-generator .vr-wizard--footer {
     justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    z-index: 11;
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+
+  .search-bar {
+    justify-content: flex-end;
+  }
 }
 /* Buttons */
 .wizard-generator .vr-wizard--footer .vr-wizard--btn {
@@ -2148,6 +2165,10 @@ select {
     align-items: center;
   }
 
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
   .md\:justify-center {
     justify-content: center;
   }
@@ -2200,6 +2221,10 @@ select {
 
   .md\:pl-12 {
     padding-left: 3rem;
+  }
+
+  .md\:pr-1 {
+    padding-right: 0.25rem;
   }
 
   .md\:text-left {
@@ -2304,8 +2329,16 @@ select {
     margin-right: 0px;
   }
 
+  .lg\:w-60 {
+    width: 15rem;
+  }
+
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:p-8 {
+    padding: 2rem;
   }
 
   .lg\:px-8 {

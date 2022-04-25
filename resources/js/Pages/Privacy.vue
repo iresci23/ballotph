@@ -52,7 +52,7 @@
     </div>
     </section>
 
-    <section class="gradient w-full mx-auto text-center pt-6 pb-12">
+    <!-- <section class="gradient w-full mx-auto text-center pt-6 pb-12">
         <h2
             class="w-full my-2 text-5xl font-black leading-tight text-center text-white">
             Are You Election Ready?
@@ -74,7 +74,7 @@
             class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg button-gradient">
             Generate My Ballot
         </button>
-    </section>
+    </section> -->
 </template>
 
 <script setup>

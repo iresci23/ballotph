@@ -33,8 +33,8 @@ onMounted(() => {
         </h3>
         <h4 class="text-2xl">Vote for one (1)</h4>
     </div>
-    <div class="flex">
-        <input type="text" placeholder="Search candidate" v-model="store.search.partylist">
+    <div class="search-bar">
+        <input class="w-full lg:w-60" type="text" placeholder="Search Partylist" v-model="store.search.partylist">
     </div>
 
     <div class="flex flex-wrap -mx-4" v-if="!store.partylist.length">
