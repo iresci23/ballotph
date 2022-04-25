@@ -85,6 +85,7 @@ class CandidatesSeeder extends Seeder
             );
 
             // import
+            // Excel::import(new LocalCandidatesImport($locality), storage_path('/app/importables/BARMM_BASILAN_AKBAR 2.xlsx'));
             Excel::import(new LocalCandidatesImport($locality), storage_path('/app/importables/'.$file));
         });
 

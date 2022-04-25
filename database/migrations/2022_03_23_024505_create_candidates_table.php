@@ -25,7 +25,7 @@ class CreateCandidatesTable extends Migration
             $table->integer('election_year')->default(2022);
             $table->foreignId('position_id')->constrained('positions');
             $table->foreignId('candidate_id')->constrained('candidates');
-            $table->tinyInteger('ballot_number');
+            $table->integer('ballot_number');
             $table->string('party')->nullable();
             $table->timestamps();
         });
@@ -38,7 +38,7 @@ class CreateCandidatesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('candidates');
         Schema::dropIfExists('position_candidates');
+        Schema::dropIfExists('candidates');
     }
 }

@@ -126,24 +126,13 @@ export const useCandidateStore = defineStore('candidate', {
       this.wizard.completedSteps = uniq
       this.wizard.lastSavedStep = last_step
     },
-    showProfile(candidate) {
-      this.showModal = true;
-      this.modalCandidate = candidate;
+    getProfileUrl(candidate) {
+      if (candidate.profile_url) {
+        return candidate.profile_url;
+      }
+      let position = (candidate.position).replace(/_/g," ");
+      return `https://www.google.com/search?q=${candidate.name} candidate running for ${position}`;
     },
-    modalOpened() {
-      console.log("opened")
-
-      var iframeId = this.modalCandidate.id;
-
-      setTimeout(() => {
-        var iframe = document.getElementById("iframe"+iframeId);
-        var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-
-        var header = innerDoc.getElementById("main-navigation");
-        header.remove();
-        console.log(header)
-      }, 100);
-    }
   },
   getters: {
     presidents: (state) => {

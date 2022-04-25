@@ -5,6 +5,7 @@ namespace App\Imports;
 use Maatwebsite\Excel\Concerns\WithStartRow;
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Concerns\ToCollection;
+use Illuminate\Support\Str;
 
 use App\Models\Candidate;
 use App\Models\Position;
@@ -29,11 +30,18 @@ class LocalCandidatesImport implements ToCollection, WithStartRow
          */
         foreach ($rows as $row) {
             $headingTitle = $row[2];
-            array_push($data, $row[2]);
-            array_push($data, $row[14]);
-            array_push($data, $row[26]);
+            
+            // loop through each cells in a row
+            for($i = 0; $i <= 56; $i++) {
+                if (isset($row[$i]) && $row[$i]) {
+                    // push cells that holds valid data
+                    if (!Str::startsWith($row[0], "FOR PARTY LIST CANDIDATES")) {
+                        array_push($data, $row[$i]);
+                    }
+                }
+            }
             // do not continue loop if we reach PARTY LIST section
-            if ($headingTitle == "PARTY LIST / Vote for 1") {
+            if (Str::startsWith($row[0], "FOR PARTY LIST CANDIDATES")) {
                 break;
             }
         }
@@ -47,7 +55,8 @@ class LocalCandidatesImport implements ToCollection, WithStartRow
             if (!preg_match('/^\d/', $row)) {
                 $title = trim(strtok($row, '/'));
                 $grouped[$title] = [
-                    'vote_limit' => abs((int) filter_var($row, FILTER_SANITIZE_NUMBER_INT)),
+                    // get the number and get only the first occurence
+                    'vote_limit' => substr(abs((int) filter_var($row, FILTER_SANITIZE_NUMBER_INT)), 0, 1),
                     'candidates' => []
                 ];
             }
@@ -111,9 +120,10 @@ class LocalCandidatesImport implements ToCollection, WithStartRow
                     // dump($positionCandidate->id);
                 }
     
-                // dump($group);
             }
         }
+
+        // dump($grouped);
 
         return true;
     }

@@ -3,7 +3,6 @@ import { onMounted } from 'vue';
 import { useCandidateStore } from '@/Stores/Candidate'
 import CandidateCard from './CandidateCard.vue';
 import CardLoading from '@/Components/CardLoading.vue';
-import { $vfm, VueFinalModal, ModalsContainer } from 'vue-final-modal';
 
 const store = useCandidateStore()
 
@@ -46,18 +45,6 @@ onMounted(() => {
             :selected="store.ballot.president == candidate.id"
             @click="store.select('president', candidate.id )">
         </CandidateCard>
-
-        <!-- <vue-final-modal v-model="store.showModal">
-            {{ store.modalCandidate.profile_url }}
-            <iframe
-            class="absolute inset-0 w-9/12 h-full"
-            :src="store.modalCandidate.profile_url+'#candidate-profile'"
-            height="100"
-            frameborder="0"
-            :id="'iframe'+store.modalCandidate.id"
-            @load="store.modalOpened()" >
-           </iframe>
-        </vue-final-modal> -->
 
     </div>
 </template>

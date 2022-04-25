@@ -22,18 +22,8 @@ class AlterLocalitiesTable extends Migration
         });
 
         Schema::table('position_candidates', function (Blueprint $table) {
-            $table->dropForeign('position_candidates_province_id_foreign');
-            $table->dropForeign('position_candidates_city_id_foreign');
-            $table->dropForeign('position_candidates_district_id_foreign');
-            $table->dropColumn('province_id');
-            $table->dropColumn('city_id');
-            $table->dropColumn('district_id');
             $table->foreignId('locality_id')->nullable()->after('candidate_id')->constrained('localities');
         });
-
-        Schema::dropIfExists('districts');
-        Schema::dropIfExists('cities');
-        Schema::dropIfExists('provinces');
     }
 
     /**
@@ -43,6 +33,9 @@ class AlterLocalitiesTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('districts');
+        Schema::dropIfExists('cities');
+        Schema::dropIfExists('provinces');
+        Schema::dropIfExists('localities');
     }
 }

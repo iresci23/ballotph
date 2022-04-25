@@ -26,7 +26,7 @@ class AddPictureColumnInCandidates extends Migration
     public function down()
     {
         Schema::table('candidates', function (Blueprint $table) {
-            //
+            $table->dropColumn('picture');
         });
     }
 }
