@@ -5588,20 +5588,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Layouts_SiteLayout_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/SiteLayout.vue */ "./resources/js/Layouts/SiteLayout.vue");
-/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
-/* harmony import */ var _vurian_wizard__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @vurian/wizard */ "./node_modules/@vurian/wizard/dist/vr-wizard.esm.js");
-/* harmony import */ var html_to_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! html-to-image */ "./node_modules/html-to-image/es/index.js");
-/* harmony import */ var _Components_Wizard_PresidentStep_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../Components/Wizard/PresidentStep.vue */ "./resources/js/Components/Wizard/PresidentStep.vue");
-/* harmony import */ var _Components_Wizard_VicePresidentStep_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../Components/Wizard/VicePresidentStep.vue */ "./resources/js/Components/Wizard/VicePresidentStep.vue");
-/* harmony import */ var _Components_Wizard_SenatorStep_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../Components/Wizard/SenatorStep.vue */ "./resources/js/Components/Wizard/SenatorStep.vue");
-/* harmony import */ var _Components_Wizard_LocaleStep_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../Components/Wizard/LocaleStep.vue */ "./resources/js/Components/Wizard/LocaleStep.vue");
-/* harmony import */ var _Components_Wizard_PartyListStep_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../Components/Wizard/PartyListStep.vue */ "./resources/js/Components/Wizard/PartyListStep.vue");
-/* harmony import */ var _Components_Wizard_CompletedStep_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./../Components/Wizard/CompletedStep.vue */ "./resources/js/Components/Wizard/CompletedStep.vue");
-/* harmony import */ var _Stores_Candidate__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/Stores/Candidate */ "./resources/js/Stores/Candidate.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
+/* harmony import */ var _vurian_wizard__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @vurian/wizard */ "./node_modules/@vurian/wizard/dist/vr-wizard.esm.js");
+/* harmony import */ var html_to_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! html-to-image */ "./node_modules/html-to-image/es/index.js");
+/* harmony import */ var _Components_Wizard_PresidentStep_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../Components/Wizard/PresidentStep.vue */ "./resources/js/Components/Wizard/PresidentStep.vue");
+/* harmony import */ var _Components_Wizard_VicePresidentStep_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../Components/Wizard/VicePresidentStep.vue */ "./resources/js/Components/Wizard/VicePresidentStep.vue");
+/* harmony import */ var _Components_Wizard_SenatorStep_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../Components/Wizard/SenatorStep.vue */ "./resources/js/Components/Wizard/SenatorStep.vue");
+/* harmony import */ var _Components_Wizard_LocaleStep_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../Components/Wizard/LocaleStep.vue */ "./resources/js/Components/Wizard/LocaleStep.vue");
+/* harmony import */ var _Components_Wizard_PartyListStep_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./../Components/Wizard/PartyListStep.vue */ "./resources/js/Components/Wizard/PartyListStep.vue");
+/* harmony import */ var _Components_Wizard_CompletedStep_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./../Components/Wizard/CompletedStep.vue */ "./resources/js/Components/Wizard/CompletedStep.vue");
+/* harmony import */ var _Stores_Candidate__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/Stores/Candidate */ "./resources/js/Stores/Candidate.js");
 
 var __default__ = {
   layout: _Layouts_SiteLayout_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
 };
+
 
 
 
@@ -5623,8 +5625,11 @@ var __default__ = {
     var expose = _ref.expose;
     expose();
     var props = __props;
-    var store = (0,_Stores_Candidate__WEBPACK_IMPORTED_MODULE_9__.useCandidateStore)();
-    store.setLocalities(props.localities); // console.log("localities", JSON.parse(JSON.stringify(props.localities)))
+    var store = (0,_Stores_Candidate__WEBPACK_IMPORTED_MODULE_10__.useCandidateStore)();
+    store.setLocalities(props.localities);
+    (0,vue__WEBPACK_IMPORTED_MODULE_1__.onMounted)(function () {
+      scroll();
+    }); // console.log("localities", JSON.parse(JSON.stringify(props.localities)))
 
     var config = {
       id: "generator",
@@ -5637,19 +5642,19 @@ var __default__ = {
         president: {
           title: 'President',
           id: 'president',
-          stepView: _Components_Wizard_PresidentStep_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+          stepView: _Components_Wizard_PresidentStep_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
           order: 0
         },
         vice_president: {
           title: 'Vice President',
           id: 'vice_president',
-          stepView: _Components_Wizard_VicePresidentStep_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+          stepView: _Components_Wizard_VicePresidentStep_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
           order: 1
         },
         senator: {
           title: 'Senators',
           id: 'senator',
-          stepView: _Components_Wizard_SenatorStep_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
+          stepView: _Components_Wizard_SenatorStep_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
           order: 2,
           on: {
             /*...*/
@@ -5661,19 +5666,19 @@ var __default__ = {
         locale: {
           title: 'Local Election',
           id: 'locale',
-          stepView: _Components_Wizard_LocaleStep_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
+          stepView: _Components_Wizard_LocaleStep_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
           order: 3
         },
         partylist: {
           title: 'Party List',
           id: 'partylist',
-          stepView: _Components_Wizard_PartyListStep_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
+          stepView: _Components_Wizard_PartyListStep_vue__WEBPACK_IMPORTED_MODULE_8__["default"],
           order: 4
         },
         success: {
           title: 'Download',
           id: 'success',
-          stepView: _Components_Wizard_CompletedStep_vue__WEBPACK_IMPORTED_MODULE_8__["default"],
+          stepView: _Components_Wizard_CompletedStep_vue__WEBPACK_IMPORTED_MODULE_9__["default"],
           order: 5
         }
       }
@@ -5690,7 +5695,7 @@ var __default__ = {
 
     var onComplete = function onComplete() {
       var ballotDiv = document.getElementById('ballot-result');
-      html_to_image__WEBPACK_IMPORTED_MODULE_2__.toJpeg(ballotDiv, {
+      html_to_image__WEBPACK_IMPORTED_MODULE_3__.toJpeg(ballotDiv, {
         quality: 0.95
       }).then(function (dataUrl) {
         var link = document.createElement('a');
@@ -5705,6 +5710,21 @@ var __default__ = {
       window.location.reload();
     }
 
+    function scroll() {
+      window.onscroll = function () {
+        setTimeout(function () {
+          var scrollValue = Math.round(window.innerHeight + window.scrollY);
+          var height = document.body.scrollHeight - 300;
+
+          if (scrollValue > height) {
+            store.wizard.bottomOfPage = true;
+          } else {
+            store.wizard.bottomOfPage = false;
+          }
+        }, 100);
+      };
+    }
+
     var __returned__ = {
       props: props,
       store: store,
@@ -5712,19 +5732,21 @@ var __default__ = {
       options: options,
       onComplete: onComplete,
       reload: reload,
+      scroll: scroll,
       SiteLayout: _Layouts_SiteLayout_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-      Head: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Head,
-      Link: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Link,
-      VrWizard: _vurian_wizard__WEBPACK_IMPORTED_MODULE_10__["default"],
-      htmlToImage: html_to_image__WEBPACK_IMPORTED_MODULE_2__,
-      toJpeg: html_to_image__WEBPACK_IMPORTED_MODULE_2__.toJpeg,
-      PresidentStep: _Components_Wizard_PresidentStep_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
-      VicePresidentStep: _Components_Wizard_VicePresidentStep_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
-      SenatorStep: _Components_Wizard_SenatorStep_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
-      LocaleStep: _Components_Wizard_LocaleStep_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
-      PartyListStep: _Components_Wizard_PartyListStep_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
-      CompletedStep: _Components_Wizard_CompletedStep_vue__WEBPACK_IMPORTED_MODULE_8__["default"],
-      useCandidateStore: _Stores_Candidate__WEBPACK_IMPORTED_MODULE_9__.useCandidateStore
+      onMounted: vue__WEBPACK_IMPORTED_MODULE_1__.onMounted,
+      Head: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_2__.Head,
+      Link: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_2__.Link,
+      VrWizard: _vurian_wizard__WEBPACK_IMPORTED_MODULE_11__["default"],
+      htmlToImage: html_to_image__WEBPACK_IMPORTED_MODULE_3__,
+      toJpeg: html_to_image__WEBPACK_IMPORTED_MODULE_3__.toJpeg,
+      PresidentStep: _Components_Wizard_PresidentStep_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+      VicePresidentStep: _Components_Wizard_VicePresidentStep_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
+      SenatorStep: _Components_Wizard_SenatorStep_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
+      LocaleStep: _Components_Wizard_LocaleStep_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
+      PartyListStep: _Components_Wizard_PartyListStep_vue__WEBPACK_IMPORTED_MODULE_8__["default"],
+      CompletedStep: _Components_Wizard_CompletedStep_vue__WEBPACK_IMPORTED_MODULE_9__["default"],
+      useCandidateStore: _Stores_Candidate__WEBPACK_IMPORTED_MODULE_10__.useCandidateStore
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -6988,17 +7010,18 @@ var _hoisted_1 = {
   "class": "min-h-screen bg-white"
 };
 var _hoisted_2 = {
-  "class": "container mx-auto wizard-generator",
-  id: "wizard-generator"
-};
-var _hoisted_3 = {
   key: 0,
   "class": "text-center py-4"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Head"], {
     title: "Generator"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["VrWizard"], {
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["container mx-auto wizard-generator", {
+      'bottom-of-page': $setup.store.wizard.bottomOfPage
+    }]),
+    id: "wizard-generator"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["VrWizard"], {
     options: $setup.options,
     id: $setup.config.id,
     context: $setup.config.context,
@@ -7008,7 +7031,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     doneText: "Download"
   }, null, 8
   /* PROPS */
-  , ["id", "context", "states", "initial"]), $setup.store.wizard.lastSavedStep != 'president' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  , ["id", "context", "states", "initial"]), $setup.store.wizard.lastSavedStep != 'president' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: "",
     onClick: _cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
       return $setup.store.reset(function () {
@@ -7016,7 +7039,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       });
     }, ["prevent"])),
     "class": "underline"
-  }, "Click here to start over")])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])], 64
+  }, "Click here to start over ")])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 2
+  /* CLASS */
+  )])], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -7063,7 +7088,8 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_1__.defineStore)('cand
     return {
       wizard: {
         lastSavedStep: "president",
-        completedSteps: []
+        completedSteps: [],
+        bottomOfPage: false
       },
       dataSource: {
         president: [],

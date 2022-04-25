@@ -120,6 +120,10 @@
     @apply bg-neutral-200 text-gray-400;
 }
 
+.wizard-generator .wrapper .w-stepper__item {
+    max-width: 185px;
+}
+
 .wizard-generator .wrapper .w-stepper__item.completed,
 .wizard-generator .wrapper .w-stepper__item.active {
     @apply bg-orange-500 text-white font-bold;
@@ -153,9 +157,13 @@
     white-space: nowrap;
 }
 
-.wizard-generator .vr-wizard--footer {
-    justify-content: center;
+.wizard-generator:not(.bottom-of-page) .vr-wizard--footer {
     position: fixed;
+}
+
+.wizard-generator .vr-wizard--footer {
+    border-top: 2px solid #f0f0ef;
+    justify-content: center;
     bottom: 0;
     left: 0;
     background-color: white;
@@ -171,7 +179,7 @@
 /* Buttons */
 
 .wizard-generator .vr-wizard--footer .vr-wizard--btn {
-    @apply md:px-20 md:py-3 text-white md:text-xl tracking-wide outline-none;
+    @apply md:px-20 md:py-3 text-white md:text-xl tracking-wide outline-none shadow-md;;
 }
 
 .wizard-generator .vr-wizard--footer .vr-wizard--footer-right .vr-wizard--btn {

@@ -7,7 +7,8 @@ export const useCandidateStore = defineStore('candidate', {
     return { 
       wizard: {
         lastSavedStep: "president",
-        completedSteps: []
+        completedSteps: [],
+        bottomOfPage: false
       },
       dataSource: {
         president: [],

@@ -2,7 +2,7 @@
     <Head title="Generator" />
 
     <div class="min-h-screen bg-white">
-        <div class="container mx-auto wizard-generator" id="wizard-generator">
+        <div class="container mx-auto wizard-generator" :class="{'bottom-of-page': store.wizard.bottomOfPage}" id="wizard-generator">
             <VrWizard 
                 :options="options" 
                 :id="config.id" 
@@ -13,13 +13,16 @@
                 doneText="Download"
             />
             <div class="text-center py-4" v-if="store.wizard.lastSavedStep != 'president'">
-              <a href="" @click.prevent="store.reset(() => { reload() })" class="underline">Click here to start over</a>
+              <a href="" @click.prevent="store.reset(() => { reload() })" class="underline">Click here to start over
+
+              </a>
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
+import { onMounted } from 'vue';
 import { Head, Link } from "@inertiajs/inertia-vue3";
 import VrWizard from '@vurian/wizard';
 
@@ -42,6 +45,9 @@ const store = useCandidateStore();
 
 store.setLocalities(props.localities);
 
+onMounted(() => {
+  scroll();
+});
 // console.log("localities", JSON.parse(JSON.stringify(props.localities)))
 
 const config = {
@@ -123,6 +129,20 @@ const onComplete = () => {
 
 function reload() {
   window.location.reload()
+}
+
+function scroll () {
+  window.onscroll = () => {
+    setTimeout(() => {
+      let scrollValue = Math.round(window.innerHeight + window.scrollY);
+      let height = document.body.scrollHeight - 300;
+      if ( scrollValue > height) {
+        store.wizard.bottomOfPage = true
+      } else {
+        store.wizard.bottomOfPage = false
+      }
+    }, 100)
+  }
 }
 </script>
 
