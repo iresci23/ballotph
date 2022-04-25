@@ -34,9 +34,17 @@ onMounted(() => {
             <div class="pt-2 px-2 md:pr-1">
                 <select v-model="store.search.province">
                     <option value="">SELECT PROVINCE</option>
-                    <option v-for="option in store.provinces" :key="option.province" v-bind:value="option.province">
-                        {{ option.province }}
-                    </option>
+                    <option disabled>---------------------------</option>
+                    <option value="NCR">NCR</option>
+                    <option disabled>---------------------------</option>
+                    <template v-for="option in store.provinces" :key="option.province">
+                        <option 
+                            v-bind:value="option.province"
+                            v-if="option.province != 'NCR'"
+                        >
+                            {{ option.province }}
+                        </option>
+                    </template>
                 </select>
             </div>
             <div class="pt-2 px-2">

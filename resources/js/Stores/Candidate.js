@@ -164,6 +164,9 @@ export const useCandidateStore = defineStore('candidate', {
     },
     provinces: (state) => {
       const provinces = [...new Map(state.dataSource.localities.map(item =>[item['province'], item])).values()];
+
+      provinces.sort((a, b) => a.province.localeCompare(b.province))
+
       return provinces;
     },
     citydists: (state) => {
