@@ -63,7 +63,7 @@
                         <li class="p-3 text-lg">I-click ang "Create My Ballot" button para mag simula.</li>
                         <img class="max-w-2xl mx-auto" src="/images/step-one.png" alt="">
                         <li class="p-3 text-lg">Piliin ang kandidatong gusto mong iboto at i-click ang "Next" button.</li>
-                        <img class="max-w-2xl mx-auto" src="/images/step2.2.png" alt="">
+                        <img class="max-w-2xl mx-auto" src="/images/step-two.png" alt="">
                         <li class="p-3 text-lg">I-check ang listahan at i-click ang “Download” button para ma-save sa'yong device ang personalized sample ballot mo.</li>
                         <img class="max-w-2xl mx-auto" src="/images/step-three.png" alt="">
                         <li class="p-3 text-lg">At 'yun na! <strong>Mayroon ka ng sample ballot para sa May 9!</strong></li>
