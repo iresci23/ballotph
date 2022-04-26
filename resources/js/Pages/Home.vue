@@ -41,8 +41,8 @@
         <div
             class="container mx-auto flex flex-wrap items-center justify-between pb-12">
             <h2
-                class="w-full my-2 lg:text-3xl text-2xl font-black leading-tight text-center text-gray-800">
-                Paano ba gamitin ang Generator?
+                class="w-full my-2 lg:text-3xl text-2xl font-black leading-tight text-center text-gray-800 md:pt-4 xl:pt-2">
+                Paano gamitin ang Generator
             </h2>
             <div class="w-full mb-4">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t">
@@ -59,15 +59,15 @@
                     </p>
                 </div>
                 <div class="w-full p-5 flex justify-center">
-                    <ul class="list-decimal">
+                    <ul class="list-decimal md:max-w-3xl text-left">
                         <li class="p-3 text-lg">I-click ang "Create My Ballot" button para mag simula.</li>
-                        <img src="https://placehold.co/600x400" alt="">
+                        <img class="max-w-2xl mx-auto" src="/images/step-one.png" alt="">
                         <li class="p-3 text-lg">Piliin ang kandidatong gusto mong iboto at i-click ang "Next" button.</li>
-                        <img src="https://placehold.co/600x400" alt="">
-                        <li class="p-3 text-lg">I-click ang “Download” button para ma-save sa'yong device ang personalized sample ballot mo.</li>
-                        <img src="https://placehold.co/600x400" alt="">
-                        <li class="p-3 text-lg">At 'yun na! Mayroon ka ng sample ballot para sa May 9!</li>
-                        <img src="https://placehold.co/600x400" alt="">
+                        <img class="max-w-2xl mx-auto" src="/images/step2.2.png" alt="">
+                        <li class="p-3 text-lg">I-check ang listahan at i-click ang “Download” button para ma-save sa'yong device ang personalized sample ballot mo.</li>
+                        <img class="max-w-2xl mx-auto" src="/images/step-three.png" alt="">
+                        <li class="p-3 text-lg">At 'yun na! <strong>Mayroon ka ng sample ballot para sa May 9!</strong></li>
+                        <!-- <img src="https://placehold.co/600x400" alt=""> -->
                     </ul>
                 </div>
             </div>
@@ -94,10 +94,13 @@
                     <a class="my-4 md:mx-4" href="https://votepilipinas.com/" target="_blank">
                         <img class="md:usefullinksimg" src="/images/VOTEPILIPINASLOGO.png" alt="Vote Pilipinas Logo">
                     </a>
+                    <a class="my-4 md:mx-4" href="https://voterverifier.comelec.gov.ph/voter_precinct" target="_blank">
+                        <img class="md:usefullinksimg" src="/images/precinct4.png" alt="Precinct Finder">
+                    </a>
                 </div>
             </div>
 
-            <div class="flex flex-col items-center text-justify">
+            <div class="flex flex-col items-center text-justify p-1">
                 <h3 class="font-bold">Disclaimer:</h3>
                 <p class="py-4">
                     We are not affiliated, associated, authorized or in any way officially connected with the <strong>Commissions on Elections (COMELEC)</strong>. 

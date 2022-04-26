@@ -23,12 +23,12 @@
                 <p class="pl-1 md:pl-0 md:text-sm md:text-center leading-none">
                     <span class="profile-party">{{ candidate.partylist }}</span>
                 </p>
-            </div>
-            <div class="text-center mb-3" v-if="!hidePicture">
+                <div class="md:mb-1" v-if="!hidePicture">
                 <a :href="store.getProfileUrl(candidate)" 
-                    class="px-2 rounded-full text-sm bg-gray-100 text-gray-600 hover:text-orange-700 hover:bg-yellow-400" 
+                    class="px-1 rounded-full text-xs bg-gray-100 text-gray-600 hover:text-orange-700 hover:bg-yellow-400" 
                     target="_blank" title="Opens in new tab">Check Profile
                 </a>
+            </div>
             </div>
         </div>
         <!-- <button @click.stop.prevent="store.showProfile(candidate)">Open Modal</button> -->

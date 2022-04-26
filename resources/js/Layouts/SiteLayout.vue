@@ -10,7 +10,7 @@
                         href="/">
                         <img
                             src="/images/SBGLOGO.png"
-                            alt="Logo"
+                            alt="Sample Ballot Generator Logo"
                             class="logo mr-5 ml-5 md:ml-0"
                         />
                         <div class="flex flex-col">

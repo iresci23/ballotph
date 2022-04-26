@@ -3,8 +3,15 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Free Sample Ballot Generator for May 9, 2022 Philippine Elections. No need to Sign-up!">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="Sample Ballot Generator">
+        <meta property="og:description" content="Free Sample Ballot Generator for May 9, 2022 Philippine Elections. No need to Sign-up!">
+        <meta property="og:image" content="/images/SBGLOGO.png">
+        <meta property="og:url" content="phballotgenerator.com">
+        <meta property="og:site_name" content="Sample Ballot Generator">
 
-        <title inertia>{{ config('app.name', 'Laravel') }}</title>
+        <title>Sample Ballot Generator for May 9, 2022 Philippine Elections</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">

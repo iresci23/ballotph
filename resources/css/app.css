@@ -19,10 +19,10 @@
 
 .c-card {
     border: 2px solid #fff;
-    @apply  flex bg-white shadow-md hover:shadow-2xl rounded-lg overflow-hidden cursor-pointer;
+    @apply  flex flex-wrap bg-white shadow-md hover:shadow-2xl rounded-lg overflow-hidden cursor-pointer;
 }
 .c-card .profile-party {
-    font-size: 10px;
+    font-size: 8px;
     @apply pr-2 xl:pr-0 py-1 leading-none text-orange-800 font-semibold uppercase tracking-wide md:text-xs;
 }
 .c-card .ballot-number {
