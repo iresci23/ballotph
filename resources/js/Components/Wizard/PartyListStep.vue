@@ -47,7 +47,7 @@ onMounted(() => {
             :candidate="candidate"
             :hide-picture="true"
             :selected="store.ballot.partylist == candidate.id"
-            @click="store.select('partylist', candidate.id)">
+            @click="store.select('partylist', candidate)">
         </CandidateCard>
 
     </div>

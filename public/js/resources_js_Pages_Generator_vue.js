@@ -5703,6 +5703,7 @@ var __default__ = {
         link.href = dataUrl;
         link.click();
       });
+      store.gtag('download');
       console.log("download ballot");
     };
 
@@ -6379,121 +6380,127 @@ var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 /* HOISTED */
 );
 
-var _hoisted_5 = ["value"];
-var _hoisted_6 = {
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
+  value: "NCR"
+}, "NCR", -1
+/* HOISTED */
+);
+
+var _hoisted_6 = ["value"];
+var _hoisted_7 = {
   "class": "pt-2 px-2"
 };
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
   value: ""
 }, "SELECT CITY", -1
 /* HOISTED */
 );
 
-var _hoisted_8 = ["value"];
-var _hoisted_9 = {
+var _hoisted_9 = ["value"];
+var _hoisted_10 = {
   key: 0
 };
-var _hoisted_10 = {
+var _hoisted_11 = {
   key: 1
 };
-var _hoisted_11 = {
+var _hoisted_12 = {
   key: 0
 };
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
   "class": "bg-green-600 text-white ballot-border ballot-center"
 }, "MEMBER, HOUSE OF REPRESENTATIVES / Vote for 1", -1
 /* HOISTED */
 );
 
-var _hoisted_13 = {
+var _hoisted_14 = {
   "class": "flex flex-wrap items-center -mx-4"
 };
-var _hoisted_14 = {
+var _hoisted_15 = {
   key: 1
 };
 
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
   "class": "bg-sky-600 text-white ballot-border ballot-center"
 }, "PROVINCIAL GOVERNOR / Vote for 1", -1
 /* HOISTED */
 );
 
-var _hoisted_16 = {
+var _hoisted_17 = {
   "class": "flex flex-wrap items-center -mx-4"
 };
-var _hoisted_17 = {
+var _hoisted_18 = {
   key: 2
 };
 
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
   "class": "bg-green-600 text-white ballot-border ballot-center"
 }, "PROVINCIAL VICE-GOVERNOR / Vote for 1", -1
 /* HOISTED */
 );
 
-var _hoisted_19 = {
-  "class": "flex flex-wrap items-center -mx-4"
-};
 var _hoisted_20 = {
-  key: 3
+  "class": "flex flex-wrap items-center -mx-4"
 };
 var _hoisted_21 = {
-  "class": "bg-sky-600 text-white ballot-border ballot-center"
+  key: 3
 };
 var _hoisted_22 = {
-  "class": "flex flex-wrap items-center -mx-4"
+  "class": "bg-sky-600 text-white ballot-border ballot-center"
 };
 var _hoisted_23 = {
+  "class": "flex flex-wrap items-center -mx-4"
+};
+var _hoisted_24 = {
   key: 4
 };
 
-var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
   "class": "bg-green-600 text-white ballot-border ballot-center"
 }, "MAYOR / Vote for 1", -1
 /* HOISTED */
 );
 
-var _hoisted_25 = {
+var _hoisted_26 = {
   "class": "flex flex-wrap items-center -mx-4"
 };
-var _hoisted_26 = {
+var _hoisted_27 = {
   key: 5
 };
 
-var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
   "class": "bg-sky-600 text-white ballot-border ballot-center"
 }, "VICE-MAYOR / Vote for 1", -1
 /* HOISTED */
 );
 
-var _hoisted_28 = {
-  "class": "flex flex-wrap items-center -mx-4"
-};
 var _hoisted_29 = {
-  key: 6
+  "class": "flex flex-wrap items-center -mx-4"
 };
 var _hoisted_30 = {
-  "class": "bg-green-600 text-white ballot-border ballot-center"
+  key: 6
 };
 var _hoisted_31 = {
-  "class": "flex flex-wrap items-center -mx-4"
+  "class": "bg-green-600 text-white ballot-border ballot-center"
 };
 var _hoisted_32 = {
+  "class": "flex flex-wrap items-center -mx-4"
+};
+var _hoisted_33 = {
   key: 2,
   "class": "text-lg md:text-xl lg:text-2xl text-center lg:p-8 py-8"
 };
 
-var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Piliin ang ");
+var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Piliin ang ");
 
-var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, "Province / City", -1
+var _hoisted_35 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, "Province / City", -1
 /* HOISTED */
 );
 
-var _hoisted_35 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" kung saan ka boboto. ");
+var _hoisted_36 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" kung saan ka boboto. ");
 
-var _hoisted_36 = [_hoisted_33, _hoisted_34, _hoisted_35];
+var _hoisted_37 = [_hoisted_34, _hoisted_35, _hoisted_36];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", (0,vue__WEBPACK_IMPORTED_MODULE_0__.mergeProps)({
     "class": "text-center py-4"
@@ -6501,86 +6508,90 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
       return $setup.store.search.province = $event;
     })
-  }, [_hoisted_4, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.provinces, function (option) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
-      key: option.province,
+  }, [_hoisted_4, _hoisted_5, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.provinces, function (option) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+      key: option.province
+    }, [option.province != 'NCR' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
+      key: 0,
       value: option.province
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(option.province), 9
     /* TEXT, PROPS */
-    , _hoisted_5);
+    , _hoisted_6)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 64
+    /* STABLE_FRAGMENT */
+    );
   }), 128
   /* KEYED_FRAGMENT */
   ))], 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $setup.store.search.province]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $setup.store.search.province]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
     "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
       return $setup.store.search.citydist = $event;
     }),
     onChange: _cache[2] || (_cache[2] = function ($event) {
       return $setup.store.fetchCandidates('local_candidates', true);
     })
-  }, [_hoisted_7, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.citydists, function (option) {
+  }, [_hoisted_8, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.citydists, function (option) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
       key: option.city_dist,
       value: option.id
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(option.city_dist), 9
     /* TEXT, PROPS */
-    , _hoisted_8);
+    , _hoisted_9);
   }), 128
   /* KEYED_FRAGMENT */
   ))], 544
   /* HYDRATE_EVENTS, NEED_PATCH */
   ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $setup.store.search.citydist]])])])], 16
   /* FULL_PROPS */
-  ), $setup.selectedLocale.city_dist ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Candidates for " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.selectedLocale.province) + " > ", 1
+  ), $setup.selectedLocale.city_dist ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Candidates for " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.selectedLocale.province) + " > ", 1
   /* TEXT */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.selectedLocale.city_dist), 1
   /* TEXT */
-  )])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $setup.store && $setup.selectedLocale.city_dist ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" MEMBER, HOUSE OF REPRESENTATIVES "), $setup.store.houseRepresentatives.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, [_hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.houseRepresentatives, function (candidate) {
+  )])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $setup.store && $setup.selectedLocale.city_dist ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" MEMBER, HOUSE OF REPRESENTATIVES "), $setup.store.houseRepresentatives.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.houseRepresentatives, function (candidate) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["CandidateCard"], {
       key: 'house_rep_' + candidate.id,
       candidate: candidate,
       "hide-picture": true,
       selected: $setup.store.ballot.house_representative == candidate.id,
       onClick: function onClick($event) {
-        return $setup.store.select('house_representative', candidate.id);
+        return $setup.store.select('house_representative', candidate);
       }
     }, null, 8
     /* PROPS */
     , ["candidate", "selected", "onClick"]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" PROVINCIAL GOVERNOR  "), $setup.store.governors.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.governors, function (candidate) {
+  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" PROVINCIAL GOVERNOR  "), $setup.store.governors.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_15, [_hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.governors, function (candidate) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["CandidateCard"], {
       key: 'governor_' + candidate.id,
       candidate: candidate,
       "hide-picture": true,
       selected: $setup.store.ballot.governor == candidate.id,
       onClick: function onClick($event) {
-        return $setup.store.select('governor', candidate.id);
+        return $setup.store.select('governor', candidate);
       }
     }, null, 8
     /* PROPS */
     , ["candidate", "selected", "onClick"]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" PROVINCIAL VICE GOVERNOR  "), $setup.store.viceGovernors.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_17, [_hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.viceGovernors, function (candidate) {
+  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" PROVINCIAL VICE GOVERNOR  "), $setup.store.viceGovernors.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_18, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.viceGovernors, function (candidate) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["CandidateCard"], {
       key: 'vice_governor_' + candidate.id,
       candidate: candidate,
       "hide-picture": true,
       selected: $setup.store.ballot.vice_governor == candidate.id,
       onClick: function onClick($event) {
-        return $setup.store.select('vice_governor', candidate.id);
+        return $setup.store.select('vice_governor', candidate);
       }
     }, null, 8
     /* PROPS */
     , ["candidate", "selected", "onClick"]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" MEMBER, SANGGUNIANG PANLALAWIGAN  "), $setup.store.provSangMembers.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_21, "MEMBER, SANGGUNIANG PANLALAWIGAN / Vote for " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.selectedLocale.prov_saggunian_member_limit), 1
+  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" MEMBER, SANGGUNIANG PANLALAWIGAN  "), $setup.store.provSangMembers.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_22, "MEMBER, SANGGUNIANG PANLALAWIGAN / Vote for " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.selectedLocale.prov_saggunian_member_limit), 1
   /* TEXT */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.provSangMembers, function (candidate) {
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.provSangMembers, function (candidate) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["CandidateCard"], {
       key: 'prov_sang_' + candidate.id,
       candidate: candidate,
@@ -6590,44 +6601,44 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         return c === candidate.id;
       }) + 1,
       onClick: function onClick($event) {
-        return $setup.store.select('prov_sang_members', candidate.id);
+        return $setup.store.select('prov_sang_members', candidate);
       }
     }, null, 8
     /* PROPS */
     , ["candidate", "selected", "selected-index", "onClick"]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" MAYOR  "), $setup.store.mayors.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_23, [_hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_25, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.mayors, function (candidate) {
+  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" MAYOR  "), $setup.store.mayors.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_24, [_hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.mayors, function (candidate) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["CandidateCard"], {
       key: 'mayor_' + candidate.id,
       candidate: candidate,
       "hide-picture": true,
       selected: $setup.store.ballot.mayor == candidate.id,
       onClick: function onClick($event) {
-        return $setup.store.select('mayor', candidate.id);
+        return $setup.store.select('mayor', candidate);
       }
     }, null, 8
     /* PROPS */
     , ["candidate", "selected", "onClick"]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" VICE MAYOR  "), $setup.store.viceMayors.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_26, [_hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.viceMayors, function (candidate) {
+  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" VICE MAYOR  "), $setup.store.viceMayors.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_27, [_hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.viceMayors, function (candidate) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["CandidateCard"], {
       key: 'vice_mayor_' + candidate.id,
       candidate: candidate,
       "hide-picture": true,
       selected: $setup.store.ballot.vice_mayor == candidate.id,
       onClick: function onClick($event) {
-        return $setup.store.select('vice_mayor', candidate.id);
+        return $setup.store.select('vice_mayor', candidate);
       }
     }, null, 8
     /* PROPS */
     , ["candidate", "selected", "onClick"]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" MEMBER, SANGUNIANG BAYAN  "), $setup.store.citySangMembers.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_30, "MEMBER, SANGUNIANG BAYAN / Vote for " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.selectedLocale.city_saggunian_member_limit), 1
+  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" MEMBER, SANGUNIANG BAYAN  "), $setup.store.citySangMembers.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_31, "MEMBER, SANGUNIANG BAYAN / Vote for " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.selectedLocale.city_saggunian_member_limit), 1
   /* TEXT */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.citySangMembers, function (candidate) {
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_32, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.store.citySangMembers, function (candidate) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["CandidateCard"], {
       key: 'city_sang_' + candidate.id,
       candidate: candidate,
@@ -6637,14 +6648,14 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         return c === candidate.id;
       }) + 1,
       onClick: function onClick($event) {
-        return $setup.store.select('city_sang_members', candidate.id);
+        return $setup.store.select('city_sang_members', candidate);
       }
     }, null, 8
     /* PROPS */
     , ["candidate", "selected", "selected-index", "onClick"]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <CandidateCard v-for=\"candidate in store.partylist\" :key=\"candidate.id\"  \r\n            :candidate=\"candidate\"\r\n            :hide-picture=\"true\"\r\n            :selected=\"store.ballot.partylist == candidate.id\"\r\n            @click=\"store.select('partylist', candidate.id)\">\r\n        </CandidateCard> ")])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_32, _hoisted_36))], 64
+  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_33, _hoisted_37))], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -6716,7 +6727,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       "hide-picture": true,
       selected: $setup.store.ballot.partylist == candidate.id,
       onClick: function onClick($event) {
-        return $setup.store.select('partylist', candidate.id);
+        return $setup.store.select('partylist', candidate);
       }
     }, null, 8
     /* PROPS */
@@ -6781,7 +6792,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       candidate: candidate,
       selected: $setup.store.ballot.president == candidate.id,
       onClick: function onClick($event) {
-        return $setup.store.select('president', candidate.id);
+        return $setup.store.select('president', candidate);
       }
     }, null, 8
     /* PROPS */
@@ -6877,7 +6888,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         return c === candidate.id;
       }) + 1,
       onClick: function onClick($event) {
-        return $setup.store.select('senators', candidate.id);
+        return $setup.store.select('senators', candidate);
       }
     }, null, 8
     /* PROPS */
@@ -6953,7 +6964,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       candidate: candidate,
       selected: $setup.store.ballot.vice_president == candidate.id,
       onClick: function onClick($event) {
-        return $setup.store.select('vice_president', candidate.id);
+        return $setup.store.select('vice_president', candidate);
       }
     }, null, 8
     /* PROPS */
@@ -7039,7 +7050,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       });
     }, ["prevent"])),
     "class": "underline"
-  }, "Click here to start over ")])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 2
+  }, " Click here to start over ")])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 2
   /* CLASS */
   )])], 64
   /* STABLE_FRAGMENT */
@@ -7203,30 +7214,43 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_1__.defineStore)('cand
         province: '',
         citydist: ''
       };
+      this.gtag('start_over');
       callback();
     },
-    select: function select(position, candidate_id) {
+    select: function select(position, candidate) {
+      var selectedLocale = this.selectedLocale;
       var positions = ['senators', 'prov_sang_members', 'city_sang_members']; // multi select
 
       if (positions.includes(position)) {
         var arr = this.ballot[position];
 
-        if (arr.includes(candidate_id)) {
-          arr.splice(arr.indexOf(candidate_id), 1);
+        if (arr.includes(candidate.id)) {
+          arr.splice(arr.indexOf(candidate.id), 1);
           return;
         }
 
-        this.ballot[position].push(candidate_id);
+        this.ballot[position].push(candidate.id);
       } else {
         // single select
-        if (this.ballot[position] && this.ballot[position] === candidate_id) {
+        if (this.ballot[position] && this.ballot[position] === candidate.id) {
           //unselect if the same
           this.ballot[position] = null;
         } else {
           //select
-          this.ballot[position] = candidate_id;
+          this.ballot[position] = candidate.id;
         }
       }
+
+      this.gtag('clicked_candidate', {
+        id: candidate.id,
+        name: candidate.name,
+        ballot_number: candidate.ballot_number,
+        position: candidate.position,
+        partylist: candidate.partylist,
+        locale_id: selectedLocale && selectedLocale.id ? selectedLocale.id : "",
+        locale_province: selectedLocale && selectedLocale.province ? selectedLocale.province : "",
+        locale_name: selectedLocale && selectedLocale.city_dist ? selectedLocale.city_dist : ""
+      });
     },
     saveCompletedSteps: function saveCompletedSteps(steps, last_step) {
       var uniq = _toConsumableArray(new Set(steps));
@@ -7241,6 +7265,11 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_1__.defineStore)('cand
 
       var position = candidate.position.replace(/_/g, " ");
       return "https://www.google.com/search?q=".concat(candidate.name, " candidate running for ").concat(position);
+    },
+    gtag: function gtag(event, params) {
+      if (typeof window !== 'undefined') {
+        window.gtag("event", event, params);
+      }
     }
   },
   getters: {
@@ -7283,6 +7312,9 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_1__.defineStore)('cand
         return [item['province'], item];
       })).values());
 
+      provinces.sort(function (a, b) {
+        return a.province.localeCompare(b.province);
+      });
       return provinces;
     },
     citydists: function citydists(state) {

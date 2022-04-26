@@ -26,6 +26,16 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
 
         @inertiaHead
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo env('GOOGLE_TRACKING_ID'); ?>"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "<?php echo env('GOOGLE_TRACKING_ID'); ?>");
+        </script>
     </head>
     <body class="gradient leading-relaxed flex flex-col">
         @inertia

@@ -63,32 +63,37 @@ class CandidatesSeeder extends Seeder
         // Import local candidates from `importables` folder
         $files = Storage::disk('importables')->files();
 
-        (collect($files))->each(function ($file, $key) {
-            // Split file name by "_", format REGION_PROVINCE_CITYDIST, NCR is special with format NCR_CITY_DIST
-            $locationInfo = explode('_', Str::of($file)->basename('.xlsx'));
+        $filesChunked = (collect($files))->chunk(50);
 
-            $region = $locationInfo[0] ?? null;
-            $province = $locationInfo[1] ?? null;
-            $citydist = $locationInfo[2] ?? null;
-
-            // Insert locale info
-            $locality = \App\Models\Locality::updateOrCreate(
-                [
-                    'region' => $region,
-                    'province' => $province,
-                    'city_dist' => str_replace('-', ' ', $citydist)
-                ],
-                [
-                    'prov_saggunian_member_limit' => 0,
-                    'city_saggunian_member_limit' => 0,
-                ]
-            );
-
-            // import
-            // Excel::import(new LocalCandidatesImport($locality), storage_path('/app/importables/BARMM_BASILAN_AKBAR 2.xlsx'));
-            Excel::import(new LocalCandidatesImport($locality), storage_path('/app/importables/'.$file));
-        });
-
+        foreach($filesChunked as $chunk) {
+            echo "\nImporting 50...";
+            (collect($chunk))->each(function ($file, $key) {
+                // Split file name by "_", format REGION_PROVINCE_CITYDIST, NCR is special with format NCR_CITY_DIST
+                $locationInfo = explode('_', Str::of($file)->basename('.xlsx'));
+    
+                $region = $locationInfo[0] ?? null;
+                $province = $locationInfo[1] ?? null;
+                $citydist = $locationInfo[2] ?? null;
+    
+                // Insert locale info
+                $locality = \App\Models\Locality::updateOrCreate(
+                    [
+                        'region' => $region,
+                        'province' => $province,
+                        'city_dist' => str_replace('-', ' ', $citydist)
+                    ],
+                    [
+                        'prov_saggunian_member_limit' => 0,
+                        'city_saggunian_member_limit' => 0,
+                    ]
+                );
+    
+                // import
+                // Excel::import(new LocalCandidatesImport($locality), storage_path('/app/importables/BARMM_BASILAN_AKBAR 2.xlsx'));
+                Excel::import(new LocalCandidatesImport($locality), storage_path('/app/importables/'.$file));
+                echo "\nImported file ".$file;
+            });
+        }
         echo "Imported data from ".count($files). " excel files.\n";
     }
 }

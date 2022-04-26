@@ -13,8 +13,8 @@
                 doneText="Download"
             />
             <div class="text-center py-4" v-if="store.wizard.lastSavedStep != 'president'">
-              <a href="" @click.prevent="store.reset(() => { reload() })" class="underline">Click here to start over
-
+              <a href="" @click.prevent="store.reset(() => { reload() })" class="underline">
+                  Click here to start over
               </a>
             </div>
         </div>
@@ -124,6 +124,7 @@ const onComplete = () => {
     link.click();
   });
 
+  store.gtag('download')
   console.log("download ballot")
 }
 

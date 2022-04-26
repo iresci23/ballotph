@@ -34,9 +34,15 @@ onMounted(() => {
             <div class="pt-2 px-2 md:pr-1">
                 <select v-model="store.search.province">
                     <option value="">SELECT PROVINCE</option>
-                    <option v-for="option in store.provinces" :key="option.province" v-bind:value="option.province">
-                        {{ option.province }}
-                    </option>
+                    <option value="NCR">NCR</option>
+                    <template v-for="option in store.provinces" :key="option.province">
+                        <option 
+                            v-bind:value="option.province"
+                            v-if="option.province != 'NCR'"
+                        >
+                            {{ option.province }}
+                        </option>
+                    </template>
                 </select>
             </div>
             <div class="pt-2 px-2">
@@ -63,7 +69,7 @@ onMounted(() => {
                     :candidate="candidate"
                     :hide-picture="true"
                     :selected="store.ballot.house_representative == candidate.id"
-                    @click="store.select('house_representative', candidate.id)">
+                    @click="store.select('house_representative', candidate)">
                 </CandidateCard>
             </div>
         </div>
@@ -76,7 +82,7 @@ onMounted(() => {
                     :candidate="candidate"
                     :hide-picture="true"
                     :selected="store.ballot.governor == candidate.id"
-                    @click="store.select('governor', candidate.id)">
+                    @click="store.select('governor', candidate)">
                 </CandidateCard>
             </div>
         </div>
@@ -89,7 +95,7 @@ onMounted(() => {
                     :candidate="candidate"
                     :hide-picture="true"
                     :selected="store.ballot.vice_governor == candidate.id"
-                    @click="store.select('vice_governor', candidate.id)">
+                    @click="store.select('vice_governor', candidate)">
                 </CandidateCard>
             </div>
         </div>
@@ -103,7 +109,7 @@ onMounted(() => {
                     :hide-picture="true"
                     :selected="store.ballot.prov_sang_members.includes(candidate.id)"
                     :selected-index="store.ballot.prov_sang_members.findIndex((c) => c === candidate.id) + 1"
-                    @click="store.select('prov_sang_members', candidate.id)">
+                    @click="store.select('prov_sang_members', candidate)">
                 </CandidateCard>
             </div>
         </div>
@@ -116,7 +122,7 @@ onMounted(() => {
                     :candidate="candidate"
                     :hide-picture="true"
                     :selected="store.ballot.mayor == candidate.id"
-                    @click="store.select('mayor', candidate.id)">
+                    @click="store.select('mayor', candidate)">
                 </CandidateCard>
             </div>
         </div>
@@ -129,7 +135,7 @@ onMounted(() => {
                     :candidate="candidate"
                     :hide-picture="true"
                     :selected="store.ballot.vice_mayor == candidate.id"
-                    @click="store.select('vice_mayor', candidate.id)">
+                    @click="store.select('vice_mayor', candidate)">
                 </CandidateCard>
             </div>
         </div>
@@ -143,17 +149,10 @@ onMounted(() => {
                     :hide-picture="true"
                     :selected="store.ballot.city_sang_members.includes(candidate.id)"
                     :selected-index="store.ballot.city_sang_members.findIndex((c) => c === candidate.id) + 1"
-                    @click="store.select('city_sang_members', candidate.id)">
+                    @click="store.select('city_sang_members', candidate)">
                 </CandidateCard>
             </div>
         </div>
-
-        <!-- <CandidateCard v-for="candidate in store.partylist" :key="candidate.id"  
-            :candidate="candidate"
-            :hide-picture="true"
-            :selected="store.ballot.partylist == candidate.id"
-            @click="store.select('partylist', candidate.id)">
-        </CandidateCard> -->
 
     </div>
     <div class="text-lg md:text-xl lg:text-2xl text-center lg:p-8 py-8" v-else>
