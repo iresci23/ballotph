@@ -19,10 +19,10 @@
 
 .c-card {
     border: 2px solid #fff;
-    @apply  flex flex-wrap bg-white shadow-md hover:shadow-2xl rounded-lg overflow-hidden cursor-pointer;
+    @apply  flex flex-wrap items-center bg-white shadow-md hover:shadow-2xl rounded-lg overflow-hidden cursor-pointer;
 }
 .c-card .profile-party {
-    font-size: 8px;
+    font-size: 9px;
     @apply pr-2 xl:pr-0 py-1 leading-none text-orange-800 font-semibold uppercase tracking-wide md:text-xs;
 }
 .c-card .ballot-number {
@@ -36,6 +36,11 @@
 
 .c-card .card-footer {
     @apply p-4 border-t border-b text-xs text-gray-700;
+}
+
+.check-profile {
+    font-size: 10px;
+    @apply md:text-xs;
 }
 
 /* Card States */

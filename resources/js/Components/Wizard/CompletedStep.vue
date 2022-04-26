@@ -61,13 +61,13 @@ onMounted(() => {
                         (3) Do not blacken more circles that what is intended
                     </p>
                 </div> -->
-                <div class="flex flex-col items-center p-2">
+                <div class="flex flex-col items-center p-2 text-center">
                     <img
                         src="/images/SBGLOGO.png"
                         alt="Logo"
-                        class="logo mr-5 ml-5 md:ml-0"
+                        class="logo mr-5 ml-5"
                     />
-                    <p>Sample Ballot Generator</p>
+                    <p class="pt-2">Sample Ballot Generator</p>
                     <p class="text-sm">phballotgenerator.com</p>
                 </div>
             </div>

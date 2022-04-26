@@ -42,19 +42,19 @@
     <footer class="bg-white">
         <div class="container mx-auto px-8">
             <div class="w-full flex flex-col md:flex-row py-6 md:pb-0">
-                <div class="flex-1 flex md:mb-6 flex-row flex-wrap justify-center">
+                <div class="flex-1 flex md:mb-6 md:flex-row flex-col flex-wrap justify-center">
                     <div class="flex md:footer-text-logo footer-text-logo-small">
                         <div class="md:pr-5">
                             <img src="/images/SBGLOGO.png" alt="Logo" class="logo ml-0">
                         </div>
                     </div>
-                    <div class="flex flex-col flex-start justify-center xl:items-start">
+                    <div class="flex flex-col justify-center xl:items-start">
                         <div class="flex flex-col flex-wrap items-center pt-5 md:pt-0">
                             <a class="text-black no-underline hover:no-underline font-bold text-lg lg:text-md"
                             href="#">
                             Sample Ballot Generator</a>
                         </div>
-                        <div class="flex xl:footer-links flex-start">
+                        <div class="flex xl:footer-links justify-center md:justify-start">
                             <ul class="list-reset mb-6 text-center md:text-justify">
                                 <li class="mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6">
                                     <a
@@ -136,8 +136,8 @@
                         </li>
                     </ul>
                 </div> -->
-                <div class="flex-1 flex md:m-5 md:ml-5 md:footer-kofi flex-col flex-wrap items-center">
-                    <div class="md:pt-5 pb-3">
+                <div class="flex-1 flex md:m-5 md:ml-5 md:mt-1 md:footer-kofi flex-col flex-wrap items-center">
+                    <div class="pb-3">
                         <p class=" text-black text-center md:text-left text-xs">
                         Hi! If this app helped you, <br>
                         maybe you can buy us coffee? ❤</p>
