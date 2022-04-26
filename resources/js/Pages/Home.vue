@@ -16,7 +16,7 @@
                 </p>
             </div>
 
-            <Link href="/generator">
+            <Link href="/generator" @click.prevent="store.gtag('home_generate_button_click')">
                   <button
                       id="navAction"
                       class="mx-auto lg:mx-0 hover:underline text-black font-bold rounded mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 button-gradient drop-shadow-md">
@@ -137,13 +137,9 @@
 
 <script setup>
 import { Head, Link } from "@inertiajs/inertia-vue3";
+import { useCandidateStore } from '@/Stores/Candidate'
 
-defineProps({
-    canLogin: Boolean,
-    canRegister: Boolean,
-    laravelVersion: String,
-    phpVersion: String,
-});
+const store = useCandidateStore();
 </script>
 
 <script>

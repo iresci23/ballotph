@@ -43,7 +43,7 @@ onMounted(() => {
         <CandidateCard v-for="candidate in store.presidents" :key="candidate.id"  
             :candidate="candidate"
             :selected="store.ballot.president == candidate.id"
-            @click="store.select('president', candidate.id )">
+            @click="store.select('president', candidate)">
         </CandidateCard>
 
     </div>

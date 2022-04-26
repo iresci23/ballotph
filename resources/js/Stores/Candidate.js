@@ -95,32 +95,47 @@ export const useCandidateStore = defineStore('candidate', {
         citydist: '',
       };
 
+      this.gtag('start_over');
+
       callback();
     },
-    select(position, candidate_id) {
+    select(position, candidate) {
       
+      let selectedLocale = this.selectedLocale;
       let positions = ['senators', 'prov_sang_members', 'city_sang_members'];
       // multi select
       if (positions.includes(position)) {
 
         let arr = this.ballot[position];
-        if(arr.includes(candidate_id)){
-            arr.splice(arr.indexOf(candidate_id), 1);
+        if(arr.includes(candidate.id)){
+            arr.splice(arr.indexOf(candidate.id), 1);
             return;
         }
-        this.ballot[position].push(candidate_id)
+        this.ballot[position].push(candidate.id)
 
       } else {
         // single select
         if (this.ballot[position] && 
-          this.ballot[position] === candidate_id) {
+          this.ballot[position] === candidate.id) {
           //unselect if the same
           this.ballot[position] = null
         } else {
           //select
-          this.ballot[position] = candidate_id
+          this.ballot[position] = candidate.id
         }
       }
+
+      this.gtag('clicked_candidate', {
+        id: candidate.id,
+        name: candidate.name,
+        ballot_number: candidate.ballot_number,
+        position: candidate.position,
+        partylist: candidate.partylist,
+        locale_id: selectedLocale && selectedLocale.id ? selectedLocale.id : "", 
+        locale_province: selectedLocale && selectedLocale.province ? selectedLocale.province : "", 
+        locale_name: selectedLocale && selectedLocale.city_dist ? selectedLocale.city_dist : "", 
+      });
+      
     },
     saveCompletedSteps(steps, last_step) {
       let uniq = [...new Set(steps)];
@@ -134,6 +149,11 @@ export const useCandidateStore = defineStore('candidate', {
       let position = (candidate.position).replace(/_/g," ");
       return `https://www.google.com/search?q=${candidate.name} candidate running for ${position}`;
     },
+    gtag(event, params){
+      if (typeof window !== 'undefined') {
+        window.gtag("event", event, params);
+      }
+    }
   },
   getters: {
     presidents: (state) => {

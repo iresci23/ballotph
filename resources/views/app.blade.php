@@ -27,7 +27,7 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', <?php echo env('GOOGLE_TRACKING_ID'); ?>);
+        gtag('config', "<?php echo env('GOOGLE_TRACKING_ID'); ?>");
         </script>
     </head>
     <body class="gradient leading-relaxed flex flex-col">

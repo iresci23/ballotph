@@ -61,7 +61,7 @@ onMounted(() => {
             :candidate="candidate"
             :selected="store.ballot.senators.includes(candidate.id)"
             :selected-index="store.ballot.senators.findIndex((c) => c === candidate.id) + 1"
-            @click="store.select('senators', candidate.id)">
+            @click="store.select('senators', candidate)">
         </CandidateCard>
 
     </div>
