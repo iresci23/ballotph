@@ -1,7 +1,7 @@
 <template>
     <Head title="Home" />
 
-    <div class="container mx-auto h-screen">
+    <div class="container mx-auto md:h-screen">
         <div class="text-center px-3 lg:px-0">
             <h1
                 class="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight">
@@ -29,7 +29,7 @@
             <div
                 class="browser-mockup flex flex-1 m-6 md:px-0 md:m-12 bg-white w-1/2 rounded shadow-xl"
             >
-                <img
+                <img class="max-h-44 md:max-h-full"
                     src="/images/Sample_Ballot_Comelec.png"
                     alt="Sample Ballot"
                 />

@@ -189,7 +189,7 @@ var _withScopeId = function _withScopeId(n) {
 };
 
 var _hoisted_1 = {
-  "class": "container mx-auto h-screen"
+  "class": "container mx-auto md:h-screen"
 };
 var _hoisted_2 = {
   "class": "text-center px-3 lg:px-0"
@@ -228,6 +228,7 @@ var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "browser-mockup flex flex-1 m-6 md:px-0 md:m-12 bg-white w-1/2 rounded shadow-xl"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+    "class": "max-h-44 md:max-h-full",
     src: "/images/Sample_Ballot_Comelec.png",
     alt: "Sample Ballot"
   })])], -1

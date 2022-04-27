@@ -843,14 +843,14 @@ select {
 .h-20 {
   height: 5rem;
 }
-.h-screen {
-  height: 100vh;
-}
 .h-1 {
   height: 0.25rem;
 }
 .h-14 {
   height: 3.5rem;
+}
+.max-h-44 {
+  max-height: 11rem;
 }
 .max-h-28 {
   max-height: 7rem;
@@ -2161,6 +2161,10 @@ select {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:h-screen {
+    height: 100vh;
   }
 
   .md\:h-full {
