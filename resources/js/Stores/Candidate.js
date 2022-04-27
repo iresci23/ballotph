@@ -153,7 +153,7 @@ export const useCandidateStore = defineStore('candidate', {
       if (typeof window !== 'undefined') {
         window.gtag("event", event, params);
       }
-      callback();
+      callback && callback();
     }
   },
   getters: {

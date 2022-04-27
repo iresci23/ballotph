@@ -3,6 +3,7 @@ import { onMounted } from 'vue';
 import { useCandidateStore } from '@/Stores/Candidate';
 import CandidateCard from './CandidateCard.vue';
 import CardLoading from '@/Components/CardLoading.vue'
+import Alert from '@/Components/Alert.vue'
 
 const store = useCandidateStore()
 
@@ -38,7 +39,16 @@ onMounted(() => {
     </div>
 
     <div class="flex flex-wrap -mx-4" v-if="!store.partylist.length">
-        <CardLoading :compact="true" v-for="index in 5" :key="index"></CardLoading>
+        <template v-if="!store.search.partylist">
+            <CardLoading :compact="true" v-for="index in 5" :key="index"></CardLoading>
+        </template>
+        <template v-else>
+            <Alert class="bg-blue-300 flex-1 m-4">
+                <template #text>
+                    No results found for <strong>{{ store.search.partylist }}</strong>
+                </template>
+            </Alert>
+        </template>
     </div>
 
     <div class="flex flex-wrap items-center -mx-4">
