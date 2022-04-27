@@ -5555,10 +5555,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Layouts/SiteLayout.vue?vue&type=script&lang=js":
-/*!*************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Layouts/SiteLayout.vue?vue&type=script&lang=js ***!
-  \*************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Layouts/SiteLayout.vue?vue&type=script&setup=true&lang=js":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Layouts/SiteLayout.vue?vue&type=script&setup=true&lang=js ***!
+  \************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5566,13 +5566,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
+/* harmony import */ var _Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Stores/Candidate */ "./resources/js/Stores/Candidate.js");
+/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+
+var __default__ = {
   components: {
-    Link: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Link
+    Link: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Link
   }
-});
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/*#__PURE__*/Object.assign(__default__, {
+  setup: function setup(__props, _ref) {
+    var expose = _ref.expose;
+    expose();
+    var store = (0,_Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__.useCandidateStore)();
+
+    function openKofi() {
+      window.open('https://ko-fi.com/codesandpaws', '_blank' // <- This is what makes it open in a new window.
+      );
+    }
+
+    var __returned__ = {
+      store: store,
+      openKofi: openKofi,
+      Link: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Link,
+      useCandidateStore: _Stores_Candidate__WEBPACK_IMPORTED_MODULE_0__.useCandidateStore
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  }
+}));
 
 /***/ }),
 
@@ -6998,10 +7024,53 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<header><nav id=\"header\" class=\"w-full z-30 top-0 text-white py-1 lg:py-4\"><div class=\"w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2\"><div class=\"md:pl-4 flex lg:items-center\"><a class=\"text-black no-underline hover:no-underline font-bold text-sm flex items-center\" href=\"/\"><img src=\"/images/SBGLOGO.png\" alt=\"Sample Ballot Generator Logo\" class=\"logo mr-5 ml-5 md:ml-0\"><div class=\"flex flex-col\"><span>Sample Ballot</span><span>Generator</span></div></a></div><!-- &lt;Link href=&quot;/generator&quot;&gt;\r\n                  &lt;button\r\n                      id=&quot;navAction&quot;\r\n                      class=&quot;mx-auto lg:mx-0 hover:underline text-gray-800 font-extrabold rounded mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 button-gradient&quot;\r\n                  &gt;\r\n                      Generate My Ballot\r\n                  &lt;/button&gt;\r\n                &lt;/Link&gt; --></div></nav><!-- &lt;Link href=&quot;/&quot;&gt;Home&lt;/Link&gt;\r\n      &lt;Link href=&quot;/about&quot;&gt;About&lt;/Link&gt;\r\n      &lt;Link href=&quot;/contact&quot;&gt;Contact&lt;/Link&gt; --></header>", 1);
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<footer class=\"bg-white\"><div class=\"container mx-auto px-8\"><div class=\"w-full flex flex-col md:flex-row py-6 md:pb-0\"><div class=\"flex-1 flex md:mb-6 md:flex-row flex-col flex-wrap justify-center\"><div class=\"flex md:footer-text-logo footer-text-logo-small\"><div class=\"md:pr-5\"><img src=\"/images/SBGLOGO.png\" alt=\"Logo\" class=\"logo ml-0\"></div></div><div class=\"flex flex-col justify-center xl:items-start\"><div class=\"flex flex-col flex-wrap items-center pt-5 md:pt-0\"><a class=\"text-black no-underline hover:no-underline font-bold text-lg lg:text-md\" href=\"#\"> Sample Ballot Generator</a></div><div class=\"flex xl:footer-links justify-center md:justify-start\"><ul class=\"list-reset mb-6 text-center md:text-justify\"><li class=\"mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6\"><a href=\"/privacy\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">Privacy Policy</a></li><!-- &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6&quot;&gt;\r\n                                    &lt;a\r\n                                        href=&quot;#&quot;\r\n                                        class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                        &gt;About Us&lt;/a\r\n                                    &gt;\r\n                                &lt;/li&gt;\r\n                                &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6&quot;&gt;\r\n                                    &lt;a\r\n                                        href=&quot;#&quot;\r\n                                        class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                        &gt;Contact Us&lt;/a\r\n                                    &gt;\r\n                                &lt;/li&gt; --></ul></div></div></div><!-- &lt;div class=&quot;flex-1&quot;&gt;\r\n                    &lt;p class=&quot;uppercase font-extrabold text-gray-500 md:mb-6&quot;&gt;\r\n                        Links\r\n                    &lt;/p&gt;\r\n                    &lt;ul class=&quot;list-reset mb-6&quot;&gt;\r\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\r\n                            &lt;a\r\n                                href=&quot;#&quot;\r\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                &gt;FAQ&lt;/a\r\n                            &gt;\r\n                        &lt;/li&gt;\r\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\r\n                            &lt;a\r\n                                href=&quot;#&quot;\r\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                &gt;Terms&lt;/a\r\n                            &gt;\r\n                        &lt;/li&gt;\r\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\r\n                            &lt;a\r\n                                href=&quot;#&quot;\r\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                &gt;Privacy&lt;/a\r\n                            &gt;\r\n                        &lt;/li&gt;\r\n                    &lt;/ul&gt;\r\n                &lt;/div&gt; --><!-- &lt;div class=&quot;flex-1&quot;&gt;\r\n                    &lt;p class=&quot;uppercase font-extrabold text-gray-500 md:mb-6&quot;&gt;\r\n                        Social\r\n                    &lt;/p&gt;\r\n                    &lt;ul class=&quot;list-reset mb-6&quot;&gt;\r\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\r\n                            &lt;a\r\n                                href=&quot;#&quot;\r\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                &gt;Facebook&lt;/a\r\n                            &gt;\r\n                        &lt;/li&gt;\r\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\r\n                            &lt;a\r\n                                href=&quot;#&quot;\r\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                &gt;Linkedin&lt;/a\r\n                            &gt;\r\n                        &lt;/li&gt;\r\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\r\n                            &lt;a\r\n                                href=&quot;#&quot;\r\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                &gt;Twitter&lt;/a\r\n                            &gt;\r\n                        &lt;/li&gt;\r\n                    &lt;/ul&gt;\r\n                &lt;/div&gt; --><div class=\"flex-1 flex md:m-5 md:ml-5 md:mt-1 md:footer-kofi flex-col flex-wrap items-center\"><div class=\"pb-3\"><p class=\"text-black text-center md:text-left text-xs\"> Hi! If this app helped you, <br> maybe you can buy us coffee? ❤</p></div><div class=\"flex\"><a href=\"https://ko-fi.com/codesandpaws\" target=\"blank\"><img class=\"h-6\" src=\"/images/Kofi_pixel_logo_with_text_dark.png\" alt=\"Kofi Logo\"></a></div><!-- &lt;ul class=&quot;list-reset mb-6&quot;&gt;\r\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\r\n                            &lt;a\r\n                                href=&quot;#&quot;\r\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                &gt;About Us&lt;/a\r\n                            &gt;\r\n                        &lt;/li&gt;\r\n                        &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-0&quot;&gt;\r\n                            &lt;a\r\n                                href=&quot;#&quot;\r\n                                class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                &gt;Contact&lt;/a\r\n                            &gt;\r\n                        &lt;/li&gt;\r\n                    &lt;/ul&gt; --></div></div></div></footer>", 1);
+var _hoisted_2 = {
+  "class": "bg-white"
+};
+var _hoisted_3 = {
+  "class": "container mx-auto px-8"
+};
+var _hoisted_4 = {
+  "class": "w-full flex flex-col md:flex-row py-6 md:pb-0"
+};
 
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex-1 flex md:mb-6 md:flex-row flex-col flex-wrap justify-center\"><div class=\"flex md:footer-text-logo footer-text-logo-small\"><div class=\"md:pr-5\"><a href=\"/\"><img src=\"/images/SBGLOGO.png\" alt=\"Logo\" class=\"logo ml-0\"></a></div></div><div class=\"flex flex-col justify-center xl:items-start\"><div class=\"flex flex-col flex-wrap items-center pt-5 md:pt-0\"><a class=\"text-black no-underline hover:no-underline font-bold text-lg lg:text-md\" href=\"/\"> Sample Ballot Generator</a></div><div class=\"flex xl:footer-links justify-center md:justify-start\"><ul class=\"list-reset mb-6 text-center md:text-justify\"><li class=\"mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6\"><a href=\"/privacy\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">Privacy Policy</a></li><!-- &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6&quot;&gt;\r\n                                    &lt;a\r\n                                        href=&quot;#&quot;\r\n                                        class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                        &gt;About Us&lt;/a\r\n                                    &gt;\r\n                                &lt;/li&gt;\r\n                                &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6&quot;&gt;\r\n                                    &lt;a\r\n                                        href=&quot;#&quot;\r\n                                        class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                        &gt;Contact Us&lt;/a\r\n                                    &gt;\r\n                                &lt;/li&gt; --></ul></div></div></div>", 1);
+
+var _hoisted_6 = {
+  "class": "flex-1 flex md:m-5 md:ml-5 md:mt-1 md:footer-kofi flex-col flex-wrap items-center"
+};
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "pb-3"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "text-black text-center md:text-left text-xs"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Hi! If this app helped you, "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" maybe you can buy us coffee? ❤")])], -1
+/* HOISTED */
+);
+
+var _hoisted_8 = {
+  "class": "flex"
+};
+
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  "class": "h-6",
+  src: "/images/Kofi_pixel_logo_with_text_dark.png",
+  alt: "Kofi Logo"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_10 = [_hoisted_9];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]), _hoisted_2], 64
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("footer", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"flex-1\">\r\n                    <p class=\"uppercase font-extrabold text-gray-500 md:mb-6\">\r\n                        Links\r\n                    </p>\r\n                    <ul class=\"list-reset mb-6\">\r\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\r\n                            <a\r\n                                href=\"#\"\r\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\r\n                                >FAQ</a\r\n                            >\r\n                        </li>\r\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\r\n                            <a\r\n                                href=\"#\"\r\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\r\n                                >Terms</a\r\n                            >\r\n                        </li>\r\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\r\n                            <a\r\n                                href=\"#\"\r\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\r\n                                >Privacy</a\r\n                            >\r\n                        </li>\r\n                    </ul>\r\n                </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"flex-1\">\r\n                    <p class=\"uppercase font-extrabold text-gray-500 md:mb-6\">\r\n                        Social\r\n                    </p>\r\n                    <ul class=\"list-reset mb-6\">\r\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\r\n                            <a\r\n                                href=\"#\"\r\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\r\n                                >Facebook</a\r\n                            >\r\n                        </li>\r\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\r\n                            <a\r\n                                href=\"#\"\r\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\r\n                                >Linkedin</a\r\n                            >\r\n                        </li>\r\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\r\n                            <a\r\n                                href=\"#\"\r\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\r\n                                >Twitter</a\r\n                            >\r\n                        </li>\r\n                    </ul>\r\n                </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: "https://ko-fi.com/codesandpaws",
+    onClick: _cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
+      $setup.store.gtag('kofi_button_click', {}, function () {
+        $setup.openKofi();
+      });
+    }, ["prevent"])),
+    target: "blank"
+  }, _hoisted_10)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <ul class=\"list-reset mb-6\">\r\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\r\n                            <a\r\n                                href=\"#\"\r\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\r\n                                >About Us</a\r\n                            >\r\n                        </li>\r\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\r\n                            <a\r\n                                href=\"#\"\r\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\r\n                                >Contact</a\r\n                            >\r\n                        </li>\r\n                    </ul> ")])])])])], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -7270,10 +7339,12 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_1__.defineStore)('cand
       var position = candidate.position.replace(/_/g, " ");
       return "https://www.google.com/search?q=".concat(candidate.name, " candidate running for ").concat(position);
     },
-    gtag: function gtag(event, params) {
+    gtag: function gtag(event, params, callback) {
       if (typeof window !== 'undefined') {
         window.gtag("event", event, params);
       }
+
+      callback();
     }
   },
   getters: {
@@ -9521,14 +9592,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _SiteLayout_vue_vue_type_template_id_61958455__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SiteLayout.vue?vue&type=template&id=61958455 */ "./resources/js/Layouts/SiteLayout.vue?vue&type=template&id=61958455");
-/* harmony import */ var _SiteLayout_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SiteLayout.vue?vue&type=script&lang=js */ "./resources/js/Layouts/SiteLayout.vue?vue&type=script&lang=js");
+/* harmony import */ var _SiteLayout_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SiteLayout.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Layouts/SiteLayout.vue?vue&type=script&setup=true&lang=js");
 /* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_SiteLayout_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_SiteLayout_vue_vue_type_template_id_61958455__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Layouts/SiteLayout.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_SiteLayout_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_SiteLayout_vue_vue_type_template_id_61958455__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Layouts/SiteLayout.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -9693,18 +9764,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Layouts/SiteLayout.vue?vue&type=script&lang=js":
-/*!*********************************************************************!*\
-  !*** ./resources/js/Layouts/SiteLayout.vue?vue&type=script&lang=js ***!
-  \*********************************************************************/
+/***/ "./resources/js/Layouts/SiteLayout.vue?vue&type=script&setup=true&lang=js":
+/*!********************************************************************************!*\
+  !*** ./resources/js/Layouts/SiteLayout.vue?vue&type=script&setup=true&lang=js ***!
+  \********************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_SiteLayout_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_SiteLayout_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_SiteLayout_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./SiteLayout.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Layouts/SiteLayout.vue?vue&type=script&lang=js");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_SiteLayout_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./SiteLayout.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Layouts/SiteLayout.vue?vue&type=script&setup=true&lang=js");
  
 
 /***/ }),

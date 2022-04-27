@@ -149,10 +149,11 @@ export const useCandidateStore = defineStore('candidate', {
       let position = (candidate.position).replace(/_/g," ");
       return `https://www.google.com/search?q=${candidate.name} candidate running for ${position}`;
     },
-    gtag(event, params){
+    gtag(event, params, callback){
       if (typeof window !== 'undefined') {
         window.gtag("event", event, params);
       }
+      callback();
     }
   },
   getters: {

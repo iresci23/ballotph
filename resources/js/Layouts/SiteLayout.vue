@@ -45,13 +45,13 @@
                 <div class="flex-1 flex md:mb-6 md:flex-row flex-col flex-wrap justify-center">
                     <div class="flex md:footer-text-logo footer-text-logo-small">
                         <div class="md:pr-5">
-                            <img src="/images/SBGLOGO.png" alt="Logo" class="logo ml-0">
+                            <a href="/"><img src="/images/SBGLOGO.png" alt="Logo" class="logo ml-0"></a>
                         </div>
                     </div>
                     <div class="flex flex-col justify-center xl:items-start">
                         <div class="flex flex-col flex-wrap items-center pt-5 md:pt-0">
                             <a class="text-black no-underline hover:no-underline font-bold text-lg lg:text-md"
-                            href="#">
+                            href="/">
                             Sample Ballot Generator</a>
                         </div>
                         <div class="flex xl:footer-links justify-center md:justify-start">
@@ -143,7 +143,9 @@
                         maybe you can buy us coffee? ❤</p>
                     </div>
                     <div class="flex">
-                        <a href="https://ko-fi.com/codesandpaws" target="blank">
+                        <a href="https://ko-fi.com/codesandpaws" @click.prevent="store.gtag('kofi_button_click', {}, () => {
+                            openKofi();
+                        })" target="blank">
                         <img class="h-6" src="/images/Kofi_pixel_logo_with_text_dark.png" alt="Kofi Logo">
                         </a>
                     </div>
@@ -177,4 +179,17 @@ export default {
         Link,
     }
 };
+</script>
+
+<script setup>
+import { useCandidateStore } from '@/Stores/Candidate'
+
+const store = useCandidateStore();
+
+function openKofi() {
+    window.open(
+        'https://ko-fi.com/codesandpaws',
+        '_blank' // <- This is what makes it open in a new window.
+    );
+}
 </script>
