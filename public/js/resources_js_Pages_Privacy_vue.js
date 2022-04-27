@@ -413,7 +413,7 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_1__.defineStore)('cand
         window.gtag("event", event, params);
       }
 
-      callback();
+      callback && callback();
     }
   },
   getters: {

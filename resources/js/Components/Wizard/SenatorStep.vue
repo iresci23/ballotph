@@ -51,7 +51,16 @@ onMounted(() => {
     </div>
 
     <div class="flex flex-wrap -mx-4" v-if="!store.senators.length">
-        <CardLoading  v-for="index in 5" :key="index"></CardLoading>
+        <template v-if="!store.search.senator">
+            <CardLoading v-for="index in 5" :key="index"></CardLoading>
+        </template>
+        <template v-else>
+            <Alert class="bg-blue-300 flex-1 m-4">
+                <template #text>
+                    No results found for <strong>{{ store.search.senator }}</strong>
+                </template>
+            </Alert>
+        </template>
     </div>
 
     <div class="flex flex-wrap -mx-4">

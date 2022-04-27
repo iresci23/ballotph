@@ -175,7 +175,7 @@ onMounted(() => {
                             <h2>MEMBER, SANGGUNIANG PANLALAWIGAN / Vote for {{ selectedLocale.prov_saggunian_member_limit }}</h2>
                         </div>
                         <div class="py-3">
-                            <div class="md:ballot-grid px-3 md:pr-0 md:pl-12" v-if="myBallot.prov_sang_members">
+                            <div class="md:ballot-grid px-3 md:pr-0 md:pl-12" v-if="myBallot.prov_sang_members.length">
                                 <div v-for="candidate in myBallot.prov_sang_members" :key="candidate.id">
                                     <div>
                                         <span>
@@ -224,7 +224,7 @@ onMounted(() => {
                         <h2>MEMBER, SANGGUNIANG BAYAN / Vote for {{ selectedLocale.city_saggunian_member_limit }}</h2>
                     </div>
                     <div class="py-3">
-                        <div class="md:ballot-grid px-3 md:pr-0 md:pl-12" v-if="myBallot.city_sang_members">
+                        <div class="md:ballot-grid px-3 md:pr-0 md:pl-12" v-if="myBallot.city_sang_members.length">
                             <div v-for="candidate in myBallot.city_sang_members" :key="candidate.id">
                                 <div>
                                     <span>
