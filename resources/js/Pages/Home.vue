@@ -61,11 +61,11 @@
                 <div class="w-full p-5 flex justify-center">
                     <ul class="list-decimal md:max-w-3xl text-left">
                         <li class="p-3 text-lg">I-click ang "Create My Ballot" button para mag simula.</li>
-                        <img class="max-w-2xl mx-auto" src="/images/step-one.png" alt="">
+                        <img class="md:max-w-2xl mx-auto" src="/images/step-one.png" alt="">
                         <li class="p-3 text-lg">Piliin ang kandidatong gusto mong iboto at i-click ang "Next" button.</li>
-                        <img class="max-w-2xl mx-auto" src="/images/step-two.png" alt="">
+                        <img class="md:max-w-2xl mx-auto" src="/images/step-two.png" alt="">
                         <li class="p-3 text-lg">I-check ang listahan at i-click ang “Download” button para ma-save sa'yong device ang personalized sample ballot mo.</li>
-                        <img class="max-w-2xl mx-auto" src="/images/step-three.png" alt="">
+                        <img class="md:max-w-2xl mx-auto" src="/images/step-three.png" alt="">
                         <li class="p-3 text-lg">At 'yun na! <strong>Mayroon ka ng sample ballot para sa May 9!</strong></li>
                         <!-- <img src="https://placehold.co/600x400" alt=""> -->
                     </ul>
