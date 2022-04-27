@@ -2,7 +2,10 @@
     <Head title="Generator" />
 
     <div class="min-h-screen bg-white">
-        <div class="container mx-auto wizard-generator" :class="{'bottom-of-page': store.wizard.bottomOfPage}" id="wizard-generator">
+        <div class="container mx-auto wizard-generator" 
+          :class="{'bottom-of-page': store.wizard.bottomOfPage, 'loading': store.wizard.loading }" 
+          id="wizard-generator">
+
             <VrWizard 
                 :options="options" 
                 :id="config.id" 
@@ -13,7 +16,7 @@
                 doneText="Download"
             />
             <div class="text-center py-4" v-if="store.wizard.lastSavedStep != 'president'">
-              <a href="" @click.prevent="store.reset(() => { reload() })" class="underline">
+              <a href="" @click.prevent="store.reset(() => { startOver() })" class="underline">
                   Click here to start over
               </a>
             </div>
@@ -47,6 +50,7 @@ store.setLocalities(props.localities);
 
 onMounted(() => {
   scroll();
+  store.wizard.loading = false;
 });
 // console.log("localities", JSON.parse(JSON.stringify(props.localities)))
 
@@ -125,11 +129,13 @@ const onComplete = () => {
   });
 
   store.gtag('download')
-  console.log("download ballot")
 }
 
-function reload() {
-  window.location.reload()
+function startOver() {
+  store.wizard.loading = true;
+  setTimeout(() => {
+    window.location.reload();
+  }, 80);
 }
 
 function scroll () {

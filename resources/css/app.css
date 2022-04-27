@@ -177,6 +177,11 @@
     z-index: 11;
 }
 
+.wizard-generator.loading {
+    opacity: 0.1;
+    pointer-events: none;
+}
+
 .search-bar {
     @apply flex justify-center md:justify-end;
 }

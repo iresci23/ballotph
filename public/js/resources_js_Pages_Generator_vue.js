@@ -5658,6 +5658,7 @@ var __default__ = {
     store.setLocalities(props.localities);
     (0,vue__WEBPACK_IMPORTED_MODULE_1__.onMounted)(function () {
       scroll();
+      store.wizard.loading = false;
     }); // console.log("localities", JSON.parse(JSON.stringify(props.localities)))
 
     var config = {
@@ -5733,11 +5734,13 @@ var __default__ = {
         link.click();
       });
       store.gtag('download');
-      console.log("download ballot");
     };
 
-    function reload() {
-      window.location.reload();
+    function startOver() {
+      store.wizard.loading = true;
+      setTimeout(function () {
+        window.location.reload();
+      }, 80);
     }
 
     function scroll() {
@@ -5761,7 +5764,7 @@ var __default__ = {
       config: config,
       options: options,
       onComplete: onComplete,
-      reload: reload,
+      startOver: startOver,
       scroll: scroll,
       SiteLayout: _Layouts_SiteLayout_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
       onMounted: vue__WEBPACK_IMPORTED_MODULE_1__.onMounted,
@@ -7139,7 +7142,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     title: "Generator"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["container mx-auto wizard-generator", {
-      'bottom-of-page': $setup.store.wizard.bottomOfPage
+      'bottom-of-page': $setup.store.wizard.bottomOfPage,
+      'loading': $setup.store.wizard.loading
     }]),
     id: "wizard-generator"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["VrWizard"], {
@@ -7156,7 +7160,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     href: "",
     onClick: _cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
       return $setup.store.reset(function () {
-        $setup.reload();
+        $setup.startOver();
       });
     }, ["prevent"])),
     "class": "underline"
@@ -7210,7 +7214,8 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_1__.defineStore)('cand
       wizard: {
         lastSavedStep: "president",
         completedSteps: [],
-        bottomOfPage: false
+        bottomOfPage: false,
+        loading: false
       },
       dataSource: {
         president: [],

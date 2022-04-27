@@ -242,7 +242,8 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_1__.defineStore)('cand
       wizard: {
         lastSavedStep: "president",
         completedSteps: [],
-        bottomOfPage: false
+        bottomOfPage: false,
+        loading: false
       },
       dataSource: {
         president: [],
