@@ -60,7 +60,7 @@
                 </div>
                 <div class="w-full p-5 flex justify-center">
                     <ul class="list-decimal md:max-w-3xl text-left">
-                        <li class="p-3 text-lg">I-click ang "Create My Ballot" button para mag simula.</li>
+                        <li class="p-3 text-lg">I-click ang "Generate My Ballot" button para mag simula.</li>
                         <img class="md:max-w-2xl mx-auto" src="/images/step-one.png" alt="">
                         <li class="p-3 text-lg">Piliin ang kandidatong gusto mong iboto at i-click ang "Next" button.</li>
                         <img class="md:max-w-2xl mx-auto" src="/images/step-two.png" alt="">
