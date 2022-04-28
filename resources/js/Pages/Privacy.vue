@@ -8,35 +8,37 @@
             <p class="">Updated: April 2022</p>
         </div>
         <div class="priv-spacing">
-            <p>Codes & Paws (“us”, “we”, or “our”) operates phballotgenerator.com (the “Site”).
-                This page informs you of our policies regarding the collection, use and disclosure of information about users of the Site. By using the Site, you agree to the collection, use and disclosure of information (the “Information”) in accordance with this policy.</p>
+            <p>Codes & Paws (“us”, “we”, or “our”) operates phballotgenerator.com (the “Website”, "Site").
+                This page informs you of our policies regarding the collection, use and disclosure of information about users of the Site. 
+                Your use of the Website constitutes your acceptance of the Privacy Policy.</p>
+                
+             <p>If at any time you do not agree to all terms and practices described in this Privacy Policy, you must cease all use of the Website and you must cease visiting the Website.</p>
         </div>
         <div class="priv-spacing">
-            <h2>Information Collected</h2>
+            <h2>Information that we collect</h2>
             <p>
-                Personal Information. We value your privacy. We DO NOT collect personally identifiable information that can be used to contact or identify you.
+                Personal Information. We value your privacy. We <strong>DO NOT</strong> collect personally identifiable information that can be used to contact or identify you.
             </p>
         </div>
         <div class="priv-spacing">
             <h2>Site Visit Information</h2>
             <p>
-                We may collect information that your browser sends whenever you visit the Site, which may include information such as your computer’s IP address, browser type, browser version, the pages of the Site that you visit, the time and date of your visit, the time spent on those pages and other statistics. We and/or we may engage third parties to use cookies, web beacons and other tracking technologies to collect information about you when you interact with the Site, including information about your browsing behavior on the Site.
+                We use Google Analytics on our Website.  
+                Google Analytics provides additional information and data related to you, your device and your computer browser and your use of, and activity on, our Website.  
+                For information regarding Google’s privacy practices please visit Google’s site.
             </p>
         </div>
         <div class="priv-spacing">
             <h2>Use of Information</h2>
-            <p>We may use the Information to improve the Site and your browsing experience, monitor and analyze trends, usage and activities, see which areas and features of the Sites are popular, count visits etc.</p>
-        </div>
-        <div class="priv-spacing">
-            <h2>Other </h2>
-            <p>
-                We may use the Information to carry out any other purpose for which the Information was collected.
-            </p>
+            <p>All information and data collected may be used for purposes of monitoring usage of the Site and for purposes of improving the Site and service offerings.</p>
         </div>
         <div class="priv-spacing">
             <h2>Cookies</h2>
             <p>
-                Cookies are files with a small amount of data, which may include an anonymous unique identifier. Cookies are sent to your browser from a web site and stored on your computer’s hard drive. Like many sites, we use “cookies” to collect information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. If you choose to remove or reject cookies, this could affect the availability and functionality of the Site.
+                Cookies are files with a small amount of data, which may include an anonymous unique identifier. 
+                Cookies are sent to your browser from a web site and stored on your computer’s hard drive. 
+                Like many sites, we use “cookies” to collect information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. 
+                If you choose to remove or reject cookies, this could affect the availability and functionality of the Site.
             </p>
         </div>
         <div class="priv-spacing">
