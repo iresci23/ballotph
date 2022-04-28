@@ -11,13 +11,14 @@
             <p>Codes & Paws (“us”, “we”, or “our”) operates phballotgenerator.com (the “Website”, "Site").
                 This page informs you of our policies regarding the collection, use and disclosure of information about users of the Site. 
                 Your use of the Website constitutes your acceptance of the Privacy Policy.</p>
-                
+        </div>
+        <div class="priv-spacing">
              <p>If at any time you do not agree to all terms and practices described in this Privacy Policy, you must cease all use of the Website and you must cease visiting the Website.</p>
         </div>
         <div class="priv-spacing">
             <h2>Information that we collect</h2>
             <p>
-                Personal Information. We value your privacy. We <strong>DO NOT</strong> collect personally identifiable information that can be used to contact or identify you.
+                We value your privacy. We <strong>DO NOT</strong> collect personally identifiable information that can be used to contact or identify you.
             </p>
         </div>
         <div class="priv-spacing">
