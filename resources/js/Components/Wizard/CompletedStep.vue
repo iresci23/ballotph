@@ -254,8 +254,11 @@ onMounted(() => {
                         <span>&nbsp;</span>
                     </div>
                 </div>
-
             </div>
         </div>
+    </div>
+
+    <div class="text-center">
+        <small>Maari mong <b>i-screenshot</b> ang page na'to, o i-click ang <b>"Download"</b>.</small>
     </div>
 </template>
