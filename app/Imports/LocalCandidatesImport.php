@@ -81,7 +81,7 @@ class LocalCandidatesImport implements ToCollection, WithStartRow
                 ];
             }
         }
-<!-- dd($grouped); -->
+// dd($grouped);
         // insert the data
         $positionMapping = [
             'MEMBER, HOUSE OF REPRESENTATIVES' => 'house_representative',
