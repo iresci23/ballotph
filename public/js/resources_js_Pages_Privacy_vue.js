@@ -189,7 +189,7 @@ var _withScopeId = function _withScopeId(n) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-411677ef"), n = n(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)(), n;
 };
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"bg-white border-b py-10\" data-v-411677ef><div class=\"container mx-auto md:px-8 max-w-6xl\" data-v-411677ef><div class=\"pb-4\" data-v-411677ef><h1 class=\"text-4xl font-bold text-center pb-10\" data-v-411677ef>Privacy Policy</h1><p class=\"\" data-v-411677ef>Updated: April 2022</p></div><div class=\"priv-spacing\" data-v-411677ef><p data-v-411677ef>Codes &amp; Paws (“us”, “we”, or “our”) operates phballotgenerator.com (the “Website”, &quot;Site&quot;). This page informs you of our policies regarding the collection, use and disclosure of information about users of the Site. Your use of the Website constitutes your acceptance of the Privacy Policy.</p><p data-v-411677ef>If at any time you do not agree to all terms and practices described in this Privacy Policy, you must cease all use of the Website and you must cease visiting the Website.</p></div><div class=\"priv-spacing\" data-v-411677ef><h2 data-v-411677ef>Information that we collect</h2><p data-v-411677ef> Personal Information. We value your privacy. We <strong data-v-411677ef>DO NOT</strong> collect personally identifiable information that can be used to contact or identify you. </p></div><div class=\"priv-spacing\" data-v-411677ef><h2 data-v-411677ef>Site Visit Information</h2><p data-v-411677ef> We use Google Analytics on our Website. Google Analytics provides additional information and data related to you, your device and your computer browser and your use of, and activity on, our Website. For information regarding Google’s privacy practices please visit Google’s site. </p></div><div class=\"priv-spacing\" data-v-411677ef><h2 data-v-411677ef>Use of Information</h2><p data-v-411677ef>All information and data collected may be used for purposes of monitoring usage of the Site and for purposes of improving the Site and service offerings.</p></div><div class=\"priv-spacing\" data-v-411677ef><h2 data-v-411677ef>Cookies</h2><p data-v-411677ef> Cookies are files with a small amount of data, which may include an anonymous unique identifier. Cookies are sent to your browser from a web site and stored on your computer’s hard drive. Like many sites, we use “cookies” to collect information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. If you choose to remove or reject cookies, this could affect the availability and functionality of the Site. </p></div><div class=\"priv-spacing\" data-v-411677ef><h2 data-v-411677ef>Policy Changes</h2><p data-v-411677ef> We may update this Privacy Policy from time-to-time by posting a new version on to this page. </p></div><div class=\"priv-spacing\" data-v-411677ef><h2 data-v-411677ef>Contact</h2><p data-v-411677ef>If you have any questions or concerns, please contact us at codesandpaws@gmail.com</p></div></div></section>", 1);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"bg-white border-b py-10\" data-v-411677ef><div class=\"container mx-auto md:px-8 max-w-6xl\" data-v-411677ef><div class=\"pb-4\" data-v-411677ef><h1 class=\"text-4xl font-bold text-center pb-10\" data-v-411677ef>Privacy Policy</h1><p class=\"\" data-v-411677ef>Updated: April 2022</p></div><div class=\"priv-spacing\" data-v-411677ef><p data-v-411677ef>Codes &amp; Paws (“us”, “we”, or “our”) operates phballotgenerator.com (the “Website”, &quot;Site&quot;). This page informs you of our policies regarding the collection, use and disclosure of information about users of the Site. Your use of the Website constitutes your acceptance of the Privacy Policy.</p></div><div class=\"priv-spacing\" data-v-411677ef><p data-v-411677ef>If at any time you do not agree to all terms and practices described in this Privacy Policy, you must cease all use of the Website and you must cease visiting the Website.</p></div><div class=\"priv-spacing\" data-v-411677ef><h2 data-v-411677ef>Information that we collect</h2><p data-v-411677ef> We value your privacy. We <strong data-v-411677ef>DO NOT</strong> collect personally identifiable information that can be used to contact or identify you. </p></div><div class=\"priv-spacing\" data-v-411677ef><h2 data-v-411677ef>Site Visit Information</h2><p data-v-411677ef> We use Google Analytics on our Website. Google Analytics provides additional information and data related to you, your device and your computer browser and your use of, and activity on, our Website. For information regarding Google’s privacy practices please visit Google’s site. </p></div><div class=\"priv-spacing\" data-v-411677ef><h2 data-v-411677ef>Use of Information</h2><p data-v-411677ef>All information and data collected may be used for purposes of monitoring usage of the Site and for purposes of improving the Site and service offerings.</p></div><div class=\"priv-spacing\" data-v-411677ef><h2 data-v-411677ef>Cookies</h2><p data-v-411677ef> Cookies are files with a small amount of data, which may include an anonymous unique identifier. Cookies are sent to your browser from a web site and stored on your computer’s hard drive. Like many sites, we use “cookies” to collect information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. If you choose to remove or reject cookies, this could affect the availability and functionality of the Site. </p></div><div class=\"priv-spacing\" data-v-411677ef><h2 data-v-411677ef>Policy Changes</h2><p data-v-411677ef> We may update this Privacy Policy from time-to-time by posting a new version on to this page. </p></div><div class=\"priv-spacing\" data-v-411677ef><h2 data-v-411677ef>Contact</h2><p data-v-411677ef>If you have any questions or concerns, please contact us at codesandpaws@gmail.com</p></div></div></section>", 1);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Head"], {
@@ -246,6 +246,7 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_1__.defineStore)('cand
         loading: false
       },
       dataSource: {
+        loading: false,
         president: [],
         vice_president: [],
         senator: [],
@@ -295,13 +296,24 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_1__.defineStore)('cand
             switch (_context.prev = _context.next) {
               case 0:
                 _context.prev = 0;
+                // get data if empty
+                _this.dataSource.loading = true;
 
                 if (!(_this.dataSource[position] && _this.dataSource[position].length == 0 || reload === true)) {
+                  _context.next = 11;
+                  break;
+                }
+
+                if (!(position == 'local_candidates' && !_this.search.citydist)) {
                   _context.next = 6;
                   break;
                 }
 
-                _context.next = 4;
+                _context.next = 10;
+                break;
+
+              case 6:
+                _context.next = 8;
                 return window.axios.get('/json/candidates', {
                   params: {
                     position: position,
@@ -309,25 +321,29 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_1__.defineStore)('cand
                   }
                 });
 
-              case 4:
+              case 8:
                 data = _context.sent;
                 _this.dataSource[position] = data.data;
 
-              case 6:
-                _context.next = 11;
-                break;
-
-              case 8:
-                _context.prev = 8;
-                _context.t0 = _context["catch"](0);
-                console.log(_context.t0);
+              case 10:
+                _this.dataSource.loading = false;
 
               case 11:
+                _context.next = 17;
+                break;
+
+              case 13:
+                _context.prev = 13;
+                _context.t0 = _context["catch"](0);
+                _this.dataSource.loading = false;
+                console.log(_context.t0);
+
+              case 17:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[0, 8]]);
+        }, _callee, null, [[0, 13]]);
       }))();
     },
     setLocalities: function setLocalities(data) {

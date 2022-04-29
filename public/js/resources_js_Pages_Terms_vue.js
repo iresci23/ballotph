@@ -246,6 +246,7 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_1__.defineStore)('cand
         loading: false
       },
       dataSource: {
+        loading: false,
         president: [],
         vice_president: [],
         senator: [],
@@ -295,13 +296,24 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_1__.defineStore)('cand
             switch (_context.prev = _context.next) {
               case 0:
                 _context.prev = 0;
+                // get data if empty
+                _this.dataSource.loading = true;
 
                 if (!(_this.dataSource[position] && _this.dataSource[position].length == 0 || reload === true)) {
+                  _context.next = 11;
+                  break;
+                }
+
+                if (!(position == 'local_candidates' && !_this.search.citydist)) {
                   _context.next = 6;
                   break;
                 }
 
-                _context.next = 4;
+                _context.next = 10;
+                break;
+
+              case 6:
+                _context.next = 8;
                 return window.axios.get('/json/candidates', {
                   params: {
                     position: position,
@@ -309,25 +321,29 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_1__.defineStore)('cand
                   }
                 });
 
-              case 4:
+              case 8:
                 data = _context.sent;
                 _this.dataSource[position] = data.data;
 
-              case 6:
-                _context.next = 11;
-                break;
-
-              case 8:
-                _context.prev = 8;
-                _context.t0 = _context["catch"](0);
-                console.log(_context.t0);
+              case 10:
+                _this.dataSource.loading = false;
 
               case 11:
+                _context.next = 17;
+                break;
+
+              case 13:
+                _context.prev = 13;
+                _context.t0 = _context["catch"](0);
+                _this.dataSource.loading = false;
+                console.log(_context.t0);
+
+              case 17:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[0, 8]]);
+        }, _callee, null, [[0, 13]]);
       }))();
     },
     setLocalities: function setLocalities(data) {

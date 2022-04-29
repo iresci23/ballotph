@@ -12,6 +12,7 @@ export const useCandidateStore = defineStore('candidate', {
         loading: false
       },
       dataSource: {
+        loading: false,
         president: [],
         vice_president: [],
         senator: [],
@@ -52,17 +53,25 @@ export const useCandidateStore = defineStore('candidate', {
     async fetchCandidates(position, reload) {
       try {
           // get data if empty
+          this.dataSource.loading = true;
           if ((this.dataSource[position] && this.dataSource[position].length == 0) || reload === true) {
-            const data = await window.axios.get('/json/candidates', {
-              params: {
-                position: position,
-                locality_id: this.search.citydist
-              }
-            })
-            this.dataSource[position] = data.data
+
+            if (position == 'local_candidates' && !this.search.citydist) {
+              //do nothing
+            } else {
+              const data = await window.axios.get('/json/candidates', {
+                params: {
+                  position: position,
+                  locality_id: this.search.citydist
+                }
+              })
+              this.dataSource[position] = data.data;
+            }
+            this.dataSource.loading = false;
           }
         }
         catch (error) {
+          this.dataSource.loading = false;
           console.log(error)
       }
     },
