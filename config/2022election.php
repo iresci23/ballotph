@@ -496,14 +496,14 @@ return [
             'ballot_number' => 42,
             'position' => 'senator',
         ],
-        [
-            'name' => 'MARCOLETA, RODANTE',
-            'picture' => 'https://eboto.ph/uploads/2022/02/2e8114b9a9864e051369eb9eb4ede7cc.JPG',
-            'profile_url' => 'https://eboto.ph/candidate/rodante-marcoleta/issue-rundown?scrollto=candidate-info-tab',
-            'party' => 'PDP-LABAN',
-            'ballot_number' => 43,
-            'position' => 'senator',
-        ],
+        // [
+        //     'name' => 'MARCOLETA, RODANTE',
+        //     'picture' => 'https://eboto.ph/uploads/2022/02/2e8114b9a9864e051369eb9eb4ede7cc.JPG',
+        //     'profile_url' => 'https://eboto.ph/candidate/rodante-marcoleta/issue-rundown?scrollto=candidate-info-tab',
+        //     'party' => 'PDP-LABAN',
+        //     'ballot_number' => 43,
+        //     'position' => 'senator',
+        // ],
         [
             'name' => 'MARCOS, FRANCIS LEO',
             'picture' => 'https://eboto.ph/uploads/2022/02/9e8dabf84db924bbe8ae0195d87cf0fb.jpg',
@@ -672,33 +672,6 @@ return [
             'ballot_number' => 64,
             'position' => 'senator',
         ],
-        
-
-        // party lists
-
-        [
-            'name' => 'KAMALAYAN',
-            'profile_url' => null,
-            'party' => null,
-            'ballot_number' => 1,
-            'position' => 'partylist',
-        ],
-        [
-            'name' => 'KM NGAYON NA',
-            'profile_url' => null,
-            'party' => null,
-            'ballot_number' => 2,
-            'position' => 'partylist',
-        ],
-        [
-            'name' => 'PSIS',
-            'profile_url' => null,
-            'party' => null,
-            'ballot_number' => 3,
-            'position' => 'partylist',
-        ],
-
-        //local NCR
     ]
     
 ];

@@ -33,7 +33,7 @@ class CandidatesImport implements ToModel, WithHeadingRow
         );
 
         // insert the candidates
-        $candidate = \App\Models\Candidate::updateOrCreate(['name' => $name],
+        $candidate = \App\Models\Candidate::updateOrCreate(['name' => $name, 'locality_id' => null],
             [
                 'picture' => $picture ?? null,
                 'profile_url' => $profile_url
@@ -41,7 +41,7 @@ class CandidatesImport implements ToModel, WithHeadingRow
         );
 
         // map the position of candidates
-        $positionCandidate = \App\Models\PositionCandidate::updateOrCreate([
+        \App\Models\PositionCandidate::updateOrCreate([
                 'election_year' => 2022,
                 'position_id' => $position->id,
                 'candidate_id' => $candidate->id

@@ -35,7 +35,7 @@ class CandidatesSeeder extends Seeder
             );
 
             // insert the candidates
-            $candidate = \App\Models\Candidate::updateOrCreate(['name' => $item['name']],
+            $candidate = \App\Models\Candidate::updateOrCreate(['name' => $item['name'], 'locality_id' => null],
                 [
                     'picture' => $item['picture'] ?? null,
                     'profile_url' => $item['profile_url']
@@ -43,7 +43,7 @@ class CandidatesSeeder extends Seeder
             );
 
             // map the position of candidates
-            $positionCandidate = \App\Models\PositionCandidate::updateOrCreate([
+            \App\Models\PositionCandidate::updateOrCreate([
                     'election_year' => 2022,
                     'position_id' => $position->id,
                     'candidate_id' => $candidate->id
@@ -57,8 +57,8 @@ class CandidatesSeeder extends Seeder
         });
 
 
-        // Import candidates from excel file
-        Excel::import(new CandidatesImport, storage_path('candidates.xlsx'));
+        // Import partylist candidates from the excel file
+        Excel::import(new CandidatesImport, storage_path('partylist.xlsx'));
 
         // Import local candidates from `importables` folder
         $files = Storage::disk('importables')->files();
@@ -89,6 +89,7 @@ class CandidatesSeeder extends Seeder
                 );
     
                 // import
+                // Excel::import(new LocalCandidatesImport($locality), storage_path('/app/importables/MABALACAT.xlsx'));
                 // Excel::import(new LocalCandidatesImport($locality), storage_path('/app/importables/BARMM_BASILAN_AKBAR 2.xlsx'));
                 Excel::import(new LocalCandidatesImport($locality), storage_path('/app/importables/'.$file));
                 echo "\nImported file ".$file;

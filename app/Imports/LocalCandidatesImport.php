@@ -54,9 +54,20 @@ class LocalCandidatesImport implements ToCollection, WithStartRow
 
             if (!preg_match('/^\d/', $row)) {
                 $title = trim(strtok($row, '/'));
+
+                $vote_limit_number = 0;
+                //clean up vote limit row to get the correct limit number
+                $vote_limit_rows = preg_split("/\r\n|\n|\r/", $row); //split when title has multiple lines
+
+                //get only the first line
+                if (isset($vote_limit_rows[0])) {
+                    $vote_limit_number = abs((int) filter_var($vote_limit_rows[0], FILTER_SANITIZE_NUMBER_INT));
+                }
+                
                 $grouped[$title] = [
                     // get the number and get only the first occurence
-                    'vote_limit' => substr(abs((int) filter_var($row, FILTER_SANITIZE_NUMBER_INT)), 0, 1),
+                    'vote_limit' => $vote_limit_number,
+                    // 'vote_limit_title' => preg_split("/\r\n|\n|\r/", $row),
                     'candidates' => []
                 ];
             }
@@ -70,7 +81,7 @@ class LocalCandidatesImport implements ToCollection, WithStartRow
                 ];
             }
         }
-
+dd($grouped);
         // insert the data
         $positionMapping = [
             'MEMBER, HOUSE OF REPRESENTATIVES' => 'house_representative',
@@ -105,10 +116,10 @@ class LocalCandidatesImport implements ToCollection, WithStartRow
                     foreach ($group['candidates'] as $item) {
                         // dump($item);
                         // insert the candidates
-                        $candidate = Candidate::updateOrCreate(['name' => $item['name']]);
+                        $candidate = Candidate::updateOrCreate(['name' => $item['name'], 'locality_id' => $this->locality->id]);
 
                         // map the position of candidates
-                        $positionCandidate = PositionCandidate::updateOrCreate([
+                        PositionCandidate::updateOrCreate([
                                 'election_year' => 2022,
                                 'position_id' => $position->id,
                                 'candidate_id' => $candidate->id,
