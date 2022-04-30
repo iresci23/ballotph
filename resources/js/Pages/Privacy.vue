@@ -50,7 +50,7 @@
         </div>
         <div class="priv-spacing">
             <h2>Contact</h2>
-            <p>If you have any questions or concerns, please contact us at codesandpaws@gmail.com</p>
+            <p>If you have any questions or concerns, please contact us at <a class="hover:underline" href="mailto:codesandpaws@gmail.com">codesandpaws@gmail.com</a></p>
         </div>
     </div>
     </section>

@@ -6015,7 +6015,7 @@ var _hoisted_4 = {
   id: "ballot-result"
 };
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex flex-col justify-between p-4\"><div><h1 class=\"font-bold text-center\"><span>May 9, 2022</span><br><span>NATIONAL AND LOCAL ELECTIONS</span></h1></div><!-- &lt;div class=&quot;flex&quot;&gt;\n                    &lt;p&gt;Type: National and Local&lt;/p&gt;\n                    &lt;p&gt;INSTRUCTIONS FOR VOTING\n                        (1) Completely blacken the inside of the circle \n                        beside the name of the desired candidate.\n                        (2) Use only the marking pen provided for\n                        blackening the circles.\n                        (3) Do not blacken more circles that what is intended\n                    &lt;/p&gt;\n                &lt;/div&gt; --><div class=\"flex flex-col items-center p-2 text-center\"><img src=\"/images/SBGLOGO.png\" alt=\"Logo\" class=\"logo mr-5 ml-5\"><p class=\"pt-2\">Sample Ballot Generator</p><p class=\"text-sm\">phballotgenerator.com</p></div></div>", 1);
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex flex-col justify-between p-4\"><div><h1 class=\"font-bold text-center\"><span>May 9, 2022</span><br><span>NATIONAL AND LOCAL ELECTIONS</span></h1></div><!-- &lt;div class=&quot;flex&quot;&gt;\r\n                    &lt;p&gt;Type: National and Local&lt;/p&gt;\r\n                    &lt;p&gt;INSTRUCTIONS FOR VOTING\r\n                        (1) Completely blacken the inside of the circle \r\n                        beside the name of the desired candidate.\r\n                        (2) Use only the marking pen provided for\r\n                        blackening the circles.\r\n                        (3) Do not blacken more circles that what is intended\r\n                    &lt;/p&gt;\r\n                &lt;/div&gt; --><div class=\"flex flex-col items-center p-2 text-center\"><img src=\"/images/SBGLOGO.png\" alt=\"Logo\" class=\"logo mr-5 ml-5\"><p class=\"pt-2\">Sample Ballot Generator</p><p class=\"text-sm\">phballotgenerator.com</p></div></div>", 1);
 
 var _hoisted_6 = {
   key: 0
@@ -6299,7 +6299,7 @@ var _hoisted_78 = [_hoisted_77];
 
 var _hoisted_79 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "text-center"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", null, "Maari mong i-screenshot ang page na'to, o i-click ang \"Download\".")], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Maari mong "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("b", null, "i-screenshot"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" ang page na'to, o i-click ang "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("b", null, "\"Download\""), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(".")])], -1
 /* HOISTED */
 );
 
@@ -7094,7 +7094,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<header><nav id=\"header\" class=\"w-full z-30 top-0 text-white py-1 lg:py-4\"><div class=\"w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2\"><div class=\"md:pl-4 flex lg:items-center\"><a class=\"text-black no-underline hover:no-underline font-bold text-sm flex items-center\" href=\"/\"><img src=\"/images/SBGLOGO.png\" alt=\"Sample Ballot Generator Logo\" class=\"logo mr-5 ml-5 md:ml-0\"><div class=\"flex flex-col\"><span>Sample Ballot</span><span>Generator</span></div></a></div><!-- &lt;Link href=&quot;/generator&quot;&gt;\n                  &lt;button\n                      id=&quot;navAction&quot;\n                      class=&quot;mx-auto lg:mx-0 hover:underline text-gray-800 font-extrabold rounded mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 button-gradient&quot;\n                  &gt;\n                      Generate My Ballot\n                  &lt;/button&gt;\n                &lt;/Link&gt; --></div></nav><!-- &lt;Link href=&quot;/&quot;&gt;Home&lt;/Link&gt;\n      &lt;Link href=&quot;/about&quot;&gt;About&lt;/Link&gt;\n      &lt;Link href=&quot;/contact&quot;&gt;Contact&lt;/Link&gt; --></header>", 1);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<header><nav id=\"header\" class=\"w-full z-30 top-0 text-white py-1 lg:py-4\"><div class=\"w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2\"><div class=\"md:pl-4 flex lg:items-center\"><a class=\"text-black no-underline hover:no-underline font-bold text-sm flex items-center\" href=\"/\"><img src=\"/images/SBGLOGO.png\" alt=\"Sample Ballot Generator Logo\" class=\"logo mr-5 ml-5 md:ml-0\"><div class=\"flex flex-col\"><span>Sample Ballot</span><span>Generator</span></div></a></div><!-- &lt;Link href=&quot;/generator&quot;&gt;\r\n                  &lt;button\r\n                      id=&quot;navAction&quot;\r\n                      class=&quot;mx-auto lg:mx-0 hover:underline text-gray-800 font-extrabold rounded mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 button-gradient&quot;\r\n                  &gt;\r\n                      Generate My Ballot\r\n                  &lt;/button&gt;\r\n                &lt;/Link&gt; --></div></nav><!-- &lt;Link href=&quot;/&quot;&gt;Home&lt;/Link&gt;\r\n      &lt;Link href=&quot;/about&quot;&gt;About&lt;/Link&gt;\r\n      &lt;Link href=&quot;/contact&quot;&gt;Contact&lt;/Link&gt; --></header>", 1);
 
 var _hoisted_2 = {
   "class": "bg-white"
@@ -7106,7 +7106,7 @@ var _hoisted_4 = {
   "class": "w-full flex flex-col md:flex-row py-6 md:pb-0"
 };
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex-1 flex md:mb-6 md:flex-row flex-col flex-wrap justify-center\"><div class=\"flex md:footer-text-logo footer-text-logo-small\"><div class=\"md:pr-5\"><a href=\"/\"><img src=\"/images/SBGLOGO.png\" alt=\"Logo\" class=\"logo ml-0\"></a></div></div><div class=\"flex flex-col justify-center xl:items-start\"><div class=\"flex flex-col flex-wrap items-center pt-5 md:pt-0\"><a class=\"text-black no-underline hover:no-underline font-bold text-lg lg:text-md\" href=\"/\"> Sample Ballot Generator</a></div><div class=\"flex xl:footer-links justify-center md:justify-start\"><ul class=\"list-reset mb-6 text-center md:text-justify\"><li class=\"mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6\"><a href=\"/privacy\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">Privacy Policy</a></li><!-- &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6&quot;&gt;\n                                    &lt;a\n                                        href=&quot;#&quot;\n                                        class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\n                                        &gt;About Us&lt;/a\n                                    &gt;\n                                &lt;/li&gt;\n                                &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6&quot;&gt;\n                                    &lt;a\n                                        href=&quot;#&quot;\n                                        class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\n                                        &gt;Contact Us&lt;/a\n                                    &gt;\n                                &lt;/li&gt; --></ul></div></div></div>", 1);
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex-1 flex md:mb-6 md:flex-row flex-col flex-wrap justify-center\"><div class=\"flex md:footer-text-logo footer-text-logo-small\"><div class=\"md:pr-5\"><a href=\"/\"><img src=\"/images/SBGLOGO.png\" alt=\"Logo\" class=\"logo ml-0\"></a></div></div><div class=\"flex flex-col justify-center xl:items-start\"><div class=\"flex flex-col flex-wrap items-center pt-5 md:pt-0\"><a class=\"text-black no-underline hover:no-underline font-bold text-lg lg:text-md\" href=\"/\"> Sample Ballot Generator</a></div><div class=\"flex xl:footer-links justify-center md:justify-start\"><ul class=\"list-reset mb-6 text-center md:text-justify\"><li class=\"mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6\"><a href=\"/privacy\" class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\">Privacy Policy</a></li><!-- &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6&quot;&gt;\r\n                                    &lt;a\r\n                                        href=&quot;#&quot;\r\n                                        class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                        &gt;About Us&lt;/a\r\n                                    &gt;\r\n                                &lt;/li&gt;\r\n                                &lt;li class=&quot;mt-2 inline-block mr-2 md:block md:mr-10 lg:mr-0 xl:mr-6&quot;&gt;\r\n                                    &lt;a\r\n                                        href=&quot;#&quot;\r\n                                        class=&quot;font-light no-underline hover:underline text-gray-800 hover:text-orange-500&quot;\r\n                                        &gt;Contact Us&lt;/a\r\n                                    &gt;\r\n                                &lt;/li&gt; --></ul></div></div></div>", 1);
 
 var _hoisted_6 = {
   "class": "flex-1 flex md:m-5 md:ml-5 md:mt-1 md:footer-kofi flex-col flex-wrap items-center"
@@ -7134,7 +7134,7 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 
 var _hoisted_10 = [_hoisted_9];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("footer", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"flex-1\">\n                    <p class=\"uppercase font-extrabold text-gray-500 md:mb-6\">\n                        Links\n                    </p>\n                    <ul class=\"list-reset mb-6\">\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\n                            <a\n                                href=\"#\"\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\n                                >FAQ</a\n                            >\n                        </li>\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\n                            <a\n                                href=\"#\"\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\n                                >Terms</a\n                            >\n                        </li>\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\n                            <a\n                                href=\"#\"\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\n                                >Privacy</a\n                            >\n                        </li>\n                    </ul>\n                </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"flex-1\">\n                    <p class=\"uppercase font-extrabold text-gray-500 md:mb-6\">\n                        Social\n                    </p>\n                    <ul class=\"list-reset mb-6\">\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\n                            <a\n                                href=\"#\"\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\n                                >Facebook</a\n                            >\n                        </li>\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\n                            <a\n                                href=\"#\"\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\n                                >Linkedin</a\n                            >\n                        </li>\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\n                            <a\n                                href=\"#\"\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\n                                >Twitter</a\n                            >\n                        </li>\n                    </ul>\n                </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("footer", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"flex-1\">\r\n                    <p class=\"uppercase font-extrabold text-gray-500 md:mb-6\">\r\n                        Links\r\n                    </p>\r\n                    <ul class=\"list-reset mb-6\">\r\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\r\n                            <a\r\n                                href=\"#\"\r\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\r\n                                >FAQ</a\r\n                            >\r\n                        </li>\r\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\r\n                            <a\r\n                                href=\"#\"\r\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\r\n                                >Terms</a\r\n                            >\r\n                        </li>\r\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\r\n                            <a\r\n                                href=\"#\"\r\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\r\n                                >Privacy</a\r\n                            >\r\n                        </li>\r\n                    </ul>\r\n                </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"flex-1\">\r\n                    <p class=\"uppercase font-extrabold text-gray-500 md:mb-6\">\r\n                        Social\r\n                    </p>\r\n                    <ul class=\"list-reset mb-6\">\r\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\r\n                            <a\r\n                                href=\"#\"\r\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\r\n                                >Facebook</a\r\n                            >\r\n                        </li>\r\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\r\n                            <a\r\n                                href=\"#\"\r\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\r\n                                >Linkedin</a\r\n                            >\r\n                        </li>\r\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\r\n                            <a\r\n                                href=\"#\"\r\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\r\n                                >Twitter</a\r\n                            >\r\n                        </li>\r\n                    </ul>\r\n                </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: "https://ko-fi.com/codesandpaws",
     onClick: _cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
       $setup.store.gtag('kofi_button_click', {}, function () {
@@ -7142,7 +7142,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       });
     }, ["prevent"])),
     target: "blank"
-  }, _hoisted_10)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <ul class=\"list-reset mb-6\">\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\n                            <a\n                                href=\"#\"\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\n                                >About Us</a\n                            >\n                        </li>\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\n                            <a\n                                href=\"#\"\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\n                                >Contact</a\n                            >\n                        </li>\n                    </ul> ")])])])])], 64
+  }, _hoisted_10)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <ul class=\"list-reset mb-6\">\r\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\r\n                            <a\r\n                                href=\"#\"\r\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\r\n                                >About Us</a\r\n                            >\r\n                        </li>\r\n                        <li class=\"mt-2 inline-block mr-2 md:block md:mr-0\">\r\n                            <a\r\n                                href=\"#\"\r\n                                class=\"font-light no-underline hover:underline text-gray-800 hover:text-orange-500\"\r\n                                >Contact</a\r\n                            >\r\n                        </li>\r\n                    </ul> ")])])])])], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -9432,12 +9432,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Alert_vue_vue_type_template_id_f21dafbe__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Alert.vue?vue&type=template&id=f21dafbe */ "./resources/js/Components/Alert.vue?vue&type=template&id=f21dafbe");
-/* harmony import */ var _Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 const script = {}
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_Alert_vue_vue_type_template_id_f21dafbe__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Alert.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_Alert_vue_vue_type_template_id_f21dafbe__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Alert.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -9459,13 +9459,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _CardLoading_vue_vue_type_template_id_dcadc5de__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CardLoading.vue?vue&type=template&id=dcadc5de */ "./resources/js/Components/CardLoading.vue?vue&type=template&id=dcadc5de");
 /* harmony import */ var _CardLoading_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CardLoading.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Components/CardLoading.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_CardLoading_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_CardLoading_vue_vue_type_template_id_dcadc5de__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/CardLoading.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_CardLoading_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_CardLoading_vue_vue_type_template_id_dcadc5de__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/CardLoading.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -9487,13 +9487,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _CandidateCard_vue_vue_type_template_id_f663528c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CandidateCard.vue?vue&type=template&id=f663528c */ "./resources/js/Components/Wizard/CandidateCard.vue?vue&type=template&id=f663528c");
 /* harmony import */ var _CandidateCard_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CandidateCard.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Components/Wizard/CandidateCard.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_CandidateCard_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_CandidateCard_vue_vue_type_template_id_f663528c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/CandidateCard.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_CandidateCard_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_CandidateCard_vue_vue_type_template_id_f663528c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/CandidateCard.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -9515,13 +9515,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _CompletedStep_vue_vue_type_template_id_6897bd3e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CompletedStep.vue?vue&type=template&id=6897bd3e */ "./resources/js/Components/Wizard/CompletedStep.vue?vue&type=template&id=6897bd3e");
 /* harmony import */ var _CompletedStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CompletedStep.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Components/Wizard/CompletedStep.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_CompletedStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_CompletedStep_vue_vue_type_template_id_6897bd3e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/CompletedStep.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_CompletedStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_CompletedStep_vue_vue_type_template_id_6897bd3e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/CompletedStep.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -9543,13 +9543,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _LocaleStep_vue_vue_type_template_id_f751a062__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LocaleStep.vue?vue&type=template&id=f751a062 */ "./resources/js/Components/Wizard/LocaleStep.vue?vue&type=template&id=f751a062");
 /* harmony import */ var _LocaleStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LocaleStep.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Components/Wizard/LocaleStep.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_LocaleStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_LocaleStep_vue_vue_type_template_id_f751a062__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/LocaleStep.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_LocaleStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_LocaleStep_vue_vue_type_template_id_f751a062__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/LocaleStep.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -9571,13 +9571,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _PartyListStep_vue_vue_type_template_id_0ac3ba97__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PartyListStep.vue?vue&type=template&id=0ac3ba97 */ "./resources/js/Components/Wizard/PartyListStep.vue?vue&type=template&id=0ac3ba97");
 /* harmony import */ var _PartyListStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PartyListStep.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Components/Wizard/PartyListStep.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_PartyListStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_PartyListStep_vue_vue_type_template_id_0ac3ba97__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/PartyListStep.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_PartyListStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_PartyListStep_vue_vue_type_template_id_0ac3ba97__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/PartyListStep.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -9599,13 +9599,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _PresidentStep_vue_vue_type_template_id_4ae65fb3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PresidentStep.vue?vue&type=template&id=4ae65fb3 */ "./resources/js/Components/Wizard/PresidentStep.vue?vue&type=template&id=4ae65fb3");
 /* harmony import */ var _PresidentStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PresidentStep.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Components/Wizard/PresidentStep.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_PresidentStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_PresidentStep_vue_vue_type_template_id_4ae65fb3__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/PresidentStep.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_PresidentStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_PresidentStep_vue_vue_type_template_id_4ae65fb3__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/PresidentStep.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -9627,13 +9627,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _SenatorStep_vue_vue_type_template_id_95f37136__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SenatorStep.vue?vue&type=template&id=95f37136 */ "./resources/js/Components/Wizard/SenatorStep.vue?vue&type=template&id=95f37136");
 /* harmony import */ var _SenatorStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SenatorStep.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Components/Wizard/SenatorStep.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_SenatorStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_SenatorStep_vue_vue_type_template_id_95f37136__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/SenatorStep.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_SenatorStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_SenatorStep_vue_vue_type_template_id_95f37136__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/SenatorStep.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -9655,13 +9655,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _VicePresidentStep_vue_vue_type_template_id_4755ea5e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VicePresidentStep.vue?vue&type=template&id=4755ea5e */ "./resources/js/Components/Wizard/VicePresidentStep.vue?vue&type=template&id=4755ea5e");
 /* harmony import */ var _VicePresidentStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VicePresidentStep.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Components/Wizard/VicePresidentStep.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_VicePresidentStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_VicePresidentStep_vue_vue_type_template_id_4755ea5e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/VicePresidentStep.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_VicePresidentStep_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_VicePresidentStep_vue_vue_type_template_id_4755ea5e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Wizard/VicePresidentStep.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -9683,13 +9683,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _SiteLayout_vue_vue_type_template_id_61958455__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SiteLayout.vue?vue&type=template&id=61958455 */ "./resources/js/Layouts/SiteLayout.vue?vue&type=template&id=61958455");
 /* harmony import */ var _SiteLayout_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SiteLayout.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Layouts/SiteLayout.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_SiteLayout_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_SiteLayout_vue_vue_type_template_id_61958455__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Layouts/SiteLayout.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_SiteLayout_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_SiteLayout_vue_vue_type_template_id_61958455__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Layouts/SiteLayout.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -9711,13 +9711,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Generator_vue_vue_type_template_id_a5a9cc0c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Generator.vue?vue&type=template&id=a5a9cc0c */ "./resources/js/Pages/Generator.vue?vue&type=template&id=a5a9cc0c");
 /* harmony import */ var _Generator_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Generator.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/Generator.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Volumes_Macintosh_HD_Users_irelene_www_codesnpaws_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Generator_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Generator_vue_vue_type_template_id_a5a9cc0c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Generator.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_ballotph_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Generator_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Generator_vue_vue_type_template_id_a5a9cc0c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Generator.vue"]])
 /* hot reload */
 if (false) {}
 
