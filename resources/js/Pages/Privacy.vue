@@ -21,7 +21,7 @@
                 We value your privacy. We <strong>DO NOT</strong> collect personally identifiable information that can be used to contact or identify you.
             </p>
             <p>
-                We DO NOT collect the names nor the ballot numbers of the candidates you select.
+                We <strong>DO NOT</strong> collect the names or the ballot numbers of the candidates you selected.
             </p>
         </div>
         <div class="priv-spacing">
