@@ -5,7 +5,7 @@
         <div class="container mx-auto md:px-8 max-w-6xl">
         <div class="pb-4">
             <h1 class="text-4xl font-bold text-center pb-10">Privacy Policy</h1>
-            <p class="">Updated: April 2022</p>
+            <p class="">Updated: May 2022</p>
         </div>
         <div class="priv-spacing">
             <p>Codes & Paws (“us”, “we”, or “our”) operates phballotgenerator.com (the “Website”, "Site").
@@ -20,6 +20,9 @@
             <p>
                 We value your privacy. We <strong>DO NOT</strong> collect personally identifiable information that can be used to contact or identify you.
             </p>
+            <p>
+                We DO NOT collect the names nor the ballot numbers of the candidates you select.
+            </p>
         </div>
         <div class="priv-spacing">
             <h2>Site Visit Information</h2>
@@ -31,7 +34,7 @@
         </div>
         <div class="priv-spacing">
             <h2>Use of Information</h2>
-            <p>All information and data collected may be used for purposes of monitoring usage of the Site and for purposes of improving the Site and service offerings.</p>
+            <p>All information and data collected may be used for purposes of monitoring usage of the Site, and for purposes of improving the Site and its service offerings.</p>
         </div>
         <div class="priv-spacing">
             <h2>Cookies</h2>
