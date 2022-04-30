@@ -460,9 +460,6 @@ var useCandidateStore = (0,pinia__WEBPACK_IMPORTED_MODULE_1__.defineStore)('cand
       }
 
       this.gtag('clicked_candidate', {
-        id: candidate.id,
-        name: candidate.name,
-        ballot_number: candidate.ballot_number,
         position: candidate.position,
         partylist: candidate.partylist,
         locale_id: selectedLocale && selectedLocale.id ? selectedLocale.id : "",
