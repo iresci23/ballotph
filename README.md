@@ -1,5 +1,4 @@
-# ballotph
-Sample Ballot Generator 2022
+# Sample Ballot Generator 2022
 
 ## Install
 Note: Run the commands in a terminal.
