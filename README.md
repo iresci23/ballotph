@@ -1,4 +1,10 @@
-# Sample Ballot Generator 2022
+# A Sample Ballot Generator web tool for Philippine Elections
+
+A personal project  created for the 2022 Philippine elections. 
+It includes a form wizard that allows users to choose their preferred candidates for each electoral position, then generates a sample ballot with the selected candidates.
+
+This project was built with Laravel, Vue (Pinia for state management) and TailwindCSS. 
+URL: https://irelene.dev/showcase/sampleballotgenerator
 
 ## Install
 Note: Run the commands in a terminal.
